@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+::-webkit-scrollbar {display: none;}
+
+* {
+    margin: 0;
+    padding: 0;
+    --color-marron: #7F6E4A;
+    --color-amarillo: #E6EFD0;
+    --color-verdeOscuro: #567661;
+    font-family: 'Roboto', sans-serif;
+}
+
+#cuerpoIndex {
+    width: 100%;
+    height: auto;
+}
+
+#cuerpoAdminApp {
+    width: 100%;
+    height: auto;
+}
+
+/*AQUÍ COMIENZA LA PARTE DE LA WEB CLIENTE*/
+/*AQUÍ COMIENZA LA CABECERA WEB*/
+#contenedorCabecera {
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    z-index: 10000;
+}
+
+#contenedorCabecera-Sup {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    z-index: 9999;
+}
+
+#contenedorCabecera-Menu {
+    width: 100%;
+    height: 50px;
+    display: table;
+    z-index: 9997;
+    background-color: white;
+}
+
+#contenedorCabecera-Menu a{
+    text-decoration: none;
+    color: var(--color-verdeOscuro);
+    line-height: 30px;
+}
+
+.lista {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+}
+
+.componente-lista {
+    display: inline-block;
+    padding: 0 10px;
+    width: 200px;
+    height: 30px;
+    visibility: visible;
+}
+
+.componente-lista:hover {
+    background-color: var(--color-marron);
+    color: white;
+}
+
+#logotipoCabecera {
+    width: 450px;
+    height: 100%;
+}
+
+#logotipo {
+    width: 90%;
+    height: auto;
+    margin: 15px 15px;
+}
+
+#iconoAdmin {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    margin-left: 85%;
+    margin-top: -150px;
+}
+
+#icono {
+    width: 10%;
+    height: auto;
+    transform: rotate(17.26deg);
+    margin-top: 50px;
+}
+
+#span-Admin {
+    color: var(--color-marron);
+    font-weight: bold;
+    position: absolute;
+    margin-top: 63px;
+    margin-left: 10px;
+}
+
+.oculto {
+    visibility: hidden;
+}
+
+#logotipoCabeceraMovil {
+    width: 100%;
+    height: 250px;
+    z-index: 9999;
+    background-color: white;
+    position: absolute;
+}
+#iconoAdminMovil {
+    width: 200px;
+    height: 150px;
+    z-index: 9990;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: -35px;
+    
+}
+
+#iconoMovil {
+    width: 20%;
+    height: auto;
+    transform: rotate(17.26deg);
+    margin-top: 50px;
+}
+
+#span-AdminMovil {
+    font-weight: bold;
+    margin-top: 90px;
+    position: absolute;
+    margin-left: 10px;
+    color: white;
+}
+ 
+.sinDecoracion {
+    text-decoration: none;
+    color: white;
+}
+
+.nivelInferior {
+    margin-top: 250px;
+    z-index: 9997;
+    position: absolute;
+}
+.nivelInferior2 {
+    margin-top: 250px;
+    z-index: 9998;
+    position: absolute;
+}
+
+#icono1 {
+    visibility: visible;
+}
+
+/*AQUÍ TERMINA LA CABECERA WEB*/
+/*AQUÍ CONCLUYE LA PARTE DE LA WEB CLIENTE*/
+
+
+/*AQUÍ COMIENZA EL SLIDER DEL INDEX*/
+#contenedorSlider {
+    width: 95%;
+    height: 500px;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 230px;
+    z-index: 1;
+}
+
+#slider {
+    width: 100%;
+    height: 450px;
+    background-color: cadetblue;
+}
+
+#barraSlider {
+    width: 100%;
+    height: 50px;
+    display: table;
+    text-align: center;
+}
+
+#barraSlider li {
+    display: inline-block;
+}
+
+#componentesBarraSlider {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.trianguloIzquierdo {
+    width: 12px;
+    height: auto;
+}
+
+.circulo {
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: var(--color-amarillo);
+    border: 0.5px solid var(--color-verdeOscuro);
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.trianguloDerecho {
+    width: 12px;
+    height: auto;
+    transform: rotate(180deg);
+    margin-left: 10px;
+}
+
+/*AQUÍ TERMINA EL SLIDER DEL INDEX*/
+/*VENTANA MODAL INICIO SESION*/
+#login {
+    width: 100%;
+    height: 100vh;
+}
+
+.modal-contenido{
+    background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 300px;
+    padding: 10px 20px;
+    margin: 20% auto;
+  }
+  .modal{
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+    z-index: 10000;
+  }
+  #login:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  .etiqueta {
+      width: 100px;
+      display: inline-block;
+      color: var(--color-verdeOscuro);
+      font-weight: bold;
+  }
+
+  #etiquetaModal {
+      font-weight: bold;
+      color: var(--color-verdeOscuro);
+  }
+
+  .campo {
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid var(--color-verdeOscuro);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.separacion2 {
+    margin-top: 20px;
+}
+
+#cCierreModal {
+    width: 34px;
+    height: 34px;
+    background-color: var(--color-verdeOscuro);
+    display: table;
+    margin-top: -11px;
+    margin-left: 295px;
+}
+
+#cierreModal{
+    display: table-cell;
+    text-decoration: none;
+    color: var(--color-amarillo);
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#separacionModal {
+    border: 1px solid var(--color-verdeOscuro);
+    background-color: var(--color-verdeOscuro);
+}
+
+.boton {
+    width: 150px;
+    height: 35px;
+    background: var(--color-verdeOscuro);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin: 30px 80px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.boton:hover {
+    background: var(--color-marron);
+}
+
+#mensajeErrorInicioSesion {
+    color: red;
+    font-weight: bold;
+    line-height: 5px;
+    margin-left: 85px;
+    position: absolute;
+}
+
+/*FIN VENTANA MODAL INICIO SESION*/
+#modalUser {
+    width: 100%;
+    height: 100vh;
+}
+
+#modalUser:target{
+    opacity:1;
+    pointer-events:auto;
+}
+
+#modalAdmin {
+    width: 100%;
+    height: 100vh;
+}
+
+#modalAdmin:target{
+    opacity:1;
+    pointer-events:auto;
+}
+
+.opcionUsuario {
+    color: var(--color-verdeOscuro);
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+}
+/*FIN MODAL USUARIO*/
+/*INICIO DEL MENÚ*/
+#menuAdmin {
+    height: 100vh;
+    width: 100px;
+    position: absolute;
+    background-color: var(--color-marron);
+    z-index: 9999;
+}
+
+.cList {
+    width: 100%;
+    height: 50px;
+    margin-top: 43px;
+}
+
+.cListImg {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.eImg {
+    height: 100%;
+    width: auto;
+}
+
+#menuAdmin-Submenu {
+    height: 100vh;
+    width: 300px;
+    margin-left: -200px;
+    position: absolute;
+    background-color: var(--color-marron);
+    z-index: 1;
+}   
+
+.tList {
+    width: 60%;
+    height: 50px;
+    margin-top: 43px;
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+.tList span {
+    line-height: 50px;
+    color: white;
+}
+
+.tList a {
+    text-decoration: none;
+}
+
+
+/*FINAL DEL MENU*/
+
+#iconoBarras {
+    visibility: hidden;
+}
+
+#iconoBarras2 {
+    visibility: hidden;
+}
+.separador {
+    display: none;
+}
+
+#iconoUsuario {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-left: 85%;
+        margin-top: -620px;
+}
+
+@media only screen 
+  and (max-device-width: 400px) {
+    #menuAdmin {
+        height: 400px;
+ 
+    }
+
+    #menuAdmin-Submenu {
+        height: 400px;
+ 
+    }   
+
+    #iconoUsuario {
+        width: 100px;
+        height: 150px;
+        position: absolute;
+        margin-left: 70%!important;
+        margin-top: -150px;
+    }
+}
+
+@media only screen 
+  and (max-device-width: 700px) {
+    #menuAdmin {
+        height: 700px;
+    }
+
+    #menuAdmin-Submenu {
+        height: 700px;
+    }   
+
+    #iconoUsuario {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-left: 70%!important;
+        margin-top: -150px;
+    }
+}
+
+@media only screen 
+  and (max-device-width: 960px) {
+
+    #contenedorCabecera-Sup {
+        z-index: 9999;
+        position: absolute;
+    } 
+
+    #contenedorCabecera-Menu {
+        background-color: var(--color-marron);
+        height: 500px;
+        z-index: 1;
+        position: absolute;
+        margin-top: -270px;
+    }
+
+    .componente-lista {
+        width: auto;
+        display: block!important;
+        color: white;
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .separacion1 {
+        margin-top: 270px;
+    }
+
+    .separacion {
+        margin-top: 30px;
+    }
+
+    #imgCamb2 {
+        width: 8%;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #iconoBarras {
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        margin-top: 150px;
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .separador {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #logotipoCabecera {
+        margin: auto;
+    }
+
+    #icono {
+        width: 25px;
+        margin-top: 180px;
+        margin-left: -50px;
+        position: absolute;
+    }
+
+    #span-Admin {
+        font-size: 24px;
+        margin-top: 200px;
+        position: absolute;
+        margin-left: -20px;
+        color: var(--color-marron);
+        font-weight: bold;
+    }
+
+    #contenedorSlider {
+        margin-top: 280px;
+    }
+
+    #menuAdmin {
+        width: 100px;
+        position: absolute;
+        margin-left: -100px;
+        background-color: var(--color-marron);
+        z-index: 9999;
+    }
+
+    #menuAdmin-Submenu {
+        width: 300px;
+        margin-left: -300px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 1;
+    }   
+
+    #imgCamb3 {
+        width: 6%;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #iconoBarras2 {
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        margin-top: 20px;
+        visibility: visible;
+        z-index: 0;
+    }
+}
+
+
+
