@@ -1,3 +1,12 @@
+<script>
+  document.getElementById("modalUser").addEventListener("click", function( e ){
+    e = window.event || e; 
+    if(this === e.target) {
+        // put your code here
+        cerrarVentanaUser();
+    }
+});
+</script>
 <div id="modalUser" class="modal">
   <div class="modal-contenido">
     <div id="cCierreModal" ><a id="cierreModal" href="#">X</a></div><br>

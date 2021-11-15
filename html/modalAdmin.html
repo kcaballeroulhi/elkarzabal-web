@@ -1,8 +1,17 @@
+<script>
+  document.getElementById("modalAdmin").addEventListener("click", function( e ){
+    e = window.event || e; 
+    if(this === e.target) {
+        // put your code here
+        cerrarVentanaAdmin();
+    }
+});
+</script>
 <div id="modalAdmin" class="modal">
     <div class="modal-contenido">
-      <div id="cCierreModal" ><a id="cierreModal" href="#">X</a></div><br>
+      <div id="cCierreModalAdmin" ><a id="cierreModalAdmin" href="#">X</a></div><br>
       <a class="opcionUsuario" href="">Cambiar contraseña</a> 
       <a class="opcionUsuario" href="">Acceso a base de datos</a> 
-      <a class="opcionUsuario" href="../index.html">Cerrar sesión</a> 
+      <a class="opcionUsuario" href="index.html">Cerrar sesión</a> 
     </div>  
 </div>

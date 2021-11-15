@@ -15,8 +15,8 @@ function extender() {
         document.getElementById("imgCamb").src = "./images/close.svg";
         estado = false;
     } else {
-        div3.style.transform = "translate(100px,0)";
-        div.style.transform = "translate(300px,0)";
+        div3.style.transform = "translate(50px,0)";
+        div.style.transform = "translate(230px,0)";
         document.getElementById("imgCamb").src = "./images/close.svg";
         estado = false;
     }
@@ -29,8 +29,8 @@ function encoger() {
         document.getElementById("imgCamb").src = "./images/barras.svg";
         estado = true;
     } else {
-        div3.style.transform = "translate(-110px,0)";
-        div.style.transform = "translate(-300px,0)";
+        div3.style.transform = "translate(-50px,0)";
+        div.style.transform = "translate(-270px,0)";
         document.getElementById("imgCamb").src = "./images/barras.svg";
         estado = true;
     }
