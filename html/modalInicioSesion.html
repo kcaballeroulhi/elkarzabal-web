@@ -1,0 +1,24 @@
+<script>
+  document.getElementById("login").addEventListener("click", function( e ){
+    e = window.event || e; 
+    if(this === e.target) {
+        // put your code here
+        cerrarVentanaSesion();
+    }
+});
+</script>
+<div id="login" class="modal">
+  <div id="fondo" class="modal-contenido">
+    <div id="cCierreModal" ><a id="cierreModal" href="#">X</a></div><br>
+    <span id="etiquetaModal">Iniciar sesión</span><hr id="separacionModal">
+    <form>
+      <label class="separacion2 etiqueta" for="user">Usuario</label>
+      <input class="campo" name="user" type="text"/></form><br>
+      <label class="etiqueta" for="password">Password</label>
+      <input class="campo" name="password" type="password" /><br>
+      <input class="boton" type="submit" value="Acceder">
+    </form>
+    <!--MENSAJE DE ERROR PARA EL LOGIN-->
+    <span id="mensajeErrorInicioSesion"></span>
+  </div>  
+</div>
