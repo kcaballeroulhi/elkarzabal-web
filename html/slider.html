@@ -1,14 +1,19 @@
+<script src="javascript/slider.js"></script>
 <div id="slider">
-
+    <ul>
+        <li><div id="img1"><img class="imgSlider" src="images/fresas.jpg"><div class="contEtiSlider"><a href="" class="enlaceSlider">Conoce más acerca de nuestros productos</a></div></div></li>
+        <li><div id="img2"><img class="imgSlider" src="images/lechuga.jpg"><div class="contEtiSlider"><a href="" class="enlaceSlider">Una forma diferente de cultivo</a></div></div></li>
+        <li><div id="img3"><img id="img3" class="imgSlider" src="images/mano.jpg"><div class="contEtiSlider"><a href="" class="enlaceSlider">Comprometidos con la comunidad</a></div></div></li>
+    </ul>
 </div>
 <div id="barraSlider">
     <div id="componentesBarraSlider">
         <ul>
-            <a href=""><li class="trianguloIzquierdo"><img src="./images/triangulo.svg"></li></a>
-            <a href=""><li class="circulo"></li></a>
-            <a href=""><li class="circulo"></li></a>
-            <a href=""><li class="circulo"></li></a>
-            <a href=""><li class="trianguloDerecho"><img src="./images/triangulo.svg"></li></a>
+            <a href="" onclick="atrasImg(); return false;"><li class="trianguloIzquierdo"><img src="./images/triangulo.svg"></li></a>
+            <a href="" onclick="imagen1(); return false;"><li id="circulo1" class="circulo"></li></a>
+            <a href="" onclick="imagen2(); return false;"><li id="circulo2" class="circulo"></li></a>
+            <a href="" onclick="imagen3(); return false;"><li id="circulo3" class="circulo"></li></a>
+            <a href="" onclick="adelanteImg(); return false;"><li class="trianguloDerecho"><img src="./images/triangulo.svg"></li></a>
         </ul>
     </div>
 </div>

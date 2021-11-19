@@ -181,7 +181,28 @@
 #slider {
     width: 100%;
     height: 450px;
-    background-color: cadetblue;
+}
+
+.enlaceSlider {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    margin-top: -70px;
+    margin-left: 350px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.66);
+    border-radius: 10px;
+    line-height: 50px;
+    font-weight: bolder;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.enlaceSlider:hover {
+    background: rgba(0, 0, 0, 0.66);
+    color: white;
 }
 
 #barraSlider {
@@ -224,7 +245,44 @@
     margin-left: 10px;
 }
 
+#slider li {
+    display: inline-block;
+}
+
+.imgSlider {
+    width: 100%;
+    height: 454px;
+}
+
 /*AQUÍ TERMINA EL SLIDER DEL INDEX*/
+
+/*CONTENEDOR GIF*/
+#contenedorGif {
+    width: 95%;
+    height: 500px;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 750px;
+    z-index: 1;
+    background-color: blue;
+}
+
+#contenedorGif img {
+    width: 100%;
+    height: auto;
+}
+/*FIN CONTENEDOR GIF*/
+
+/*CONTENEDOR PIE*/
+#contenedorPie {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    margin-top: 1500px;
+    background-color: var(--color-marron);
+}
+/*FIN CONTENEDOR PIE*/
+
 /*VENTANA MODAL INICIO SESION*/
 #login {
     width: 100%;
@@ -1632,11 +1690,12 @@
 
     #span-Admin {
         font-size: 20px;
-        margin-top: 160px;
+        margin-top: 70px;
         position: absolute;
-        margin-left: -20px;
+        margin-left: 15px;
         color: var(--color-marron);
         font-weight: bold;
+        font-size: 15px;
     }
 
     #contenedorSlider {
@@ -1978,7 +2037,12 @@
 
     #iconoAdmin {
         margin-top: -45px;
-        margin-left: 70%;
+        margin-left: 55%;
+    }
+
+    #icono {
+        margin-top: 40px;
+        margin-left: -10px;
     }
 
     .modal-contenido{
