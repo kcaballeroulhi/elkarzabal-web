@@ -5,4 +5,5 @@ $(document).ready(function(){
     $("#ventanaModalUsuario").load("html/modalUsuario.html");  
     $("#ventanaModalAdmin").load("html/modalAdmin.html");   
     $("#contenedorSlider").load("html/slider.html");  
+    $("#pie").load("html/pie.html"); 
 })
