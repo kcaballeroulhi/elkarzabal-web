@@ -1,24 +1,57 @@
 <script>
-  document.getElementById("login").addEventListener("click", function( e ){
-    e = window.event || e; 
-    if(this === e.target) {
-        // put your code here
-        cerrarVentanaSesion();
+  document.getElementById("login").addEventListener("click", function (e) {
+    e = window.event || e;
+    if (this === e.target) {
+      // put your code here
+      cerrarVentanaSesion();
     }
-});
+  });
+
+  function getUserData() {
+    var name = document.getElementById("user").value;
+    var password = document.getElementById("password").value;
+
+    $.ajax({
+      method: "POST",
+      url: "http://localhost:3000/api/login",
+      data: JSON.stringify({ "email": name, "password": password }),
+      contentType: "application/json",
+      success: function (data) {
+        accessToken = data.accessToken;
+        userNumTipe = data.id;
+        switch (userNumTipe) {
+          case 1:
+            window.open("././adminApp.html", "_self")
+            break;
+          case 2:
+            window.open("././adminApp.html", "_self")
+            break;
+          case 3:
+            window.open("././pedido.html", "_self")
+            break;
+        }
+      },
+      error: function (e) {
+        document.getElementById("mensajeErrorInicioSesion").innerHTML = "Usuario o contraseña incorrecto"
+      }
+    });
+  }
+
 </script>
 <div id="login" class="modal">
   <div id="fondo" class="modal-contenido">
-    <div id="cCierreModal" ><a id="cierreModal" href="#">X</a></div><br>
-    <span id="etiquetaModal">Iniciar sesión</span><hr id="separacionModal">
+    <div id="cCierreModal"><a id="cierreModal" href="#">X</a></div><br>
+    <span id="etiquetaModal">Iniciar sesión</span>
+    <hr id="separacionModal">
     <form>
       <label class="separacion2 etiqueta" for="user">Usuario</label>
-      <input class="campo" name="user" type="text"/></form><br>
-      <label class="etiqueta" for="password">Password</label>
-      <input class="campo" name="password" type="password" /><br>
-      <input class="boton" type="submit" value="Acceder">
+      <input class="campo" name="user" type="text" id="user" />
+    </form><br>
+    <label class="etiqueta" for="password">Password</label>
+    <input class="campo" name="password" type="password" id="password" /><br>
+    <input class="boton" type="submit" value="Acceder" onclick="getUserData()">
     </form>
     <!--MENSAJE DE ERROR PARA EL LOGIN-->
     <span id="mensajeErrorInicioSesion"></span>
-  </div>  
+  </div>
 </div>
