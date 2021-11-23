@@ -12,7 +12,7 @@
 
 <body>
     <script>
-
+        const URL = "http://localhost:3000/";
         function createNewUser() {
             var name = document.getElementById("name").value;
             var lastname = document.getElementById("lastname").value;
@@ -20,25 +20,24 @@
             var phone = document.getElementById("phone").value;
             var password = document.getElementById("password").value;
             var role = document.getElementById("role").value;
-            console.log(role)
 
             $.ajax({
                 method: "POST",
-                url: "http://localhost:3000/api/register",
+                url: URL + "api/register",
                 data: JSON.stringify({
                     "name": name,
                     "lastname": lastname,
                     "phone": phone,
                     "email": email,
                     "password": password,
-                    "roleId": role
+                    "roleId": parseInt(role)
                 }),
                 contentType: "application/json",
                 success: function (data) {
-                    alert(data)
+                    alert("Usuario " + data.name + " " + data.lastname + " añadido correctamente")
                 },
                 error: function (e) {
-                    alert(e)
+                    console.log(e)
                 }
             });
         }
@@ -68,7 +67,7 @@
             <option value="3">Cliente</option>
         </select>
 
-        <input class="" type="submit" onclick="createNewUser()">
+        <input class="" type="button" value="añadir" onclick="createNewUser()">
 
     </form>
 </body>
