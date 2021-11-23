@@ -19,6 +19,7 @@
       success: function (data) {
         accessToken = data.accessToken;
         userNumTipe = data.id;
+        localStorage.setItem('token', accessToken);
         switch (userNumTipe) {
           case 1:
             window.open("././adminApp.html", "_self")
