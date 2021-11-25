@@ -9,6 +9,7 @@
   });
 
   function getUserData() {
+    alert("rutina")
     var name = document.getElementById("user").value;
     var password = document.getElementById("password").value;
 
@@ -18,10 +19,11 @@
       data: JSON.stringify({ "email": name, "password": password }),
       contentType: "application/json",
       success: function (data) {
+        console.log(data);
         accessToken = data.accessToken;
         userNumTipe = data.id;
         localStorage.setItem('token', accessToken);
-        switch (userNumTipe) {
+        /*switch (userNumTipe) {
           case 1:
             window.open("././adminApp.html", "_self")
             break;
@@ -31,7 +33,7 @@
           case 3:
             window.open("././pedido.html", "_self")
             break;
-        }
+        }*/
       },
       error: function (e) {
         document.getElementById("mensajeErrorInicioSesion").innerHTML = "Usuario o contraseña incorrecto"
