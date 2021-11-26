@@ -1,6 +1,15 @@
 <script src="javascript/ventanasModales.js"></script>
 <script src="javascript/desplazamientoMenu.js"></script>
-
+<script>
+    if(leerCookie( "roleId" ) == 1 || leerCookie( "roleId" ) == 2) {
+        document.getElementById("iconoAdmin"). innerHTML = "<a onclick='mostrarVentanaAdmin()' href='#modalAdmin'><img id='icono' src='./images/zanahoria.svg'><span id='span-Admin'></span></a></div>";
+        document.getElementById("span-Admin").innerHTML = leerCookie( "user" );
+    }
+    else if(leerCookie( "roleId" ) == 3) {
+        document.getElementById("iconoAdmin"). innerHTML = "<a onclick='mostrarVentanaUsuario()' href='#modalUser'><img id='icono' src='./images/zanahoria.svg'><span id='span-Admin'></span></a></div>";
+        document.getElementById("span-Admin").innerHTML = leerCookie( "user" );   
+    }
+</script>
 <div id="contenedorCabecera">
     <div id="contenedorCabecera-Sup">
         <div id="logotipoCabecera"><a href="index.html"><img id="logotipo" src="./images/logo-elkarzabal.svg" decoding="async"></a></div>
@@ -10,7 +19,7 @@
         <ul class="lista">
             <a href="quienessomos.html"><li id="el1" class="separacion1 componente-lista">Quiénes somos</li></a><hr class="separador">
             <a href="nuestrasinstalaciones.html"><li id="el2" class="separacion componente-lista">Nuestras instalaciones</li></a><hr class="separador">
-            <a href="pedido.html"><li id="el3" class="separacion componente-lista">Haz tu pedido</li></a><hr class="separador">
+            <a href="haztupedido.html"><li id="el3" class="separacion componente-lista">Haz tu pedido</li></a><hr class="separador">
             <a href="contacto.html"><li id="el4" class="separacion componente-lista">Contacto</li></a><hr class="separador">
         </ul>
     </div>

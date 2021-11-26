@@ -19,7 +19,14 @@
       success: function (data) {
         accessToken = data.accessToken;
         userNumTipe = data.id;
-        switch (userNumTipe) {
+        userRole = data.roleId;    
+        //SE CREAN LAS COOKIES
+        document.cookie = "user=" + data.name;
+        document.cookie = "id=" + userNumTipe;
+        document.cookie = "roleId=" + userRole;
+        //FIN DE LAS COOKIES
+
+        switch (userRole) {
           case 1:
             window.open("././adminApp.html", "_self")
             break;
