@@ -9,6 +9,7 @@
   });
 
   function getUserData() {
+    alert("rutina")
     var name = document.getElementById("user").value;
     var password = document.getElementById("password").value;
 
@@ -18,8 +19,12 @@
       data: JSON.stringify({ "email": name, "password": password }),
       contentType: "application/json",
       success: function (data) {
+        console.log(data);
         accessToken = data.accessToken;
+
         userNumTipe = data.id;
+        localStorage.removeItem('token')
+
         localStorage.setItem('token', accessToken);
         switch (userNumTipe) {
           case 1:
