@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminApp</title>
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        const URL = "http://localhost:3000/";
+        function createNewUser() {
+            var name = document.getElementById("name").value;
+            var lastname = document.getElementById("lastname").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var password = document.getElementById("password").value;
+            var role = document.getElementById("role").value;
+
+            $.ajax({
+                method: "POST",
+                url: URL + "api/register",
+                data: JSON.stringify({
+                    "name": name,
+                    "lastname": lastname,
+                    "phone": phone,
+                    "email": email,
+                    "password": password,
+                    "roleId": parseInt(role)
+                }),
+                contentType: "application/json",
+                success: function (data) {
+                    alert("Usuario " + data.name + " " + data.lastname + " añadido correctamente")
+                },
+                error: function (e) {
+                    console.log(e)
+                }
+            });
+        }
+
+
+
+    </script>
+    <form>
+        <label class="" for="">Nombre</label>
+        <input class="" name="name" type="text" id="name" />
+
+        <label class="" for="">Apellidos</label>
+        <input class="" name="lastname" type="text" id="lastname" />
+
+        <label class="" for="">email</label>
+        <input class="" name="email" type="text" id="email" />
+
+        <label class="" for="">Teléfono</label>
+        <input class="" name="phone" type="text" id="phone" />
+
+        <label class="" for="">Password</label>
+        <input class="" name="password" type="password" id="password" />
+
+        <select id="role">
+            <option value="1">Administrador</option>
+            <option value="2">Vendedor</option>
+            <option value="3">Cliente</option>
+        </select>
+
+        <input class="" type="button" value="añadir" onclick="createNewUser()">
+
+    </form>
+</body>
+
+</html>

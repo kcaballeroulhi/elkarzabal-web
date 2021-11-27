@@ -1,4 +1,5 @@
 <script>
+  const URL = "http://localhost:3000/";
   document.getElementById("login").addEventListener("click", function (e) {
     e = window.event || e;
     if (this === e.target) {
@@ -8,25 +9,27 @@
   });
 
   function getUserData() {
+    alert("rutina")
     var name = document.getElementById("user").value;
     var password = document.getElementById("password").value;
 
     $.ajax({
       method: "POST",
-      url: "http://localhost:3000/api/login",
+      url: URL + "api/login",
       data: JSON.stringify({ "email": name, "password": password }),
       contentType: "application/json",
       success: function (data) {
+        console.log(data);
         accessToken = data.accessToken;
-        userNumTipe = data.id;
-        userRole = data.roleId;    
+        userNumTipe = data.roleId;
+        localStorage.removeItem('token')
+        localStorage.setItem('token', accessToken);
+  
         //SE CREAN LAS COOKIES
         document.cookie = "user=" + data.name;
-        document.cookie = "id=" + userNumTipe;
-        document.cookie = "roleId=" + userRole;
+        document.cookie = "roleId=" + userNumTipe;
         //FIN DE LAS COOKIES
-
-        switch (userRole) {
+        switch (userNumTipe) {
           case 1:
             window.open("././adminApp.html", "_self")
             break;
