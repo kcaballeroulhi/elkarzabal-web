@@ -21,8 +21,10 @@
       success: function (data) {
         console.log(data);
         accessToken = data.accessToken;
-        userNumTipe = data.roleId;
+
+        userNumTipe = data.id;
         localStorage.removeItem('token')
+
         localStorage.setItem('token', accessToken);
         switch (userNumTipe) {
           case 1:
