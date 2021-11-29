@@ -26,6 +26,11 @@
         localStorage.removeItem('token')
 
         localStorage.setItem('token', accessToken);
+  
+        //SE CREAN LAS COOKIES
+        document.cookie = "user=" + data.name;
+        document.cookie = "roleId=" + userNumTipe;
+        //FIN DE LAS COOKIES
         switch (userNumTipe) {
           case 1:
             window.open("././adminApp.html", "_self")

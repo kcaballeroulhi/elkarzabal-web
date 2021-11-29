@@ -1,4 +1,159 @@
-#el3 {
-    background-color: #7F6E4A!important;
+* {
+    margin: 0;
+    padding: 0;
+    --color-marron: #7F6E4A;
+    --color-amarillo: #E6EFD0;
+    --color-verdeOscuro: #567661;
+    font-family: 'Roboto', sans-serif;
+}
+
+#iconoAdmin {
+    display: none!important;
+}
+
+#iconoUser {
+    width: 200px;
+    height: 150px;
+    position: fixed;
+    margin-left: 85%;
+    z-index: 10099;
+    margin-top: -10px;
+}
+
+#icono5 {
+    width: 10%;
+    height: auto;
+    transform: rotate(17.26deg);
+    margin-top: 50px;
+}
+
+#span-Usuario {
+    color: var(--color-marron);
+    font-weight: bold;
+    position: absolute;
+    margin-top: 63px;
+    margin-left: 10px;
+}
+
+#contenedorPie {
+    margin-top: 800px!important;
+}
+
+#cesta {
+    z-index: 10003;
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    margin-left: 75%;
+    margin-top: 37px;
+}
+
+#cesta a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--color-verdeOscuro);
+    font-size: large;
+}
+
+#cesta img {
+    width: 60%;
+}
+
+#cesta span {
+    position: absolute;
+}
+
+#contenedorCabecera-Menu {
+    display: none;
+}
+
+#mensajeFacturas {
+    z-index: 10003;
+    position: fixed;
+    width: 300px;
+    height: 50px;
+    margin-left: 54%;
+    margin-top: 50px;
+}
+
+#mensajeFacturas img {
+    width: 35px;
+}
+
+
+#mensajeFacturas a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: red;
+    font-size: large;
+}
+
+#mensajeFacturas span {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+#cuerpoTablaPedido {
+    width: 95%;
+    height: 500px;
+    border: 2px solid var(--color-verdeOscuro);
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 25px;
+    overflow: scroll;
+}
+
+#tabla {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#columnas {
+    background-color: var(--color-verdeOscuro);
+    height: 30px;
     color: white;
+}
+
+#tabla td {
+    height: 30px;
+}
+
+#cProducto {
+    width: 150px;
+}
+
+#cDescripcion {
+    width: 400px;
+}
+
+#cPrecio {
+    width: 50px;
+}
+
+#cStock {
+    width: 50px;
+}
+
+#cCantidad {
+    width: 50px;
+}
+
+#iCantidad {
+    width: 50px;
+}
+
+#cAnadir {
+    width: 50px;
+}
+
+#iBoton {
+    width: 30%;
+    height: auto;
 }
