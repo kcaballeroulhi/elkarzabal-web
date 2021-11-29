@@ -518,7 +518,8 @@
         height: 150px;
         position: absolute;
         margin-left: 85%;
-        margin-top: -1300px
+        margin-top: -1300px;
+        z-index: 3;
 }
 
     #cCierreModalAdmin {
@@ -555,9 +556,8 @@
         margin-left: 10px;
     }
 
-
 @media only screen and (max-width: 1033px) and (min-width: 981px) {  
-    
+
     #menu {
         height: 100%;
     }
@@ -619,7 +619,7 @@
         height: 150px;
         position: absolute;
         margin-left: 80%;
-        margin-top: -1050px
+        margin-top: -1050px;
     }
     
     #icono5 {
