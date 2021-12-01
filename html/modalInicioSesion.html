@@ -9,7 +9,6 @@
   });
 
   function getUserData() {
-    alert("rutina")
     var name = document.getElementById("user").value;
     var password = document.getElementById("password").value;
 
@@ -26,7 +25,7 @@
         localStorage.removeItem('token')
 
         localStorage.setItem('token', accessToken);
-  
+
         //SE CREAN LAS COOKIES
         document.cookie = "user=" + data.name;
         document.cookie = "roleId=" + userNumTipe;
