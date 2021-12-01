@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminApp</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <!--<script src="javascript/load.js"></script>
+    <script src="javascript/ventanasModales.js"></script>
+    <script src="javascript/leerCookies.js"></script>
+    <script src="javascript/tablaProductos.js"></script>-->
+</head>
+
+<body id="cuerpoAdminApp">
+    <script>
+        const URL = "http://localhost:3000/api/";
+        var id = "";
+        var productos = []
+        $.ajax({
+            url: URL + "product",
+            type: 'GET',
+            headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
+            success: function (data) {
+                productos = data.map(function (item) {
+                    return { name: item.name, description: item.description, measure: item.measurementUnit };
+
+                })
+            },
+            error: function () {
+                alert("Revisa tu conexión");
+            }
+        });
+        console.log(productos)
+    </script>
+    <!--Navigation bar-->
+    <!--<div id="menu"></div>
+    <div id="iconoUsuario"><a onclick="mostrarVentanaAdmin()" href="#modalAdmin"><img id="icono5"
+                src="./images/zanahoria.svg"><span id="span-Admin2"></span></a></div>
+    <div id="ventanaModalAdmin"></div>
+    <div id="cuerpoTablaProducto"></div>
+    <script>
+        document.getElementById("span-Admin2").innerHTML = leerCookie("user");
+    </script>-->
+</body>
+
+</html>
