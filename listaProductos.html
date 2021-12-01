@@ -16,25 +16,37 @@
 
 <body id="cuerpoAdminApp">
     <script>
+
         const URL = "http://localhost:3000/api/";
         var id = "";
-        var productos = []
-        $.ajax({
+        productos = []
+        producto = {}
+        var promise = $.ajax({
+            async: false,
             url: URL + "product",
             type: 'GET',
             headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
             success: function (data) {
-                productos = data.map(function (item) {
-                    return { name: item.name, description: item.description, measure: item.measurementUnit };
-
+                producto = data.map(function (item) {
+                    producto.name = item.name
+                    producto.description = item.description
+                    producto.id = item.id
+                    weeklyProduct = item.weeklyProducts.map(function (item) {
+                        producto.price = item.price
+                        producto.stock = item.max_quantity
+                    })
+                    productos.push(producto)
                 })
+
             },
             error: function () {
                 alert("Revisa tu conexión");
             }
         });
         console.log(productos)
+
     </script>
+    <div id="cuerpoTablaPedido"></div>
     <!--Navigation bar-->
     <!--<div id="menu"></div>
     <div id="iconoUsuario"><a onclick="mostrarVentanaAdmin()" href="#modalAdmin"><img id="icono5"
