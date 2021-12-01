@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    --color-marron: #7F6E4A;
+    --color-amarillo: #E6EFD0;
+    --color-verdeOscuro: #567661;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contenedorDeleteUser {
+    width: 95%;
+    height: 110%;
+    margin-left: 7%;
+    margin-top: -1200px;
+    position: absolute;
+    z-index: 0;
+    overflow: scroll;
+}
+
+#contenedorDeleteUser form {
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 30px;
+    border: 1px solid var(--color-verdeOscuro);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+}
+
+#contenedorDeleteUser label {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    font-weight: bolder;
+    color: var(--color-verdeOscuro);
+}
+
+#contenedorDeleteUser input {
+    display: inline-block;
+    width: 250px;   
+    height: 30px;
+}
+
+#contenedorDeleteUser select {
+    width: 150px;
+    height: 50px;
+}
+
+.botonUpdateUser {
+    width: 150px;
+    height: 35px;
+    background: var(--color-verdeOscuro);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 300px;
+    margin-top: 25px;
+}
+
+.botonUpdateUser:hover {
+    background: var(--color-marron);
+}
+
+.separacionUpdate {
+    margin-left: 20px;
+}
+
+.selectIdioma {
+    margin-left: 130px;
+}
