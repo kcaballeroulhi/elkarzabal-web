@@ -3,12 +3,12 @@
 
 productos = []
 var productos
-
+const URL = "http://localhost:3000/api/"
 console.log(URL)
 
 $.ajax({
     async: false,
-    url: "http://localhost:3000/api/" + "product",
+    url: URL + "product",
     type: 'GET',
     headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
     success: function (data) {
