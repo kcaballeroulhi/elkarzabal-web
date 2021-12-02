@@ -6,13 +6,20 @@ var productos
 const URL = "http://localhost:3000/api/"
 console.log(URL)
 
+function updateProduct(id) {
+    window.open("#")
+}
+
+function deleteProduct(id) {
+    window.open("#")
+}
+
 $.ajax({
     async: false,
     url: URL + "product",
     type: 'GET',
     headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
     success: function (data) {
-        console.log(data)
         productos = data
     },
 
@@ -37,11 +44,13 @@ $(document).ready(function () {
 
     //RECORRER LOS PRODUCTOS
     for (i in productos) {
-
+        var productID = productos[i].id
         var tr2 = $("<tr><td>"
             + productos[i].name + "</td><td>"
             + productos[i].description + "</td><td>"
-            + productos[i].measurementUnit + "</td><td>");
+            + productos[i].measurementUnit + "</td><td>"
+            + "<button onclick=updateProduct(" + productID + ")>Modificar</button></td><td>"
+            + "<button onclick=deleteProduct(" + productID + ")>Eliminar</button></td><td>");
 
         tr2.attr({
             id: "celdas"
