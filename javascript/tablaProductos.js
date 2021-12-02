@@ -1,18 +1,17 @@
 //CREAR LA PETICION DE LOS PRODUCTOS SEMANALES
-//const URL = "http://localhost:3000/api/";
 
 productos = []
 var productos
 const URL = "http://localhost:3000/api/"
-console.log(URL)
 
-function updateProduct(id) {
+
+/*function updateProduct(id) {
     window.open("#")
 }
 
 function deleteProduct(id) {
     window.open("#")
-}
+}*/
 
 $.ajax({
     async: false,
@@ -48,9 +47,9 @@ $(document).ready(function () {
         var tr2 = $("<tr><td>"
             + productos[i].name + "</td><td>"
             + productos[i].description + "</td><td>"
-            + productos[i].measurementUnit + "</td><td>"
-            + "<button onclick=updateProduct(" + productID + ")>Modificar</button></td><td>"
-            + "<button onclick=deleteProduct(" + productID + ")>Eliminar</button></td><td>");
+            + productos[i].measurementUnit + "</td><td>");
+        // + "<button onclick=updateProduct(" + productID + ")>Modificar</button></td><td>"
+        // + "<button onclick=deleteProduct(" + productID + ")>Eliminar</button></td><td>");
 
         tr2.attr({
             id: "celdas"
