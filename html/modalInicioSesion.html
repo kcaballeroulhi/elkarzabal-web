@@ -18,10 +18,9 @@
       data: JSON.stringify({ "email": name, "password": password }),
       contentType: "application/json",
       success: function (data) {
-        console.log(data);
         accessToken = data.accessToken;
 
-        userNumTipe = data.id;
+        userNumTipe = data.roleId;
         localStorage.removeItem('token')
 
         localStorage.setItem('token', accessToken);
