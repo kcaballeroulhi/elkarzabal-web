@@ -8,10 +8,6 @@ const URL = "http://localhost:3000/api/"
 /*function updateProduct(id) {
     window.open("#")
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 153f358ccc9a8d10b7ce4659e2cda6fa2174bdc0
 function deleteProduct(id) {
     window.open("#")
 }*/
