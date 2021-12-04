@@ -1,36 +1,39 @@
 //CREAR LA PETICION DE LOS PRODUCTOS SEMANALES
-const URL = "http://localhost:3000/api/";
-var id = "";
+
+productos = []
+var productos
+const URL = "http://localhost:3000/api/"
+
+
+/*function updateProduct(id) {
+    window.open("#")
+}
+function deleteProduct(id) {
+    window.open("#")
+}*/
+
 $.ajax({
+    async: false,
     url: URL + "product",
     type: 'GET',
     headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-    success: function (result) {
-        id = result.id;
-        console.log(id);
-        console.log(result)
-        /*document.getElementById("name").value = result.name;
-        document.getElementById("description").value = result.lastname;
-        document.getElementById("password").value = result.password;
-        document.getElementById("email").value = result.email;
-        document.getElementById("phone").value = result.phone;
-        document.getElementById("role").value = result.roleId;*/
+    success: function (data) {
+        productos = data
     },
+
     error: function () {
         alert("Revisa tu conexión");
     }
 });
-
-
 $(document).ready(function () {
-    var cuerpoTabla = $('#cuerpoTablaPedido');
+    var cuerpoTabla = $('#cuerpoTablaProducto');
 
     var tabla = $("<table></table>");
     tabla.attr({
         id: "tabla"
     });
 
-    var tr = $("<tr><th id='cProducto'>Producto</th><th id='cDescripcion'>Descripción</th><th id='cPrecio'>Precio</th><th id='cStock'>Stock</th><th id='cCantidad'>Cantidad</th><th id='cAnadir'>Añadir producto</th></tr>");
+    var tr = $("<tr><th id='cProducto'>Producto</th><th id='cDescripcion'>Descripción</th><th id='cPrecio'>Unidad de medida</th>");
     tr.attr({
         id: "columnas"
     });
@@ -39,14 +42,14 @@ $(document).ready(function () {
 
     //RECORRER LOS PRODUCTOS
     for (i in productos) {
-
+        var productID = productos[i].id
         var tr2 = $("<tr><td>"
-            +/*NOMBRE PRODUCTO*/ +"</td><td>"
-            +/*DESCRIPCIÓN*/ +"</td><td>"
-            +/*PRECIO*/ +"</td><td>"
-            +/*STOCK*/ +"</td><td>"
-            + "<input id='iCantidad' type='number' name='cantidad' min='1'/>" + "</td><td>"
-            + "<a href='' onclick=''><img id='iBoton' src='./images/add.svg'></a>" + "</td></tr>");
+            + productos[i].name + "</td><td>"
+            + productos[i].description + "</td><td>"
+            + productos[i].measurementUnit + "</td><td>");
+        // + "<button onclick=updateProduct(" + productID + ")>Modificar</button></td><td>"
+        // + "<button onclick=deleteProduct(" + productID + ")>Eliminar</button></td><td>");
+
         tr2.attr({
             id: "celdas"
         });
