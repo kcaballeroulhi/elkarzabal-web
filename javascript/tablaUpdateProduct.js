@@ -5,13 +5,26 @@ var productos
 const URL = "http://localhost:3000/api/"
 
 
-/*function updateProduct(id) {
-    window.open("#")
+function updateProduct(id) {
+    window.open("./updateForm.html?id=" + id)
 }
 
 function deleteProduct(id) {
-    window.open("#")
-}*/
+    console.log(productos[i].name)
+    $.ajax({
+        async: false,
+        url: URL + "product/" + id,
+        type: 'DELETE',
+        headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
+        success:
+            alert(productos[i].name + " borrado")
+        ,
+
+        error: function () {
+            alert("Revisa tu conexión");
+        }
+    });
+}
 
 $.ajax({
     async: false,
@@ -34,13 +47,12 @@ $(document).ready(function () {
         id: "tabla"
     });
 
-    var tr = $("<tr><th id='cProducto'>Imagen</th><th id='cProducto'>Producto</th><th id='cDescripcion'>Descripción</th><th id='cPrecio'>Unidad de medida</th>");
+    var tr = $("<tr><th id='cProducto'>Producto</th><th id='cDescripcion'>Descripción</th><th id='cPrecio'>Unidad de medida</th>");
     tr.attr({
         id: "columnas"
     });
 
     tabla.append(tr);
-
 
     //RECORRER LOS PRODUCTOS
     for (i in productos) {
@@ -50,9 +62,9 @@ $(document).ready(function () {
             + '<img src="' + imagen + '" alt="Girl in a jacket" width="100" height="100"></img>' + "</td><td>"
             + productos[i].name + "</td><td>"
             + productos[i].description + "</td><td>"
-            + productos[i].measurementUnit + "</td><td>");
-        // + "<button onclick=updateProduct(" + productID + ")>Modificar</button></td > <td>"
-        // + "<button onclick=deleteProduct(" + productID + ")>Eliminar</button></td > <td>");
+            + productos[i].measurementUnit + "</td><td>"
+            + "<button onclick=updateProduct(" + productID + ")>Modificar</button></td><td>"
+            + "<button onclick=deleteProduct(" + productID + ")>Eliminar</button></td><td>");
 
         tr2.attr({
             id: "celdas"
