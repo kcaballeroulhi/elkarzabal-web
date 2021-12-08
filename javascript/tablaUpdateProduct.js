@@ -9,13 +9,26 @@ function updateProduct(id) {
     window.open("./updateForm.html?id=" + id)
 }
 
-/*function deleteProduct(id) {
-    window.open("#")
-}*/
+function deleteProduct(id) {
+    console.log(productos[i].name)
+    $.ajax({
+        async: false,
+        url: URL + "product/" + id,
+        type: 'DELETE',
+        headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
+        success:
+            alert(productos[i].name + " borrado")
+        ,
+
+        error: function () {
+            alert("Revisa tu conexión");
+        }
+    });
+}
 
 $.ajax({
     async: false,
-    url: URL + "product",
+    url: URL + "product/base",
     type: 'GET',
     headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
     success: function (data) {

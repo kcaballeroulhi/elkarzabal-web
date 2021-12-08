@@ -15,7 +15,7 @@ function deleteProduct(id) {
 
 $.ajax({
     async: false,
-    url: URL + "product",
+    url: URL + "product/base",
     type: 'GET',
     headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
     success: function (data) {
