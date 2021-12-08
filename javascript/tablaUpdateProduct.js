@@ -11,15 +11,46 @@ function updateProduct(id) {
 
 function deleteProduct(id) {
     console.log(productos[i].name)
+    var deleteID = 0
+    console.log(deleteID)
+    //conseguir id imagen del producto a borrar
+    $.ajax({
+        async: false,
+        url: URL + "product/" + id,
+        type: 'GET',
+        headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
+        success: function (data) {
+            console.log(data.images[0].id)
+            deleteID = data.images[0].id;
+            //console.log(typeof (deleteID))
+            //console.log(deleteID)
+        }
+        ,
+        error: function () {
+            alert("Revisa tu conexión");
+        }
+    });
+
+    // borrar la imagen
+    $.ajax({
+        async: false,
+        url: URL + "product-image/" + deleteID,
+        type: 'DELETE',
+        headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
+        error: function () {
+            alert("Revisa tu conexión");
+        }
+    });
+    //borrar producto
     $.ajax({
         async: false,
         url: URL + "product/" + id,
         type: 'DELETE',
         headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-        success:
-            alert(productos[i].name + " borrado")
-        ,
-
+        success: function () {
+            alert(productos[i].name + " borrado"),
+                location.reload()
+        },
         error: function () {
             alert("Revisa tu conexión");
         }
