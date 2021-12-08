@@ -80,3 +80,108 @@
     margin-top: 250px;
 }
 
+/* Para 320px */  
+@media only screen and (max-width: 340px) and (min-width: 5px)  { 
+    #cuerpoAdminApp {
+        overflow: scroll;
+    }
+
+    #contenedorElementos {
+        width: 95%;
+        height: 130%;
+        margin-left: 3%;
+        margin-top: 50px;
+    }
+
+    #elemento1 {
+        width: 150px;
+        height: 150px;
+        margin-left: 75px;
+        margin-top: 50px;
+    }
+    
+    #elemento2 {
+        width: 150px;
+        height: 150px;
+        margin-left: 75px;
+        margin-top: 30px;
+    }
+    
+    #elemento3 {
+        width: 150px;
+        height: 150px;
+        margin-left: 75px;
+        margin-top: 30px;
+    }
+
+    .enlaceEl {
+        font-size: medium;
+    }
+
+    #spanEl1 {
+        margin-left: -115px;
+        margin-top: 120px;
+    }
+    
+    #spanEl2 {
+        margin-left: -125px;
+        margin-top: 120px;
+    }
+    
+    #spanEl3 {
+        margin-left: -120px;
+        margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 5px) and (orientation : landscape) {  
+    #cuerpoAdminApp {
+        overflow: scroll;
+    }
+
+    #contenedorElementos {
+        width: 200px;
+        height: 130%;
+        margin-left: 130px;
+        margin-top: 50px;
+    }
+
+    #elemento1 {
+        width: 150px;
+        height: 150px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    
+    #elemento2 {
+        width: 150px;
+        height: 150px;
+        margin-top: 30px;
+    }
+    
+    #elemento3 {
+        width: 150px;
+        height: 150px;
+        margin-top: 30px;
+    }
+
+    .enlaceEl {
+        font-size: medium;
+    }
+
+    #spanEl1 {
+        margin-left: -115px;
+        margin-top: 120px;
+    }
+    
+    #spanEl2 {
+        margin-left: -125px;
+        margin-top: 120px;
+    }
+    
+    #spanEl3 {
+        margin-left: -120px;
+        margin-top: 120px;
+    }
+}
+

@@ -20,35 +20,40 @@
             <div id="ventanaModalAdmin"></div>
             <div id="contenedorFormProduct">
 
-            <script>
-                const URL = "http://localhost:3000/api/";
-                function createProduct() {
-                    var name = document.getElementById("name").value;
-                    var description = document.getElementById("description").value;
-                    var measure = document.getElementById("measure").value;
-
-                    $.ajax({
-                        method: "POST",
-                        url: URL + "product",
-                        headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-                        data: JSON.stringify({
-                            "name": name,
-                            "description": description,
-                            "measurementUnit": measure,
-                        }),
-                        contentType: "application/json",
-                        success: function (data) {
-                            alert(data.name + " añadido correctamente")
-                        },
-                        error: function (e) {
-                            console.log(e)
-                        }
-                    });
-                }
-
-
-
-            </script>
+                <script>
+                    const URL = "http://localhost:3000/api/";
+                    function createProduct() {
+                        var name = document.getElementById("name").value;
+                        var description = document.getElementById("description").value;
+                        var measure = document.getElementById("measure").value;
+                        var image = document.getElementById("imagen").value;
+            
+                        var miProduct = new FormData();
+                        miProduct.append('name', name);
+                        miProduct.append('description', description);
+                        miProduct.append('measurementUnit', measure);
+                        miProduct.append('files', imagen.files[0])
+            
+                        $.ajax({
+                            type: 'POST',
+                            url: URL + "product",
+                            headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
+                            data: miProduct,
+                            contentType: false,
+                            processData: false,
+                            success: function (data) {
+                                console.log(data)
+                                alert(data.name + " añadido correctamente")
+                            },
+                            error: function (e) {
+                                console.log(e)
+                            }
+                        });
+                    }
+            
+            
+            
+                </script>
             <form>
                 <label class="" for="">Nombre</label>
                 <input class="" name="name" type="text" id="name" />
