@@ -22,8 +22,6 @@ function deleteProduct(id) {
         success: function (data) {
             console.log(data.images[0].id)
             deleteID = data.images[0].id;
-            //console.log(typeof (deleteID))
-            //console.log(deleteID)
         }
         ,
         error: function () {
@@ -32,15 +30,18 @@ function deleteProduct(id) {
     });
 
     // borrar la imagen
-    $.ajax({
-        async: false,
-        url: URL + "product-image/" + deleteID,
-        type: 'DELETE',
-        headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-        error: function () {
-            alert("Revisa tu conexión");
-        }
-    });
+    if (deleteID !== 0) {
+        $.ajax({
+            async: false,
+            url: URL + "product-image/" + deleteID,
+            type: 'DELETE',
+            headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
+            error: function () {
+                alert("Revisa tu conexión llll");
+            }
+        });
+    }
+
     //borrar producto
     $.ajax({
         async: false,
