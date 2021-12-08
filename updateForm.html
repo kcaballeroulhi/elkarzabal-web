@@ -34,11 +34,10 @@
                 type: 'GET',
                 headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
                 success: function (result) {
-                    //console.log(result)
-
                     document.getElementById("name").value = result.name;
                     document.getElementById("description").value = result.description;
                     document.getElementById("measurement").value = result.measurementUnit;
+                    document.getElementById("image").src = result.images[0].filename;
 
                 },
                 error: function () {
@@ -84,6 +83,10 @@
 
             <label class="" for="">Unidad de medida</label>
             <input class="" name="measurement" type="text" id="measurement" />
+
+            <label class="" for="">Imagen</label>
+
+            <input class="" name="image" type="image" id="image" />
 
 
             </select><br>
