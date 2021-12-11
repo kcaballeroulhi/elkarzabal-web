@@ -90,3 +90,9 @@
 .bUProduct:hover {
     background-color: var(--color-marron);
 }
+
+#imgListProd {
+    width: 20%;
+    height: auto;
+    padding: 10px;
+}

@@ -71,3 +71,13 @@
 .selectIdioma {
     margin-left: 130px;
 }
+
+#image {
+    width: 100px!important;
+    height: 100px!important;
+    margin-left: -20px;
+}
+
+.separacionIzq {
+    margin-left: 20px;
+}
