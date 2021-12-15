@@ -64,3 +64,91 @@
 .botonAddUser:hover {
     background: var(--color-marron);
 }
+
+/* Para 320px */  
+@media only screen and (max-width: 340px) and (min-width: 5px)  {
+    #cuerpoAdminApp {
+        overflow: scroll!important;
+    }
+
+    #contenedorFormUser {
+        margin-top: 100px;
+        margin-left: 30px;
+        width: 250px;
+        height: 700px;
+    }
+
+    #contenedorFormUser form {
+        width: 80%;
+        height: 80%;
+        margin-left: 2%;
+        padding: 20px;
+    }
+
+    #contenedorFormUser label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 50px;
+        margin-left: 5px;
+        margin-top: 30px!important;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) and (min-width: 5px) and (orientation : landscape) {  
+    #cuerpoAdminApp {
+        overflow: scroll!important;
+    }
+
+    #contenedorFormUser {
+        margin-top: 100px;
+        margin-left: 50px;
+        width: 500px;
+        height: 500px;
+    }
+
+    #contenedorFormUser form {
+        width: 80%;
+        height: 80%;
+        margin-left: 2%;
+        padding: 20px;
+    }
+
+    #contenedorFormUser label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 50px;
+        margin-left: 100px;
+        margin-top: 30px!important;
+    }
+}
