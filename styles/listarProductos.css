@@ -87,8 +87,12 @@
     cursor: pointer;
 }
 
-.bUProduct:hover {
-    
+#bUP1:hover {
+    content:url("../images/edit_marron.svg");
+}
+
+#bUP2:hover {
+    content:url("../images/delete_marron.svg");
 }
 
 .bUImage {

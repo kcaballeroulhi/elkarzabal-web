@@ -95,8 +95,8 @@ $(document).ready(function () {
             + productos[i].name + "</td><td>"
             + productos[i].description + "</td><td>"
             + productos[i].measurementUnit + "</td><td>"
-            + "<button class='bUProduct' onclick=updateProduct(" + productID + ")><img class='bUImage' src='./images/edit.svg' /></button></td><td>"
-            + "<button class='bUProduct' onclick=deleteProduct(" + productID + ")><img class='bUImage' src='./images/delete.svg' /></button></td><td>");
+            + "<button class='bUProduct' onclick=updateProduct(" + productID + ")><img id='bUP1' class='bUImage' src='./images/edit.svg' /></button></td><td>"
+            + "<button class='bUProduct' onclick=deleteProduct(" + productID + ")><img id='bUP2' class='bUImage' src='./images/delete.svg' /></button></td><td>");
 
         tr2.attr({
             id: "celdas"
