@@ -688,7 +688,7 @@
 
     .modal-contenido{
         width: 250px;
-        height: 250px;
+        height: 300px;
         padding: 10px 20px;
         margin: 20% auto;
     }
@@ -775,9 +775,10 @@
   
     #mensajeErrorInicioSesion {
        color: red;
+       font-size: small;
        font-weight: bold;
        line-height: 5px;
-       margin-left: 85px;
+       margin-left: 10px;
        position: absolute;
     }
 
@@ -1037,7 +1038,7 @@
 
     .modal-contenido{
         width: 250px;
-        height: 250px!important;
+        height: 280px!important;
         padding: 10px 20px;
         margin: 5% auto;
     }
@@ -1124,9 +1125,10 @@
   
     #mensajeErrorInicioSesion {
        color: red;
+       font-size: small;
        font-weight: bold;
-       line-height: 5px;
-       margin-left: 85px;
+       line-height: 2px;
+       margin-left: 10px;
        position: absolute;
     }
 

@@ -105,3 +105,72 @@
     height: auto;
     padding: 10px;
 }
+
+@media only screen and (max-width: 340px) and (min-width: 5px) {  
+
+    #cuerpoTablaProducto {
+        margin-top: 90px;
+        margin-left: 30px;
+        width: 250px;
+        height: 400px;
+        margin-bottom: 200px;
+        overflow: scroll!important;
+    }
+
+    #tabla {
+        width: 500px;
+        height: 500px;
+        font-size: small;
+    }
+
+    #cDescripcion{
+        width: 200px;
+    }
+
+    #cProducto{
+        width: 100px;
+    }
+
+    #imgListProd {
+        width: 50%;
+        height: auto;
+    }
+
+    #celdas {
+        height: 20px!important;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 5px) and (orientation : landscape) { 
+    #cuerpoTablaProducto {
+        margin-top: 100px;
+        margin-left: 40px;
+        width: 480px;
+        height: 200px;
+        margin-bottom: 200px;
+        overflow: scroll!important;
+    }
+
+    #tabla {
+        width: 500px;
+        height: 500px;
+        font-size: small;
+    }
+
+    #cDescripcion{
+        width: 200px;
+    }
+
+    #cProducto{
+        width: 100px;
+    }
+
+    #imgListProd {
+        width: 50%;
+        height: auto;
+    }
+
+    #celdas {
+        height: 20px!important;
+    }
+}
