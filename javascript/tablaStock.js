@@ -4,17 +4,47 @@ productos = []
 var productos
 const URL = "http://localhost:3000/api/"
 
-
-/*function updateProduct(id) {
-    window.open("#")
+function addBBDD(id, stock, price) {
+    $.ajax({
+        method: "POST",
+        url: URL + "weekly-product",
+        headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
+        data: JSON.stringify({ "productId": id, "maxQuantity": stock, "price": price }),
+        contentType: "application/json",
+        success: function (data) {
+            alert("añadido correctamente")
+        },
+        error: function (e) {
+            alert("se ha producido un error")
+        }
+    });
 }
-function deleteProduct(id) {
-    window.open("#")
-}*/
+
 
 function update() {
-    console.log("hola")
+    //console.log("hola")
+
+
+    var tab = document.getElementById("tabla");
+    var rows = tab.rows;
+
+    for (var i = 1; i < rows.length; i++) {// recorre las filas de la tabla
+        var tag = "chk" + i;
+        var idTag = "id" + i;
+        var stockTag = "cantidad" + i;
+        var priceTag = "precio" + i;
+        if (document.getElementById(tag).checked) {
+            var id = document.getElementById(idTag).value;
+            var intID = parseInt(id);
+            var stock = document.getElementById(stockTag).value;
+            var numberStock = parseFloat(stock);
+            var price = document.getElementById(priceTag).value;
+            var numberPrice = parseFloat(price)
+            addBBDD(intID, numberStock, numberPrice)
+        }
+    }
 }
+
 
 $.ajax({
     async: false,
@@ -50,12 +80,13 @@ $(document).ready(function () {
         var productID = productos[i].id
         var imagen = productos[i].images[0]
         var tr2 = $("<tr><td>"
-            + '<input type="checkbox" id="activo" ' + "</td><td>"
+            + '<input type="checkbox" id="chk' + productID + '"> </td><td>'
             + '<img src="' + imagen + '" alt="Girl in a jacket" width="100" height="100"></img>' + "</td><td>"
             + productos[i].name + "</td><td>"
             + productos[i].measurementUnit + "</td><td>"
-            + '<input type="Text" id="cantidad" value="">' + "</td><td>"
-            + '<input type="Text" id="precio" value="">' + "</tr></td>");
+            + '<input type="Text" id="cantidad' + productID + '" value="">' + "</td><td>"
+            + '<input type="Text" id="precio' + productID + '" value="">' + "</td><td>"
+            + '<input type="hidden" id="id' + productID + '" value="' + productID + '">' + "</tr></td>");
 
         tr2.attr({
             id: "celdas"
