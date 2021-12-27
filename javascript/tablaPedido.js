@@ -2,15 +2,47 @@
 productos = []
 var productos
 var miProducto
+var contador = 0
 const URL = "http://localhost:3000/api/"
 
 
-/*function updateProduct(id) {
-    window.open("#")
+function addProduct(linea) {
+
+    document.getElementById("cantidadProductos").innerHTML = contador;
+
+    var cantidad = document.getElementById("iCantidad" + linea).value
+    var numCantidad = parseFloat(cantidad)
+    if (cantidad <= productos[linea].maxQuantity) {
+        $.ajax({
+            async: false,
+            url: URL + "order",
+            type: 'POST',
+            headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
+            data: JSON.stringify({
+                "orderProducts": [
+                    {
+                        "weeklyProductId": productos[linea].id,
+                        "quantity": numCantidad
+                    }
+                ]
+
+
+            }),
+            success: function (data) {
+                contador = contador + 1;
+                alert(productos[linea].name + " añadido a la cesta")
+                //DESCONTAR STOCK
+            },
+
+            error: function () {
+                alert("Revisa tu conexión");
+            }
+        });
+    } else {
+        alert("No hay suficiente stock")
+    }
+
 }
-function deleteProduct(id) {
-    window.open("#")
-}*/
 
 function takeProductData(id, stock, price) {
     $.ajax({
@@ -19,7 +51,9 @@ function takeProductData(id, stock, price) {
         type: 'GET',
         headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
         success: function (data) {
-            var miProducto = {
+            var miProducto =
+            {
+                id: data.id,
                 name: data.name,
                 description: data.description,
                 maxQuantity: stock,
@@ -71,7 +105,6 @@ $(document).ready(function () {
     tabla.append(tr);
 
     //RECORRER LOS PRODUCTOS
-    console.log(productos)
     for (i in productos) {
 
         var tr2 = $("<tr><td>"
@@ -79,8 +112,8 @@ $(document).ready(function () {
             + productos[i].description + "</td><td>"
             + productos[i].price + "</td><td>"
             + productos[i].maxQuantity + "</td><td>"
-            + "<input id='iCantidad' type='number' name='cantidad' min='1'/>" + "</td><td>"
-            + "<a href='' onclick=''><img id='iBoton' src='./images/add.svg'></a>" + "</td></tr>");
+            + "<input id='iCantidad" + i + "' type='number' name='cantidad' min='1' value=''/>" + "</td><td>"
+            + "<a href=# onclick='addProduct(" + i + ")'><img id='iBoton' src='./images/add.svg'></a>" + "</td></tr>");
         tr2.attr({
             id: "celdas"
         });

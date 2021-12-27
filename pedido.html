@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elkarzabal</title>
-        <link rel="stylesheet" href="styles/estilos.css">
-        <link rel="stylesheet" href="styles/estilospedido.css">
-        <script src="javascript/jquery-3.6.0.min.js"></script>
-        <script src="javascript/load.js"></script>
-        <script src="javascript/tablaPedido.js"></script>
-        <script src="javascript/leerCookies.js"></script>
-    </head>
-    <body id="cuerpoIndex">
-        <div id="cCabecera">
-            <div id="cabecera"></div>
-            <div id="ventanaModal"></div>
-            <div id="ventanaModalUsuario"></div>
-        </div>
-        <!--Navigation bar-->
-        <div id="iconoUser"><a onclick="mostrarVentanaUsuario()" href="#modalUser"><img id="icono5" src="./images/zanahoria.svg"><span id="span-Usuario">Usuario</span></a></div>
-        <div id="cesta">
-            <a href=""><img src="images/cart.svg"><span id="cantidadProductos">7</span></a>
-        </div>
-        <div id="mensajeFacturas">
-            <a href=""><img src="images/alert.svg"><span id="cantidadFacturas">2 Facturas pendientes</span></a>
-        </div>
-        <div id="cuerpoTablaPedido"></div>
-        <div id="pie"></div>
-        <script>
-            document.getElementById("span-Usuario").innerHTML = leerCookie( "user" );
-        </script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elkarzabal</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="styles/estilospedido.css">
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <script src="javascript/load.js"></script>
+    <script src="javascript/tablaPedido.js"></script>
+    <script src="javascript/leerCookies.js"></script>
+</head>
+
+<body id="cuerpoIndex">
+    <div id="cCabecera">
+        <div id="cabecera"></div>
+        <div id="ventanaModal"></div>
+        <div id="ventanaModalUsuario"></div>
+    </div>
+    <!--Navigation bar-->
+    <div id="iconoUser"><a onclick="mostrarVentanaUsuario()" href="#modalUser"><img id="icono5"
+                src="./images/zanahoria.svg"><span id="span-Usuario">Usuario</span></a></div>
+    <div id="cesta">
+        <a href=""><img src="images/cart.svg"><span id="cantidadProductos"></span></a>
+    </div>
+    <div id="mensajeFacturas">
+        <a href=""><img src="images/alert.svg"><span id="cantidadFacturas">2 Facturas pendientes</span></a>
+    </div>
+    <div id="cuerpoTablaPedido"></div>
+    <div id="pie"></div>
+    <script>
+        document.getElementById("span-Usuario").innerHTML = leerCookie("user");
+    </script>
+</body>
+
 </html>
