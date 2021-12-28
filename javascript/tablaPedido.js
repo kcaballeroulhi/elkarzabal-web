@@ -9,6 +9,7 @@ function addProduct(linea) {
     var numCantidad = parseFloat(cantidad)
     if (numCantidad <= productos[linea].maxQuantity) {
         var unProducto = {
+            "id": productos[linea].id,
             "name": productos[linea].name,
             "description": productos[linea].description,
             "cantidad": numCantidad,
@@ -71,7 +72,7 @@ $.ajax({
 
 $(document).ready(function () {
     document.getElementById("cantidadProductos").innerHTML = orderProducts.length
-
+    localStorage.removeItem('pedido')
     var cuerpoTabla = $('#cuerpoTablaPedido');
 
     var tabla = $("<table></table>");
@@ -105,6 +106,7 @@ $(document).ready(function () {
         }
 
         tabla.append(tr2);
+
     }
 
     cuerpoTabla.append(tabla);
