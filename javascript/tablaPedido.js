@@ -1,43 +1,22 @@
 //CREAR LA PETICION DE LOS PRODUCTOS SEMANALES
-productos = []
-var productos
-var miProducto
-var contador = 0
+var productos = []
+var orderProducts = []
 const URL = "http://localhost:3000/api/"
 
 
 function addProduct(linea) {
-
-    document.getElementById("cantidadProductos").innerHTML = contador;
-
     var cantidad = document.getElementById("iCantidad" + linea).value
     var numCantidad = parseFloat(cantidad)
-    if (cantidad <= productos[linea].maxQuantity) {
-        $.ajax({
-            async: false,
-            url: URL + "order",
-            type: 'POST',
-            headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-            data: JSON.stringify({
-                "orderProducts": [
-                    {
-                        "weeklyProductId": productos[linea].id,
-                        "quantity": numCantidad
-                    }
-                ]
-
-
-            }),
-            success: function (data) {
-                contador = contador + 1;
-                alert(productos[linea].name + " añadido a la cesta")
-                //DESCONTAR STOCK
-            },
-
-            error: function () {
-                alert("Revisa tu conexión");
-            }
-        });
+    if (numCantidad <= productos[linea].maxQuantity) {
+        var unProducto = {
+            "name": productos[linea].name,
+            "description": productos[linea].description,
+            "cantidad": numCantidad,
+            "medida": productos[linea].measurementUnit,
+            "precio": productos[linea].price
+        }
+        orderProducts.push(unProducto)
+        localStorage.setItem('pedido', JSON.stringify(orderProducts));
     } else {
         alert("No hay suficiente stock")
     }
@@ -57,7 +36,8 @@ function takeProductData(id, stock, price) {
                 name: data.name,
                 description: data.description,
                 maxQuantity: stock,
-                price: price
+                price: price,
+                measurementUnit: data.measurementUnit
             }
             productos.push(miProducto)
         },
@@ -90,6 +70,8 @@ $.ajax({
 });
 
 $(document).ready(function () {
+    document.getElementById("cantidadProductos").innerHTML = orderProducts.length
+
     var cuerpoTabla = $('#cuerpoTablaPedido');
 
     var tabla = $("<table></table>");
