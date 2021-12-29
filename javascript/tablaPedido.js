@@ -9,11 +9,8 @@ function validateStock(quantity, maxQuantity) {
     console.log(maxQuantity)
     if (quantity <= maxQuantity) {
         return true
-        //orderProducts.push(unProducto)
-        //localStorage.setItem('pedido', JSON.stringify(orderProducts));
     } else {
         return false
-        //alert("No hay suficiente stock")
     }
 
 }
@@ -32,9 +29,10 @@ function addProduct(linea) {
 
 
     if (localStorage.getItem("pedido") === null) {
-        if (validateStock(numCantidad, productos[linea].maxQuantity)) {
+        if (validateStock(numCantidad, productos[linea].currentQuantity)) {
             orderProducts.push(unProducto)
             localStorage.setItem('pedido', JSON.stringify(orderProducts));
+            document.getElementById("cantidadProductos").innerHTML = orderProducts.length
         }
         else {
             alert("No hay suficiente stock")
@@ -43,18 +41,20 @@ function addProduct(linea) {
     } else {
         var guardado = localStorage.getItem('pedido');
         var order = JSON.parse(guardado)
-        if (validateStock(numCantidad, productos[linea].maxQuantity)) {
+        if (validateStock(numCantidad, productos[linea].currentQuantity)) {
             for (i in order) {
                 if (order[i].id === productos[linea].id) {
                     temp = true
                     order[i].cantidad = numCantidad
                     localStorage.removeItem("pedido")
                     localStorage.setItem("pedido", JSON.stringify(order))
+                    document.getElementById("cantidadProductos").innerHTML = orderProducts.length
                 }
             }
             if (temp === false) {
                 orderProducts.push(unProducto)
                 localStorage.setItem('pedido', JSON.stringify(orderProducts));
+                document.getElementById("cantidadProductos").innerHTML = orderProducts.length
             } else {
                 temp = false
             }
@@ -78,7 +78,7 @@ function takeProductData(id, stock, price) {
                 id: data.id,
                 name: data.name,
                 description: data.description,
-                maxQuantity: stock,
+                currentQuantity: stock,
                 price: price,
                 measurementUnit: data.measurementUnit
             }
@@ -101,7 +101,7 @@ $.ajax({
         for (i in producto) {
 
             var id = producto[i].id
-            var stock = producto[i].maxQuantity
+            var stock = producto[i].currentQuantity
             var price = producto[i].price
             takeProductData(id, stock, price);
         }
@@ -135,7 +135,7 @@ $(document).ready(function () {
             + productos[i].name + "</td><td>"
             + productos[i].description + "</td><td>"
             + productos[i].price + "</td><td>"
-            + productos[i].maxQuantity + "</td><td>"
+            + productos[i].currentQuantity + "</td><td>"
             + "<input id='iCantidad" + i + "' type='number' name='cantidad' min='1' value=''/>" + "</td><td>"
             + "<a href=# onclick='addProduct(" + i + ")'><img id='iBoton' src='./images/add.svg'></a>" + "</td></tr>");
         tr2.attr({

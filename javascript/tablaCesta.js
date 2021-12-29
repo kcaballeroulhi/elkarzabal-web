@@ -3,8 +3,9 @@ var order = JSON.parse(guardado)
 var createOrder = []
 const URL = "http://localhost:3000/api/";
 
-function confirm() {
 
+function confirm() {
+    console.log(order)
     for (i in order) {
         var id = order[i].id
         var quantity = order[i].cantidad
@@ -23,11 +24,11 @@ function confirm() {
         contentType: "application/json",
         headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
         success: function (data) {
-            console.log(data)
+            alert("Pedido realizado correctamente")
 
         },
         error: function (e) {
-            document.getElementById("mensajeErrorInicioSesion").innerHTML = "Usuario o contraseña incorrecto"
+            alert("Revise su pedido")
         }
     });
 
@@ -51,6 +52,7 @@ $(document).ready(function () {
 
     //RECORRER LOS PRODUCTOS
     for (i in order) {
+        var subTotal = subTotal + order[i].precio * order[i].cantidad
 
         var tr2 = $("<tr><td>"
             + order[i].name + "</td><td>"
