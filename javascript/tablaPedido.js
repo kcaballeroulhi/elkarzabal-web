@@ -2,26 +2,68 @@
 var productos = []
 var orderProducts = []
 const URL = "http://localhost:3000/api/"
+var temp = false
 
+function validateStock(quantity, maxQuantity) {
+    console.log(quantity)
+    console.log(maxQuantity)
+    if (quantity <= maxQuantity) {
+        return true
+        //orderProducts.push(unProducto)
+        //localStorage.setItem('pedido', JSON.stringify(orderProducts));
+    } else {
+        return false
+        //alert("No hay suficiente stock")
+    }
 
+}
 function addProduct(linea) {
     var cantidad = document.getElementById("iCantidad" + linea).value
     var numCantidad = parseFloat(cantidad)
-    if (numCantidad <= productos[linea].maxQuantity) {
-        var unProducto = {
-            "id": productos[linea].id,
-            "name": productos[linea].name,
-            "description": productos[linea].description,
-            "cantidad": numCantidad,
-            "medida": productos[linea].measurementUnit,
-            "precio": productos[linea].price
-        }
-        orderProducts.push(unProducto)
-        localStorage.setItem('pedido', JSON.stringify(orderProducts));
-    } else {
-        alert("No hay suficiente stock")
+
+    var unProducto = {
+        "id": productos[linea].id,
+        "name": productos[linea].name,
+        "description": productos[linea].description,
+        "cantidad": numCantidad,
+        "medida": productos[linea].measurementUnit,
+        "precio": productos[linea].price
     }
 
+
+    if (localStorage.getItem("pedido") === null) {
+        if (validateStock(numCantidad, productos[linea].maxQuantity)) {
+            orderProducts.push(unProducto)
+            localStorage.setItem('pedido', JSON.stringify(orderProducts));
+        }
+        else {
+            alert("No hay suficiente stock")
+        }
+
+    } else {
+        var guardado = localStorage.getItem('pedido');
+        var order = JSON.parse(guardado)
+        if (validateStock(numCantidad, productos[linea].maxQuantity)) {
+            for (i in order) {
+                if (order[i].id === productos[linea].id) {
+                    temp = true
+                    order[i].cantidad = numCantidad
+                    localStorage.removeItem("pedido")
+                    localStorage.setItem("pedido", JSON.stringify(order))
+                }
+            }
+            if (temp === false) {
+                orderProducts.push(unProducto)
+                localStorage.setItem('pedido', JSON.stringify(orderProducts));
+            } else {
+                temp = false
+            }
+        }
+        else {
+            alert("No hay suficiente stock")
+        }
+
+    }
 }
 
 function takeProductData(id, stock, price) {
@@ -64,7 +106,6 @@ $.ajax({
             takeProductData(id, stock, price);
         }
     },
-
     error: function () {
         alert("Revisa tu conexión");
     }
