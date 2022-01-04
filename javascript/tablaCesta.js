@@ -43,24 +43,24 @@ $(document).ready(function () {
         id: "tabla"
     });
 
-    var tr = $("<tr><th id='cProducto'>Producto</th><th id='cDescripcion'>Descripción</th><th id='cPrecio'>Unidad de medida</th><th id='cStock'>Cantidad</th><th id='cPrecio'>Precio</th><th id=''>Total</th></tr>");
+    var tr = $("<tr><th id='cProducto'>Producto</th><th id='cDescripcion'>Descripción</th><th id='cPrecio'>Unidad de medida</th><th id='cStock'>Cantidad</th><th id='cPrecio'>Precio</th><th id='total'>Total</th></tr>");
     tr.attr({
         id: "columnas"
     });
 
     tabla.append(tr);
-
+    var total = 0;
     //RECORRER LOS PRODUCTOS
     for (i in order) {
-        var subTotal = subTotal + order[i].precio * order[i].cantidad
-
+        //var subTotal = subTotal + order[i].precio * order[i].cantidad;
+        total = total + order[i].precio * order[i].cantidad;
         var tr2 = $("<tr><td>"
             + order[i].name + "</td><td>"
             + order[i].description + "</td><td>"
             + order[i].medida + "</td><td>"
             + order[i].cantidad + "</td><td>"
             + order[i].precio + "</td><td>"
-            + order[i].precio * order[i].cantidad + "</td><td>");
+            + order[i].precio * order[i].cantidad + "</td>");
         tr2.attr({
             id: "celdas"
         });
@@ -72,7 +72,12 @@ $(document).ready(function () {
         tabla.append(tr2);
         var button = '<button class="bUProduct" onclick=confirm()>Confirmar</button>';
     }
-
+    var th1 = $("<th colspan='4'></th>");
+    var th2 = $("<th id='subtotal'>"+"Subtotal"+"</th>");
+    var tr3 = $("<td id='celdaSub' >"+total+"</td>");
+    tabla.append(th1);
+    tabla.append(th2);
+    tabla.append(tr3);
     cuerpoTabla.append(tabla);
     cuerpoTabla.append(button);
 })

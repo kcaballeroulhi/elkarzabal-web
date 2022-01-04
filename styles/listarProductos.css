@@ -106,6 +106,17 @@
     padding: 10px;
 }
 
+.bUProduct {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 450px;
+    background-color: var(--color-verdeOscuro);
+}
+
+.bUProduct:hover {
+    background-color: var(--color-marron);
+}
+
 @media only screen and (max-width: 340px) and (min-width: 5px) {  
 
     #cuerpoTablaProducto {
@@ -138,6 +149,11 @@
 
     #celdas {
         height: 20px!important;
+    }
+
+    .bUProduct {
+        margin-top: 15px;
+        margin-left: 100px;
     }
 }
 
@@ -172,5 +188,11 @@
 
     #celdas {
         height: 20px!important;
+    }
+
+    
+    .bUProduct {
+        margin-top: 15px;
+        margin-left: 300px;
     }
 }

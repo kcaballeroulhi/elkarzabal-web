@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    --color-marron: #7F6E4A;
+    --color-amarillo: #E6EFD0;
+    --color-verdeOscuro: #567661;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bUProduct {
+    background-color: var(--color-verdeOscuro);
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+    color: white;
+    font-weight: bolder!important;
+    border-radius: 5px;
+    margin-left: 500px;
+    margin-top: 30px;
+}
+
+.bUProduct:hover {
+    background-color: var(--color-marron);
+}
+
+#subtotal {
+    height: 90px;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#celdaSub {
+    height: 90px;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#cProducto {
+    width: 150px;
+}
+
+#cDescripcion {
+    width: 350px;
+}
+
+#cPrecio {
+    width: 150px;
+}
+
+#cStock {
+    width: 150px;
+}
+
+@media only screen and (max-width: 340px) and (min-width: 5px) {  
+    #tabla {
+        width: 500px!important;
+    }
+
+    #celdaSub {
+        height: 20px;
+    }
+
+    #subtotal {
+        height: 20px;
+    }
+
+    .bUProduct {
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 5px) and (orientation : landscape) { 
+    #tabla {
+        width: 500px!important;
+    }
+
+    #celdaSub {
+        height: 20px;
+    }
+
+    #subtotal {
+        height: 20px;
+    }
+
+    .bUProduct {
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+}
