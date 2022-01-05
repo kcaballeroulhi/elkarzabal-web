@@ -104,6 +104,7 @@
     margin-top: 200px;
     margin-left: 25px;
     overflow: scroll;
+    z-index: 1000;
 }
 
 #tabla {
@@ -156,4 +157,267 @@
 #iBoton {
     width: 30%;
     height: auto;
+}
+
+#contenedorCabecera-Menu {
+    display: block!important;
+    margin-left: 180px;
+} 
+
+@media only screen and (max-width: 340px) and (min-width: 5px) {  
+
+    #contenedorCabecera-Menu {
+        display: block!important;
+        margin-left: 0!important;
+    }
+
+    .separador {
+        width: 300px!important;
+    }
+
+    #cuerpoTablaPedido {
+        margin-top: 200px;
+        margin-left: 30px;
+        width: 250px;
+        height: 400px;
+        margin-bottom: 200px;
+        overflow: scroll!important;
+    }
+
+    #tabla {
+        width: 500px;
+        height: 500px;
+        font-size: small;
+    }
+
+    #cDescripcion{
+        width: 200px;
+    }
+
+    #cProducto{
+        width: 100px;
+    }
+
+    #imgListProd {
+        width: 50%;
+        height: auto;
+    }
+
+    #celdas {
+        height: 20px!important;
+    }
+
+    .bUProduct {
+        margin-top: 15px;
+        margin-left: 100px;
+    }
+
+    #iBoton {
+        width: 30px;
+        height: auto;
+    }
+
+    #cesta {
+        width: 15%;
+        height: auto;
+        margin-top: 150px;
+        margin-left: 120px;
+    }
+
+    #mensajeFacturas {
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+
+    #mensajeFacturas img {
+        width: 9%;
+        height: auto;
+    }
+
+    #cantidadFacturas {
+        font-size: small!important;
+    }
+
+    #icono {
+        width: 20px;
+        margin-top: 50px;
+        margin-left: -55px;
+        position: absolute;
+    }
+
+    #iconoAdmin {
+        margin-top: -60px;
+        margin-left: 65%;
+    }
+    
+    #icono5 {
+        width: 20px;
+        margin-top: 150px;
+        margin-left: -60px;
+        position: absolute;
+    }
+
+    #iconoUsuario {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        margin-left: 190px!important;
+        margin-top: 20px;
+        z-index: 0;
+    }
+
+    #span-Admin2 {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 40px;
+        font-size: 10px;
+    }
+
+    #span-Usuario {
+        margin-top: 170px;
+        font-size: 13px;
+        margin-left: -40px;
+    }
+
+    #ventanaModalUsuario {
+        position: absolute;
+        z-index: 12000;
+    }
+
+}
+
+@media only screen and (max-width: 600px) and (min-width: 5px) and (orientation : landscape) { 
+
+    #contenedorCabecera-Menu {
+        display: block!important;
+        margin-left: 0!important;
+    }
+
+    .separador {
+        width: 300px!important;
+    }
+
+    #cuerpoTablaPedido {
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 500px;
+        height: 400px;
+        margin-bottom: 200px;
+        overflow: scroll!important;
+    }
+
+    #iconoUser {
+        position: relative;
+        width: 80px;
+    }
+
+    #tabla {
+        width: 500px;
+        height: 500px;
+        font-size: small;
+    }
+
+    #cDescripcion{
+        width: 200px;
+    }
+
+    #cProducto{
+        width: 100px;
+    }
+
+    #imgListProd {
+        width: 50%;
+        height: auto;
+    }
+
+    #celdas {
+        height: 20px!important;
+    }
+
+    .bUProduct {
+        margin-top: 15px;
+        margin-left: 100px;
+    }
+
+    #iBoton {
+        width: 30px;
+        height: auto;
+    }
+
+    #cesta {
+        width: 15%;
+        height: auto;
+        margin-top: -200px;
+        margin-left: 300px;
+        position: relative;
+        
+    }
+
+    #mensajeFacturas {
+        width: 200px;
+        margin-top: -40px;
+        margin-left: 100px;
+        position: relative;
+    }
+
+    #mensajeFacturas img {
+        width: 9%;
+        height: auto;
+    }
+
+    #cantidadFacturas {
+        font-size: small!important;
+    }
+
+    #icono {
+        width: 20px;
+        margin-top: 50px;
+        margin-left: -55px;
+        position: absolute;
+    }
+
+    #iconoAdmin {
+        margin-top: -60px;
+        margin-left: 65%;
+    }
+    
+    #icono5 {
+        width: 20px;
+        margin-top: -50px;
+        margin-left: -80px;
+    }
+
+    #iconoUsuario {
+        width: 100px;
+        height: 200px;
+        margin-left: 190px!important;
+        margin-top: 20px;
+    }
+
+    #span-Admin2 {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 40px;
+        font-size: 10px;
+    }
+
+    #span-Usuario {
+        margin-top: -35px;
+        font-size: 13px;
+        margin-left: -40px;
+    }
+
+    #ventanaModalUsuario {
+        z-index: 10000;
+    }
+
+    #ventanaModalUsuario {
+        position: absolute;
+        z-index: 12000;
+    }
+
 }
