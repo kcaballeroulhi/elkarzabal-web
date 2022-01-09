@@ -97,7 +97,7 @@ $(document).ready(function () {
         }
 
         tabla.append(tr2);
-        var button = '<button class="bUProduct" onclick=update()>Modificar</button>';
+        var button = '<button class="bAddProduct" onclick=update()>Modificar</button>';
     }
 
 
