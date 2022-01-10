@@ -17,7 +17,7 @@
     color: white;
     font-weight: bolder!important;
     border-radius: 5px;
-    margin-left: 500px;
+    margin-left: 800px;
     margin-top: 30px;
 }
 
@@ -55,13 +55,186 @@
     width: 150px;
 }
 
-@media only screen and (max-width: 340px) and (min-width: 5px) {  
+@media only screen and (max-width: 1300px) and (min-width: 1034px) {  
+    .bUProduct {
+        background-color: var(--color-verdeOscuro);
+        width: 120px;
+        height: 30px;
+        cursor: pointer;
+        box-shadow: none;
+        border: none;
+        color: white;
+        font-weight: bolder!important;
+        border-radius: 5px;
+        margin-left: 500px;
+        margin-top: 30px;
+    }
+    
+    .bUProduct:hover {
+        background-color: var(--color-marron);
+    }
+    
+    #subtotal {
+        height: 90px;
+        vertical-align: middle;
+        font-weight: bolder;
+        font-size: large;
+    }
+    
+    #celdaSub {
+        height: 90px;
+        vertical-align: middle;
+        font-weight: bolder;
+        font-size: large;
+    }
+    
+    #cProducto {
+        width: 150px;
+    }
+    
+    #cDescripcion {
+        width: 350px;
+    }
+    
+    #cPrecio {
+        width: 150px;
+    }
+    
+    #cStock {
+        width: 150px;
+    }
+    
+}
+
+@media only screen and (max-width: 1033px) and (min-width: 981px) {  
     #tabla {
-        width: 500px!important;
+        width: 800px!important;
     }
 
     #celdaSub {
         height: 20px;
+    }
+
+    #subtotal {
+        height: 20px;
+    }
+
+    .bUProduct {
+        margin-top: 20px;
+        margin-left: 400px;
+    }
+
+    #cesta {
+        width: 12%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 980px) and (min-width: 821px) {  
+    
+    #cuerpoTablaPedido {
+        margin-top: 50px;
+    }
+
+    #tabla {
+        width: 800px!important;
+    }
+
+    #celdaSub {
+        height: 20px;
+    }
+
+    #subtotal {
+        height: 20px;
+    }
+
+    .bUProduct {
+        margin-top: 20px;
+        margin-left: 400px;
+    }
+
+    #cesta {
+        width: 12%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 820px) and (min-width: 621px) {  
+    #tabla {
+        width: 800px!important;
+    }
+
+    #celdaSub {
+        height: 20px;
+    }
+
+    #subtotal {
+        height: 20px;
+    }
+
+    .bUProduct {
+        margin-top: 20px;
+        margin-left: 400px;
+    }
+
+    #cesta {
+        width: 12%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 620px) and (min-width: 501px) {  }
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
+    #tabla {
+        width: 700px!important;
+    }
+
+    #celdaSub {
+        height: 20px!important;
+    }
+
+    #subtotal {
+        height: 20px;
+    }
+
+    .bUProduct {
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 601px) and (orientation : landscape) { 
+    #cesta {
+        width: 12%;
+        height: auto;
+    }
+
+    #tabla {
+        width: 700px!important;
+    }
+
+    #celdaSub {
+        height: 20px;
+    }
+
+    #subtotal {
+        height: 20px;
+    }
+
+    .bUProduct {
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+}
+
+@media only screen and (max-width: 340px) and (min-width: 5px) {  
+    #tabla {
+        width: 700px!important;
+    }
+
+    #celdaSub {
+        height: 20px!important;
     }
 
     #subtotal {
@@ -75,8 +248,13 @@
 }
 
 @media only screen and (max-width: 600px) and (min-width: 5px) and (orientation : landscape) { 
+    #cesta {
+        width: 12%;
+        height: auto;
+    }
+
     #tabla {
-        width: 500px!important;
+        width: 700px!important;
     }
 
     #celdaSub {

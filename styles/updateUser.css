@@ -11,10 +11,14 @@
     width: 95%;
     height: 110%;
     margin-left: 7%;
-    margin-top: -1200px;
+    margin-top: -1700px;
     position: absolute;
     z-index: 0;
     overflow: scroll;
+}
+
+#iconoUsuario {
+    margin-top: -1900px;
 }
 
 #contenedorDeleteUser form {
@@ -56,7 +60,7 @@
     font-weight: bold;
     cursor: pointer;
     font-size: 15px;
-    margin-left: 300px;
+    margin-left: 500px;
     margin-top: 25px;
 }
 
@@ -82,11 +86,509 @@
     margin-left: 20px;
 }
 
+@media only screen and (max-width: 1300px) and (min-width: 1034px) {  
+    #contenedorDeleteUser {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1200px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -1300px;
+    }
+    
+    #contenedorDeleteUser form {
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 30px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+    
+    #contenedorDeleteUser label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+    
+    #contenedorDeleteUser input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+    
+    #contenedorDeleteUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonUpdateUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 250px;
+        margin-top: 25px;
+    }
+    
+    .botonUpdateUser:hover {
+        background: var(--color-marron);
+    }
+    
+    .separacionUpdate {
+        margin-left: 20px;
+    }
+    
+    .selectIdioma {
+        margin-left: 130px;
+    }
+    
+    #image {
+        width: 100px!important;
+        height: 100px!important;
+        margin-left: -20px;
+    }
+    
+    .separacionIzq {
+        margin-left: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 1033px) and (min-width: 981px) {  
+    #cuerpoAdminApp {
+        overflow: scroll!important;
+    }
+
+    #iconoUsuario {
+        margin-top: 20px;
+    }
+    
+
+    #contenedorDeleteUser {
+        margin-top: 100px;
+        margin-left: 200px;
+        width: 600px;
+        height: 700px;
+    }
+
+    #contenedorDeleteUser form {
+        width: 80%;
+        height: 70%;
+        margin-left: 2%;
+        padding: 20px;
+    }
+
+    #contenedorDeleteUser label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #contenedorDeleteUser input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #contenedorDeleteUser select {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    #image {
+        margin-top: 10px!important;
+        margin-left: 0;
+    }
+
+    .separacionIzq {
+        margin-left: 0!important;
+    }
+
+    .separacionUpdate {
+        margin-left: 0!important;
+    }
+    
+    .botonUpdateUser {
+        width: 50px;
+        margin-left: 120px;
+        margin-top: 30px!important;
+    }
+
+    .selectIdioma {
+        width: 150px;
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 980px) and (min-width: 821px) {  
+    #cuerpoAdminApp {
+        overflow: scroll!important;
+    }
+
+    #iconoUsuario {
+        margin-top: 20px;
+    }
+    
+
+    #contenedorDeleteUser {
+        margin-top: 100px;
+        margin-left: 200px;
+        width: 600px;
+        height: 700px;
+    }
+
+    #contenedorDeleteUser form {
+        width: 80%;
+        height: 70%;
+        margin-left: 2%;
+        padding: 20px;
+    }
+
+    #contenedorDeleteUser label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #contenedorDeleteUser input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #contenedorDeleteUser select {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    #image {
+        margin-top: 10px!important;
+        margin-left: 0;
+    }
+
+    .separacionIzq {
+        margin-left: 0!important;
+    }
+
+    .separacionUpdate {
+        margin-left: 0!important;
+    }
+    
+    .botonUpdateUser {
+        width: 50px;
+        margin-left: 120px;
+        margin-top: 30px!important;
+    }
+
+    .selectIdioma {
+        width: 150px;
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 820px) and (min-width: 621px) {  
+    #cuerpoAdminApp {
+        overflow: scroll!important;
+    }
+
+    #iconoUsuario {
+        margin-top: 20px;
+    }
+    
+
+    #contenedorDeleteUser {
+        margin-top: 100px;
+        margin-left: 120px;
+        width: 600px;
+        height: 1000px;
+    }
+
+    #contenedorDeleteUser form {
+        width: 80%;
+        height: 70%;
+        margin-left: 2%;
+        padding: 20px;
+    }
+
+    #contenedorDeleteUser label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #contenedorDeleteUser input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #contenedorDeleteUser select {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    #image {
+        margin-top: 10px!important;
+        margin-left: 0;
+    }
+
+    .separacionIzq {
+        margin-left: 0!important;
+    }
+
+    .separacionUpdate {
+        margin-left: 0!important;
+    }
+    
+    .botonUpdateUser {
+        width: 50px;
+        margin-left: 120px;
+        margin-top: 30px!important;
+    }
+
+    .selectIdioma {
+        width: 150px;
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 620px) and (min-width: 501px) {  
+    #cuerpoAdminApp {
+        overflow: scroll!important;
+    }
+
+    #iconoUsuario {
+        margin-top: 20px;
+    }
+    
+
+    #contenedorDeleteUser {
+        margin-top: 100px;
+        margin-left: 50px;
+        width: 600px;
+        height: 700px;
+    }
+
+    #contenedorDeleteUser form {
+        width: 80%;
+        height: 70%;
+        margin-left: 2%;
+        padding: 20px;
+    }
+
+    #contenedorDeleteUser label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #contenedorDeleteUser input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #contenedorDeleteUser select {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    #image {
+        margin-top: 10px!important;
+        margin-left: 0;
+    }
+
+    .separacionIzq {
+        margin-left: 0!important;
+    }
+
+    .separacionUpdate {
+        margin-left: 0!important;
+    }
+    
+    .botonUpdateUser {
+        width: 50px;
+        margin-left: 120px;
+        margin-top: 30px!important;
+    }
+
+    .selectIdioma {
+        width: 150px;
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
+    #cuerpoAdminApp {
+        overflow: scroll!important;
+    }
+
+    #iconoUsuario {
+        margin-top: 20px;
+    }
+    
+
+    #contenedorDeleteUser {
+        margin-top: 80px;
+        margin-left: 30px;
+        width: 300px;
+        height: 950px;
+    }
+
+    #contenedorDeleteUser form {
+        width: 80%;
+        height: 75%;
+        margin-left: 2%;
+        padding: 20px;
+    }
+
+    #contenedorDeleteUser label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #contenedorDeleteUser input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #contenedorDeleteUser select {
+        width: 150px;
+        height: 50px;
+    }
+
+    #image {
+        margin-top: 10px!important;
+        margin-left: 0;
+    }
+
+    .separacionIzq {
+        margin-left: 0!important;
+    }
+
+    .separacionUpdate {
+        margin-left: 0!important;
+    }
+    
+    .botonUpdateUser {
+        width: 50px;
+        margin-left: 2px;
+        margin-top: 30px!important;
+    }
+
+    .selectIdioma {
+        margin-left: 0!important;
+    }
+
+}
+
+@media only screen and (max-width: 700px) and (min-width: 601px) and (orientation : landscape) { 
+    #cuerpoAdminApp {
+        overflow: scroll!important;
+    }
+
+    #iconoUsuario {
+        margin-top: 20px;
+    }
+    
+
+    #contenedorDeleteUser {
+        margin-top: 100px;
+        margin-left: 50px;
+        width: 600px;
+        height: 700px;
+    }
+
+    #contenedorDeleteUser form {
+        width: 80%;
+        height: 70%;
+        margin-left: 2%;
+        padding: 20px;
+    }
+
+    #contenedorDeleteUser label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #contenedorDeleteUser input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #contenedorDeleteUser select {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    #image {
+        margin-top: 10px!important;
+        margin-left: 0;
+    }
+
+    .separacionIzq {
+        margin-left: 0!important;
+    }
+
+    .separacionUpdate {
+        margin-left: 0!important;
+    }
+    
+    .botonUpdateUser {
+        width: 50px;
+        margin-left: 120px;
+        margin-top: 30px!important;
+    }
+
+    .selectIdioma {
+        width: 150px;
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+}
+
 /* Para 320px */  
 @media only screen and (max-width: 340px) and (min-width: 5px)  {
     #cuerpoAdminApp {
         overflow: scroll!important;
     }
+
+    #iconoUsuario {
+        margin-top: 20px;
+    }
+    
 
     #contenedorDeleteUser {
         margin-top: 80px;
@@ -148,6 +650,11 @@
     #cuerpoAdminApp {
         overflow: scroll!important;
     }
+
+    #iconoUsuario {
+        margin-top: 20px;
+    }
+    
 
     #contenedorDeleteUser {
         margin-top: 100px;
