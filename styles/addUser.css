@@ -68,6 +68,199 @@
 .botonAddUser:hover {
     background: var(--color-marron);
 }
+
+@media only screen and (max-width: 1600px) and (min-width: 1501px) {  
+    #contenedorFormUser {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1450px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -1600px;
+    }
+    
+    #contenedorFormUser form {
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    #contenedorFormUser label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 150px;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1401px) {  
+    #contenedorFormUser {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1400px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -1500px;
+    }
+    
+    #contenedorFormUser form {
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    #contenedorFormUser label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 150px;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1301px) {  
+    #contenedorFormUser {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1300px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -1400px;
+    }
+
+    #contenedorFormUser form {
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    #contenedorFormUser label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 100px;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+}
+
 @media only screen and (max-width: 1300px) and (min-width: 1034px) {  
     #contenedorFormUser {
         width: 95%;
@@ -133,39 +326,43 @@
 }
 
 @media only screen and (max-width: 1033px) and (min-width: 981px) {  
-    #cuerpoAdminApp {
-        overflow: scroll!important;
-    }
-
     #contenedorFormUser {
-        margin-top: 100px;
-        margin-left: 200px;
-        width: 500px;
-        height: 500px;
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -900px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
     }
-
+    
     #iconoUsuario {
-        margin-top: 20px;
-        margin-left: 700px!important;
+        margin-top: -1020px;
     }
 
     #contenedorFormUser form {
-        width: 80%;
-        height: 80%;
-        margin-left: 10%;
-        padding: 20px;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
     }
-
+    
+    
     #contenedorFormUser label {
+        display: inline-block;
         width: 150px;
-        margin-bottom: -20px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
     }
     
     #contenedorFormUser input {
         display: inline-block;
-        width: 200px;   
-        margin-top: -50px;
-        margin-bottom: 20px;
+        width: 250px;   
+        height: 30px;
     }
     
     #contenedorFormUser select {
@@ -174,45 +371,62 @@
     }
     
     .botonAddUser {
-        width: 50px;
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
         margin-left: 100px;
-        margin-top: 30px!important;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
     }
 }
 
 @media only screen and (max-width: 980px) and (min-width: 821px) {  
-    #cuerpoAdminApp {
-        overflow: scroll!important;
-    }
-
     #contenedorFormUser {
-        margin-top: 100px;
-        margin-left: 200px;
-        width: 500px;
-        height: 500px;
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -800px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
     }
-
+    
     #iconoUsuario {
-        margin-top: 20px;
+        margin-top: -940px;
     }
 
     #contenedorFormUser form {
-        width: 80%;
-        height: 80%;
-        margin-left: 10%;
-        padding: 20px;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
     }
-
+    
+    
     #contenedorFormUser label {
+        display: inline-block;
         width: 150px;
-        margin-bottom: -20px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
     }
     
     #contenedorFormUser input {
         display: inline-block;
-        width: 200px;   
-        margin-top: -50px;
-        margin-bottom: 20px;
+        width: 250px;   
+        height: 30px;
     }
     
     #contenedorFormUser select {
@@ -221,9 +435,21 @@
     }
     
     .botonAddUser {
-        width: 50px;
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
         margin-left: 100px;
-        margin-top: 30px!important;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
     }
 }
 

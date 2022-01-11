@@ -84,6 +84,245 @@
     margin-top: 250px;
 }
 
+@media only screen and (max-width: 1600px) and (min-width: 1501px) {  
+    #contenedorElementos {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1700px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -1600px;
+    }
+    
+    #elemento1 {
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 100px;
+        margin-top: 250px;
+        text-align: center;
+    }
+    
+    #elemento2 {
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 250px;
+        text-align: center;
+    }
+    
+    #elemento3 {
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 200px;
+        text-align: center;
+    }
+    
+    .posImg {
+        width: 90%;
+        height: auto;
+    }
+    
+    .enlaceEl {
+        text-decoration: none;
+        color: white;
+        font-size: large;
+        font-weight: bolder;
+    }
+    
+    #spanEl1 {
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
+    }
+    
+    #spanEl2 {
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
+    }
+    
+    #spanEl3 {
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
+    }
+    
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1401px) {  
+    #contenedorElementos {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1700px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -1500px;
+    }
+    
+    #elemento1 {
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 100px;
+        margin-top: 300px;
+        text-align: center;
+    }
+    
+    #elemento2 {
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 300px;
+        text-align: center;
+    }
+    
+    #elemento3 {
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 200px;
+        text-align: center;
+    }
+    
+    .posImg {
+        width: 90%;
+        height: auto;
+    }
+    
+    .enlaceEl {
+        text-decoration: none;
+        color: white;
+        font-size: large;
+        font-weight: bolder;
+    }
+    
+    #spanEl1 {
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
+    }
+    
+    #spanEl2 {
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
+    }
+    
+    #spanEl3 {
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
+    }
+    
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1301px) {  
+    #contenedorElementos {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1300px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -1400px;
+    }
+
+    #elemento1 {
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 100px;
+        margin-top: 80px;
+        text-align: center;
+    }
+    
+    #elemento2 {
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 80px;
+        text-align: center;
+    }
+    
+    #elemento3 {
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 200px;
+        text-align: center;
+    }
+    
+    .posImg {
+        width: 90%;
+        height: auto;
+    }
+    
+    .enlaceEl {
+        text-decoration: none;
+        color: white;
+        font-size: large;
+        font-weight: bolder;
+    }
+    
+    #spanEl1 {
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
+    }
+    
+    #spanEl2 {
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
+    }
+    
+    #spanEl3 {
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
+    }
+}
+
 @media only screen and (max-width: 1300px) and (min-width: 1034px) { 
     #contenedorElementos {
         width: 95%;
@@ -164,114 +403,160 @@
 }
 
 @media only screen and (max-width: 1033px) and (min-width: 981px) {  
-    #cuerpoAdminApp {
+    #contenedorElementos {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1300px;
+        position: absolute;
+        z-index: 0;
         overflow: scroll;
     }
-
+    
     #iconoUsuario {
-        margin-top: 20px;
-        margin-left: 650px!important;
-    }
-
-    #contenedorElementos {
-        width: 200px;
-        height: 130%;
-        margin-left: 300px;
-        margin-top: 70px;
+        margin-top: -1050px;
     }
 
     #elemento1 {
-        width: 150px;
-        height: 150px;
-        margin-top: 50px;
-        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 100px;
+        margin-top: 400px;
+        text-align: center;
     }
     
     #elemento2 {
-        width: 150px;
-        height: 150px;
-        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 400px;
+        text-align: center;
     }
     
     #elemento3 {
-        width: 150px;
-        height: 150px;
-        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 200px;
+        text-align: center;
     }
-
+    
+    .posImg {
+        width: 90%;
+        height: auto;
+    }
+    
     .enlaceEl {
-        font-size: medium;
+        text-decoration: none;
+        color: white;
+        font-size: large;
+        font-weight: bolder;
     }
-
+    
     #spanEl1 {
-        margin-left: -115px;
-        margin-top: 120px;
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
     }
     
     #spanEl2 {
-        margin-left: -125px;
-        margin-top: 120px;
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
     }
     
     #spanEl3 {
-        margin-left: -120px;
-        margin-top: 120px;
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
     }
 }
 
 @media only screen and (max-width: 980px) and (min-width: 821px) {  
-    #cuerpoAdminApp {
+    #contenedorElementos {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1300px;
+        position: absolute;
+        z-index: 0;
         overflow: scroll;
     }
-
+    
     #iconoUsuario {
-        margin-top: 20px;
-        margin-left: 650px!important;
-    }
-
-    #contenedorElementos {
-        width: 200px;
-        height: 130%;
-        margin-left: 300px;
-        margin-top: 70px;
+        margin-top: -930px;
     }
 
     #elemento1 {
-        width: 150px;
-        height: 150px;
-        margin-top: 50px;
-        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 100px;
+        margin-top: 500px;
+        text-align: center;
     }
     
     #elemento2 {
-        width: 150px;
-        height: 150px;
-        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 500px;
+        text-align: center;
     }
     
     #elemento3 {
-        width: 150px;
-        height: 150px;
-        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+        background-color: var(--color-verdeOscuro);
+        border-radius: 10px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 200px;
+        text-align: center;
     }
-
+    
+    .posImg {
+        width: 90%;
+        height: auto;
+    }
+    
     .enlaceEl {
-        font-size: medium;
+        text-decoration: none;
+        color: white;
+        font-size: large;
+        font-weight: bolder;
     }
-
+    
     #spanEl1 {
-        margin-left: -115px;
-        margin-top: 120px;
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
     }
     
     #spanEl2 {
-        margin-left: -125px;
-        margin-top: 120px;
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
     }
     
     #spanEl3 {
-        margin-left: -120px;
-        margin-top: 120px;
+        position: absolute;
+        margin-left: -190px;
+        margin-top: 250px;
     }
 }
 

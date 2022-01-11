@@ -164,6 +164,486 @@
     margin-left: 180px;
 } 
 
+@media only screen and (max-width: 1600px) and (min-width: 1501px) {  
+    #iconoAdmin {
+        display: none!important;
+    }
+    
+    #iconoUser {
+        width: 200px;
+        height: 150px;
+        position: fixed;
+        margin-left: 85%;
+        z-index: 10099;
+        margin-top: -10px;
+    }
+    
+    #icono5 {
+        width: 10%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-Usuario {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 63px;
+        margin-left: 10px;
+    }
+    
+    #contenedorPie {
+        margin-top: 880px!important;
+    }
+    
+    #cesta {
+        z-index: 10003;
+        position: fixed;
+        width: 100px;
+        height: 50px;
+        margin-left: 75%;
+        margin-top: 37px;
+    }
+    
+    #cesta a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+        font-size: large;
+    }
+    
+    #cesta img {
+        width: 60%;
+    }
+    
+    #cesta span {
+        position: absolute;
+    }
+    
+    #contenedorCabecera-Menu {
+        display: none;
+    }
+    
+    #mensajeFacturas {
+        z-index: 10003;
+        position: fixed;
+        width: 300px;
+        height: 50px;
+        margin-left: 54%;
+        margin-top: 50px;
+    }
+    
+    #mensajeFacturas img {
+        width: 35px;
+    }
+    
+    
+    #mensajeFacturas a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: red;
+        font-size: large;
+    }
+    
+    #mensajeFacturas span {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+    
+    #cuerpoTablaPedido {
+        width: 95%;
+        height: 500px;
+        border: 2px solid var(--color-verdeOscuro);
+        border-radius: 10px;
+        margin: auto;
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 25px;
+        overflow: scroll;
+        z-index: 1000;
+    }
+    
+    #tabla {
+        width: 95%;
+        margin: auto;
+        margin-top: 30px;
+        border-spacing: 0;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    #columnas {
+        background-color: var(--color-verdeOscuro);
+        height: 30px;
+        color: white;
+    }
+    
+    #tabla td {
+        height: 30px;
+    }
+    
+    #cProducto {
+        width: 150px;
+    }
+    
+    #cDescripcion {
+        width: 400px;
+    }
+    
+    #cPrecio {
+        width: 50px;
+    }
+    
+    #cStock {
+        width: 50px;
+    }
+    
+    #cCantidad {
+        width: 50px;
+    }
+    
+    #iCantidad {
+        width: 50px;
+    }
+    
+    #cAnadir {
+        width: 50px;
+    }
+    
+    #iBoton {
+        width: 30%;
+        height: auto;
+    }
+    
+    #contenedorCabecera-Menu {
+        display: block!important;
+        margin-left: 180px;
+    } 
+    
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1401px) {  
+    #iconoAdmin {
+        display: none!important;
+    }
+    
+    #iconoUser {
+        width: 200px;
+        height: 150px;
+        position: fixed;
+        margin-left: 85%;
+        z-index: 10099;
+        margin-top: -10px;
+    }
+    
+    #icono5 {
+        width: 10%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-Usuario {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 63px;
+        margin-left: 10px;
+    }
+    
+    #contenedorPie {
+        margin-top: 880px!important;
+    }
+    
+    #cesta {
+        z-index: 10003;
+        position: fixed;
+        width: 100px;
+        height: 50px;
+        margin-left: 75%;
+        margin-top: 37px;
+    }
+    
+    #cesta a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+        font-size: large;
+    }
+    
+    #cesta img {
+        width: 60%;
+    }
+    
+    #cesta span {
+        position: absolute;
+    }
+    
+    #contenedorCabecera-Menu {
+        display: none;
+    }
+    
+    #mensajeFacturas {
+        z-index: 10003;
+        position: fixed;
+        width: 300px;
+        height: 50px;
+        margin-left: 54%;
+        margin-top: 50px;
+    }
+    
+    #mensajeFacturas img {
+        width: 35px;
+    }
+    
+    
+    #mensajeFacturas a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: red;
+        font-size: large;
+    }
+    
+    #mensajeFacturas span {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+    
+    #cuerpoTablaPedido {
+        width: 95%;
+        height: 500px;
+        border: 2px solid var(--color-verdeOscuro);
+        border-radius: 10px;
+        margin: auto;
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 25px;
+        overflow: scroll;
+        z-index: 1000;
+    }
+    
+    #tabla {
+        width: 95%;
+        margin: auto;
+        margin-top: 30px;
+        border-spacing: 0;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    #columnas {
+        background-color: var(--color-verdeOscuro);
+        height: 30px;
+        color: white;
+    }
+    
+    #tabla td {
+        height: 30px;
+    }
+    
+    #cProducto {
+        width: 150px;
+    }
+    
+    #cDescripcion {
+        width: 400px;
+    }
+    
+    #cPrecio {
+        width: 50px;
+    }
+    
+    #cStock {
+        width: 50px;
+    }
+    
+    #cCantidad {
+        width: 50px;
+    }
+    
+    #iCantidad {
+        width: 50px;
+    }
+    
+    #cAnadir {
+        width: 50px;
+    }
+    
+    #iBoton {
+        width: 30%;
+        height: auto;
+    }
+    
+    #contenedorCabecera-Menu {
+        display: block!important;
+        margin-left: 180px;
+    } 
+    
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1301px) {  
+            
+    #iconoAdmin {
+        display: none!important;
+    }
+
+    #iconoUser {
+        width: 200px;
+        height: 150px;
+        position: fixed;
+        margin-left: 85%;
+        z-index: 10099;
+        margin-top: -10px;
+    }
+
+    #icono5 {
+        width: 10%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+
+    #span-Usuario {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 63px;
+        margin-left: 10px;
+    }
+
+    #contenedorPie {
+        margin-top: 800px!important;
+    }
+
+    #cesta {
+        z-index: 10003;
+        position: fixed;
+        width: 100px;
+        height: 50px;
+        margin-left: 75%;
+        margin-top: 37px;
+    }
+
+    #cesta a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+        font-size: large;
+    }
+
+    #cesta img {
+        width: 60%;
+    }
+
+    #cesta span {
+        position: absolute;
+    }
+
+    #contenedorCabecera-Menu {
+        display: none;
+    }
+
+    #mensajeFacturas {
+        z-index: 10003;
+        position: fixed;
+        width: 300px;
+        height: 50px;
+        margin-left: 54%;
+        margin-top: 50px;
+    }
+
+    #mensajeFacturas img {
+        width: 35px;
+    }
+
+
+    #mensajeFacturas a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: red;
+        font-size: large;
+    }
+
+    #mensajeFacturas span {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+
+    #cuerpoTablaPedido {
+        width: 95%;
+        height: 500px;
+        border: 2px solid var(--color-verdeOscuro);
+        border-radius: 10px;
+        margin: auto;
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 25px;
+        overflow: scroll;
+        z-index: 1000;
+    }
+
+    #tabla {
+        width: 95%;
+        margin: auto;
+        margin-top: 30px;
+        border-spacing: 0;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    #columnas {
+        background-color: var(--color-verdeOscuro);
+        height: 30px;
+        color: white;
+    }
+
+    #tabla td {
+        height: 30px;
+    }
+
+    #cProducto {
+        width: 150px;
+    }
+
+    #cDescripcion {
+        width: 400px;
+    }
+
+    #cPrecio {
+        width: 50px;
+    }
+
+    #cStock {
+        width: 50px;
+    }
+
+    #cCantidad {
+        width: 50px;
+    }
+
+    #iCantidad {
+        width: 50px;
+    }
+
+    #cAnadir {
+        width: 50px;
+    }
+
+    #iBoton {
+        width: 30%;
+        height: auto;
+    }
+
+    #contenedorCabecera-Menu {
+        display: block!important;
+        margin-left: 180px;
+    } 
+
+}
 
 @media only screen and (max-width: 1300px) and (min-width: 1034px) {  
         
@@ -327,273 +807,333 @@
 }
 
 @media only screen and (max-width: 1033px) and (min-width: 981px) {  
-           
-    #contenedorCabecera-Menu {
-        display: block!important;
-        margin-left: 0!important;
-    }
-
-    .separador {
-        width: 300px!important;
-    }
-
-    #cuerpoTablaPedido {
-        margin-top: 30px;
-        margin-left: 30px;
-        width: 850px;
-        height: 400px;
-        margin-bottom: 200px;
-        overflow: scroll!important;
+        
+    #iconoAdmin {
+        display: none!important;
     }
 
     #iconoUser {
-        position: relative;
-        width: 80px;
-    }
-
-    #tabla {
-        width: 500px;
-        height: 700px;
-        font-size: small;
-    }
-
-    #cDescripcion{
         width: 200px;
+        height: 150px;
+        position: fixed;
+        margin-left: 85%;
+        z-index: 10099;
+        margin-top: -10px;
     }
 
-    #cProducto{
-        width: 100px;
-    }
-
-    #imgListProd {
-        width: 50%;
-        height: auto;
-    }
-
-    #celdas {
-        height: 20px!important;
-    }
-
-    .bUProduct {
-        margin-top: 15px;
-        margin-left: 100px;
-    }
-
-    #iBoton {
-        width: 30px;
-        height: auto;
-    }
-
-    #cesta {
-        width: 12%;
-        height: auto;
-        margin-top: -190px;
-        margin-left: 500px;
-        position: relative;
-        
-    }
-
-    #mensajeFacturas {
-        width: 200px;
-        margin-top: -40px;
-        margin-left: 200px;
-        position: relative;
-    }
-
-    #mensajeFacturas img {
-        width: 9%;
-        height: auto;
-    }
-
-    #cantidadFacturas {
-        font-size: small!important;
-    }
-
-    #icono {
-        width: 20px;
-        margin-top: 50px;
-        margin-left: -55px;
-        position: absolute;
-    }
-
-    #iconoAdmin {
-        margin-top: -60px;
-        margin-left: 65%;
-    }
-    
     #icono5 {
-        width: 20px;
-        margin-top: -50px;
-        margin-left: -80px;
-    }
-
-    #iconoUsuario {
-        width: 100px;
-        height: 200px;
-        margin-left: 190px!important;
-        margin-top: 20px;
-    }
-
-    #span-Admin2 {
-        color: var(--color-marron);
-        font-weight: bold;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 40px;
-        font-size: 10px;
+        width: 10%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
     }
 
     #span-Usuario {
-        margin-top: -35px;
-        font-size: 13px;
-        margin-left: -40px;
-    }
-
-    #ventanaModalUsuario {
-        z-index: 10000;
-    }
-
-    #ventanaModalUsuario {
+        color: var(--color-marron);
+        font-weight: bold;
         position: absolute;
-        z-index: 12000;
+        margin-top: 63px;
+        margin-left: 10px;
     }
+
+    #contenedorPie {
+        margin-top: 800px!important;
+    }
+
+    #cesta {
+        z-index: 10003;
+        position: fixed;
+        width: 100px;
+        height: 50px;
+        margin-left: 75%;
+        margin-top: 37px;
+    }
+
+    #cesta a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+        font-size: large;
+    }
+
+    #cesta img {
+        width: 60%;
+    }
+
+    #cesta span {
+        position: absolute;
+    }
+
+    #contenedorCabecera-Menu {
+        display: none;
+    }
+
+    #mensajeFacturas {
+        z-index: 10003;
+        position: fixed;
+        width: 300px;
+        height: 50px;
+        margin-left: 54%;
+        margin-top: 50px;
+    }
+
+    #mensajeFacturas img {
+        width: 35px;
+    }
+
+
+    #mensajeFacturas a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: red;
+        font-size: large;
+    }
+
+    #mensajeFacturas span {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+
+    #cuerpoTablaPedido {
+        width: 95%;
+        height: 500px;
+        border: 2px solid var(--color-verdeOscuro);
+        border-radius: 10px;
+        margin: auto;
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 25px;
+        overflow: scroll;
+        z-index: 1000;
+    }
+
+    #tabla {
+        width: 95%;
+        margin: auto;
+        margin-top: 30px;
+        border-spacing: 0;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    #columnas {
+        background-color: var(--color-verdeOscuro);
+        height: 30px;
+        color: white;
+    }
+
+    #tabla td {
+        height: 30px;
+    }
+
+    #cProducto {
+        width: 150px;
+    }
+
+    #cDescripcion {
+        width: 400px;
+    }
+
+    #cPrecio {
+        width: 50px;
+    }
+
+    #cStock {
+        width: 50px;
+    }
+
+    #cCantidad {
+        width: 50px;
+    }
+
+    #iCantidad {
+        width: 50px;
+    }
+
+    #cAnadir {
+        width: 50px;
+    }
+
+    #iBoton {
+        width: 30%;
+        height: auto;
+    }
+
+    #contenedorCabecera-Menu {
+        display: block!important;
+        margin-left: 90px;
+    } 
+    
 }
 
 @media only screen and (max-width: 980px) and (min-width: 821px) {  
-           
-    #contenedorCabecera-Menu {
-        display: block!important;
-        margin-left: 0!important;
-    }
-
-    .separador {
-        width: 300px!important;
-    }
-
-    #cuerpoTablaPedido {
-        margin-top: 30px;
-        margin-left: 30px;
-        width: 850px;
-        height: 400px;
-        margin-bottom: 200px;
-        overflow: scroll!important;
+        
+    #iconoAdmin {
+        display: none!important;
     }
 
     #iconoUser {
-        position: relative;
-        width: 80px;
-    }
-
-    #tabla {
-        width: 500px;
-        height: 700px;
-        font-size: small;
-    }
-
-    #cDescripcion{
         width: 200px;
+        height: 150px;
+        position: fixed;
+        margin-left: 85%;
+        z-index: 10099;
+        margin-top: -10px;
     }
 
-    #cProducto{
-        width: 100px;
-    }
-
-    #imgListProd {
-        width: 50%;
-        height: auto;
-    }
-
-    #celdas {
-        height: 20px!important;
-    }
-
-    .bUProduct {
-        margin-top: 15px;
-        margin-left: 100px;
-    }
-
-    #iBoton {
-        width: 30px;
-        height: auto;
-    }
-
-    #cesta {
-        width: 12%;
-        height: auto;
-        margin-top: -190px;
-        margin-left: 400px;
-        position: relative;
-        
-    }
-
-    #mensajeFacturas {
-        width: 200px;
-        margin-top: -40px;
-        margin-left: 100px;
-        position: relative;
-    }
-
-    #mensajeFacturas img {
-        width: 9%;
-        height: auto;
-    }
-
-    #cantidadFacturas {
-        font-size: small!important;
-    }
-
-    #icono {
-        width: 20px;
-        margin-top: 50px;
-        margin-left: -55px;
-        position: absolute;
-    }
-
-    #iconoAdmin {
-        margin-top: -60px;
-        margin-left: 65%;
-    }
-    
     #icono5 {
-        width: 20px;
-        margin-top: -50px;
-        margin-left: -80px;
-    }
-
-    #iconoUsuario {
-        width: 100px;
-        height: 200px;
-        margin-left: 190px!important;
-        margin-top: 20px;
-    }
-
-    #span-Admin2 {
-        color: var(--color-marron);
-        font-weight: bold;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 40px;
-        font-size: 10px;
+        width: 10%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
     }
 
     #span-Usuario {
-        margin-top: -35px;
-        font-size: 13px;
-        margin-left: -40px;
-    }
-
-    #ventanaModalUsuario {
-        z-index: 10000;
-    }
-
-    #ventanaModalUsuario {
+        color: var(--color-marron);
+        font-weight: bold;
         position: absolute;
-        z-index: 12000;
+        margin-top: 63px;
+        margin-left: 10px;
     }
+
+    #contenedorPie {
+        margin-top: 800px!important;
+    }
+
+    #cesta {
+        z-index: 10003;
+        position: fixed;
+        width: 100px;
+        height: 50px;
+        margin-left: 75%;
+        margin-top: 37px;
+    }
+
+    #cesta a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+        font-size: large;
+    }
+
+    #cesta img {
+        width: 60%;
+    }
+
+    #cesta span {
+        position: absolute;
+    }
+
+    #contenedorCabecera-Menu {
+        display: none;
+    }
+
+    #mensajeFacturas {
+        z-index: 10003;
+        position: fixed;
+        width: 300px;
+        height: 50px;
+        margin-left: 54%;
+        margin-top: 50px;
+    }
+
+    #mensajeFacturas img {
+        width: 35px;
+    }
+
+
+    #mensajeFacturas a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: red;
+        font-size: large;
+    }
+
+    #mensajeFacturas span {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+
+    #cuerpoTablaPedido {
+        width: 95%;
+        height: 500px;
+        border: 2px solid var(--color-verdeOscuro);
+        border-radius: 10px;
+        margin: auto;
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 25px;
+        overflow: scroll;
+        z-index: 1000;
+    }
+
+    #tabla {
+        width: 95%;
+        margin: auto;
+        margin-top: 30px;
+        border-spacing: 0;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    #columnas {
+        background-color: var(--color-verdeOscuro);
+        height: 30px;
+        color: white;
+    }
+
+    #tabla td {
+        height: 30px;
+    }
+
+    #cProducto {
+        width: 150px;
+    }
+
+    #cDescripcion {
+        width: 400px;
+    }
+
+    #cPrecio {
+        width: 50px;
+    }
+
+    #cStock {
+        width: 50px;
+    }
+
+    #cCantidad {
+        width: 50px;
+    }
+
+    #iCantidad {
+        width: 50px;
+    }
+
+    #cAnadir {
+        width: 50px;
+    }
+
+    #iBoton {
+        width: 30%;
+        height: auto;
+    }
+
+    #contenedorCabecera-Menu {
+        display: block!important;
+        margin-left: 30px;
+    } 
+ 
 }
 
 @media only screen and (max-width: 820px) and (min-width: 621px) {  
        
+    #cuerpoIndex {
+        height: auto!important;
+    }
+    
     #contenedorCabecera-Menu {
         display: block!important;
         margin-left: 0!important;
@@ -729,6 +1269,10 @@
 
 @media only screen and (max-width: 500px) and (min-width: 341px) {  
     
+    #cuerpoIndex {
+        height: auto!important;
+    }
+
     #contenedorCabecera-Menu {
         display: block!important;
         margin-left: 0!important;

@@ -10,7 +10,7 @@ function comprobarEstado() {
 
 function extender() {
     let anchura = window.innerWidth;
-    if(anchura > 980) {
+    if(anchura > 821) {
         div.style.transform = "translate(200px,0)";
         document.getElementById("imgCamb").src = "./images/close.svg";
         estado = false;
@@ -24,7 +24,7 @@ function extender() {
 }
 function encoger() {
     let anchura = window.innerWidth;
-    if(anchura > 980) {
+    if(anchura > 821) {
         div.style.transform = "translate(-200px,0)";
         document.getElementById("imgCamb").src = "./images/barras.svg";
         estado = true;
