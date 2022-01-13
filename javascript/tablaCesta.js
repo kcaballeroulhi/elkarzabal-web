@@ -25,6 +25,7 @@ function confirm() {
         headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
         success: function (data) {
             alert("Pedido realizado correctamente")
+            localStorage.removeItem('pedido')
 
         },
         error: function (e) {
@@ -73,8 +74,8 @@ $(document).ready(function () {
         var button = '<button class="bUProduct" onclick=confirm()>Confirmar</button>';
     }
     var th1 = $("<th colspan='4'></th>");
-    var th2 = $("<th id='subtotal'>"+"Subtotal"+"</th>");
-    var tr3 = $("<td id='celdaSub' >"+total+"</td>");
+    var th2 = $("<th id='subtotal'>" + "Subtotal" + "</th>");
+    var tr3 = $("<td id='celdaSub' >" + total + "</td>");
     tabla.append(th1);
     tabla.append(th2);
     tabla.append(tr3);
