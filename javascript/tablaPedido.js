@@ -1,6 +1,13 @@
 //CREAR LA PETICION DE LOS PRODUCTOS SEMANALES
+if (localStorage.getItem('pedido') === true) {
+    var guardado = localStorage.getItem('pedido');
+    var orderProducts = JSON.parse(guardado)
+} else {
+    var orderProducts = []
+}
 var productos = []
-var orderProducts = []
+
+
 const URL = "http://localhost:3000/api/"
 var temp = false
 
@@ -46,7 +53,7 @@ function addProduct(linea) {
                 if (order[i].id === productos[linea].id) {
                     temp = true
                     order[i].cantidad = numCantidad
-                    localStorage.removeItem("pedido")
+                    //localStorage.removeItem("pedido")
                     localStorage.setItem("pedido", JSON.stringify(order))
                     document.getElementById("cantidadProductos").innerHTML = orderProducts.length
                 }
@@ -113,7 +120,7 @@ $.ajax({
 
 $(document).ready(function () {
     document.getElementById("cantidadProductos").innerHTML = orderProducts.length
-    localStorage.removeItem('pedido')
+    //localStorage.removeItem('pedido')
     var cuerpoTabla = $('#cuerpoTablaPedido');
 
     var tabla = $("<table></table>");
@@ -130,7 +137,6 @@ $(document).ready(function () {
 
     //RECORRER LOS PRODUCTOS
     for (i in productos) {
-
         var tr2 = $("<tr><td>"
             + productos[i].name + "</td><td>"
             + productos[i].description + "</td><td>"
