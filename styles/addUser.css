@@ -11,10 +11,14 @@
     width: 95%;
     height: 110%;
     margin-left: 7%;
-    margin-top: -1200px;
+    margin-top: -1700px;
     position: absolute;
     z-index: 0;
     overflow: scroll;
+}
+
+#iconoUsuario {
+    margin-top: -1900px;
 }
 
 #contenedorFormUser form {
@@ -65,6 +69,534 @@
     background: var(--color-marron);
 }
 
+@media only screen and (max-width: 1600px) and (min-width: 1501px) {  
+    #contenedorFormUser {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1450px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -1600px;
+    }
+    
+    #contenedorFormUser form {
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    #contenedorFormUser label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 150px;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1401px) {  
+    #contenedorFormUser {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1400px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -1500px;
+    }
+    
+    #contenedorFormUser form {
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    #contenedorFormUser label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 150px;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1301px) {  
+    #contenedorFormUser {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1300px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -1400px;
+    }
+
+    #contenedorFormUser form {
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    #contenedorFormUser label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 100px;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1034px) {  
+    #contenedorFormUser {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -1200px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -1300px;
+    }
+
+    #contenedorFormUser form {
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    #contenedorFormUser label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 100px;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+}
+
+@media only screen and (max-width: 1033px) and (min-width: 981px) {  
+    #contenedorFormUser {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -900px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -1020px;
+    }
+
+    #contenedorFormUser form {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    #contenedorFormUser label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 100px;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+}
+
+@media only screen and (max-width: 980px) and (min-width: 821px) {  
+    #contenedorFormUser {
+        width: 95%;
+        height: 110%;
+        margin-left: 7%;
+        margin-top: -800px;
+        position: absolute;
+        z-index: 0;
+        overflow: scroll;
+    }
+    
+    #iconoUsuario {
+        margin-top: -940px;
+    }
+
+    #contenedorFormUser form {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    #contenedorFormUser label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 100px;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+}
+
+@media only screen and (max-width: 820px) and (min-width: 621px) {  
+    #cuerpoAdminApp {
+        overflow: scroll!important;
+    }
+
+    #contenedorFormUser {
+        margin-top: 100px;
+        margin-left: 120px;
+        width: 500px;
+        height: 500px;
+    }
+
+    #iconoUsuario {
+        margin-top: 20px;
+    }
+
+    #contenedorFormUser form {
+        width: 80%;
+        height: 80%;
+        margin-left: 10%;
+        padding: 20px;
+    }
+
+    #contenedorFormUser label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 50px;
+        margin-left: 100px;
+        margin-top: 30px!important;
+    }
+}
+
+@media only screen and (max-width: 620px) and (min-width: 501px) {  }
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
+    #cuerpoAdminApp {
+        overflow: scroll!important;
+    }
+
+    #contenedorFormUser {
+        margin-top: 100px;
+        margin-left: 60px;
+        width: 250px;
+        height: 750px;
+    }
+    
+    #iconoUsuario {
+        margin-top: 20px;
+        margin-left: 250px!important;
+    }
+
+    #contenedorFormUser form {
+        width: 80%;
+        height: 80%;
+        margin-left: 2%;
+        padding: 20px;
+    }
+
+    #contenedorFormUser label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 50px;
+        margin-left: 5px;
+        margin-top: 30px!important;
+    }
+
+}
+
+@media only screen and (max-width: 700px) and (min-width: 601px) and (orientation : landscape) { 
+    #cuerpoAdminApp {
+        overflow: scroll!important;
+    }
+
+    #contenedorFormUser {
+        margin-top: 100px;
+        margin-left: 50px;
+        width: 500px;
+        height: 500px;
+    }
+
+    #iconoUsuario {
+        margin-top: 20px;
+    }
+
+    #contenedorFormUser form {
+        width: 80%;
+        height: 80%;
+        margin-left: 10%;
+        padding: 20px;
+    }
+
+    #contenedorFormUser label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #contenedorFormUser input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #contenedorFormUser select {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 50px;
+        margin-left: 100px;
+        margin-top: 30px!important;
+    }
+}
 /* Para 320px */  
 @media only screen and (max-width: 340px) and (min-width: 5px)  {
     #cuerpoAdminApp {
@@ -76,6 +608,10 @@
         margin-left: 30px;
         width: 250px;
         height: 700px;
+    }
+    
+    #iconoUsuario {
+        margin-top: 20px;
     }
 
     #contenedorFormUser form {
@@ -120,6 +656,10 @@
         margin-left: 50px;
         width: 500px;
         height: 500px;
+    }
+
+    #iconoUsuario {
+        margin-top: 20px;
     }
 
     #contenedorFormUser form {

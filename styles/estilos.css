@@ -63,7 +63,7 @@
 
 .componente-lista {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 100px;
     width: 200px;
     height: 30px;
     visibility: visible;
@@ -169,9 +169,29 @@
 
 
 /*AQUÍ COMIENZA EL SLIDER DEL INDEX*/
+#imgN1 {
+    content:url("../images/fresas2.jpg");
+    width: 100%;
+    height: 700px;
+}
+
+#imgN2 {
+    content:url("../images/lechuga2.jpg");
+    width: 100%;
+    height: 700px;
+    margin-top: -246px;
+}
+
+#imgN3 {
+    content:url("../images/mano2.jpg");
+    width: 100%;
+    height: 700px;
+    margin-top: -246px;
+}
+
 #contenedorSlider {
     width: 95%;
-    height: 500px;
+    height: 700px;
     position: absolute;
     margin-left: 25px;
     margin-top: 230px;
@@ -180,7 +200,7 @@
 
 #slider {
     width: 100%;
-    height: 450px;
+    height: 700px;
 }
 
 .enlaceSlider {
@@ -188,7 +208,7 @@
     width: 500px;
     height: 50px;
     margin-top: -70px;
-    margin-left: 350px;
+    margin-left: 600px;
     text-align: center;
     background: rgba(255, 255, 255, 0.66);
     border-radius: 10px;
@@ -198,6 +218,7 @@
     font-size: 20px;
     cursor: pointer;
     text-decoration: none;
+    z-index: 10000;
 }
 
 .enlaceSlider:hover {
@@ -262,9 +283,8 @@
     height: 500px;
     position: absolute;
     margin-left: 25px;
-    margin-top: 750px;
+    margin-top: 1000px;
     z-index: 1;
-    background-color: blue;
 }
 
 #contenedorGif img {
@@ -278,7 +298,7 @@
     width: 100%;
     height: 130px;
     position: absolute;
-    margin-top: 1500px;
+    margin-top: 2100px;
     background-color: var(--color-marron);
 }
 /*FIN CONTENEDOR PIE*/
@@ -556,27 +576,3798 @@
         margin-left: 10px;
     }
 
+@media only screen and (max-width: 1600px) and (min-width: 1501px) {
+    #cuerpoIndex {
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+    }
+    
+    #cuerpoAdminApp {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    /*AQUÍ COMIENZA LA PARTE DE LA WEB CLIENTE*/
+    /*AQUÍ COMIENZA LA CABECERA WEB*/
+    #contenedorCabecera {
+        width: 100%;
+        height: 200px;
+        position: fixed;
+        z-index: 10000;
+    }
+    
+    #contenedorCabecera-Sup {
+        width: 100%;
+        height: 150px;
+        background-color: white;
+        z-index: 9999;
+    }
+    
+    #contenedorCabecera-Menu {
+        width: 100%;
+        height: 50px;
+        display: table;
+        z-index: 9997;
+        background-color: white;
+        margin-top: 0px!important;
+    }
+    
+    #contenedorCabecera-Menu a{
+        text-decoration: none;
+        color: var(--color-verdeOscuro);
+        line-height: 30px;
+    }
+    
+    .lista {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .componente-lista {
+        display: inline-block;
+        padding: 0 70px;
+        width: 200px;
+        height: 30px;
+        visibility: visible;
+    }
+    
+    .componente-lista:hover {
+        background-color: var(--color-marron);
+        color: white;
+    }
+    
+    #logotipoCabecera {
+        max-width: 450px;
+        height: 100%;
+    }
+    
+    #logotipo {
+        width: 90%;
+        height: auto;
+        margin: 15px 15px;
+    }
+    
+    #iconoAdmin {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-left: 85%;
+        margin-top: -150px;
+    }
+    
+    #icono {
+        width: 10%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-Admin {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 63px;
+        margin-left: 10px;
+    }
+    
+    .oculto {
+        visibility: hidden;
+    }
+    
+    #logotipoCabeceraMovil {
+        width: 100%;
+        height: 250px;
+        z-index: 9999;
+        background-color: white;
+        position: absolute;
+    }
+    #iconoAdminMovil {
+        width: 200px;
+        height: 150px;
+        z-index: 9990;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: -35px;
+        
+    }
+    
+    #iconoMovil {
+        width: 20%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-AdminMovil {
+        font-weight: bold;
+        margin-top: 90px;
+        position: absolute;
+        margin-left: 10px;
+        color: white;
+    }
+     
+    .sinDecoracion {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nivelInferior {
+        margin-top: 250px;
+        z-index: 9997;
+        position: absolute;
+    }
+    .nivelInferior2 {
+        margin-top: 250px;
+        z-index: 9998;
+        position: absolute;
+    }
+    
+    #icono1 {
+        visibility: visible;
+    }
+    
+    /*AQUÍ TERMINA LA CABECERA WEB*/
+    /*AQUÍ CONCLUYE LA PARTE DE LA WEB CLIENTE*/
+    
+    
+    /*AQUÍ COMIENZA EL SLIDER DEL INDEX*/
+    #imgN1 {
+        content:url("../images/fresas2.jpg");
+        width: 100%;
+        height: 700px;
+    }
+    
+    #imgN2 {
+        content:url("../images/lechuga2.jpg");
+        width: 100%;
+        height: 700px;
+        margin-top: -246px;
+    }
+    
+    #imgN3 {
+        content:url("../images/mano2.jpg");
+        width: 100%;
+        height: 700px;
+        margin-top: -246px;
+    }
+    
+    #contenedorSlider {
+        width: 95%;
+        height: 700px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 230px;
+        z-index: 1;
+    }
+    
+    #slider {
+        width: 100%;
+        height: 700px;
+    }
+    
+    .enlaceSlider {
+        position: absolute;
+        width: 500px;
+        height: 50px;
+        margin-top: -70px;
+        margin-left: 600px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.66);
+        border-radius: 10px;
+        line-height: 50px;
+        font-weight: bolder;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        z-index: 10000;
+    }
+    
+    .enlaceSlider:hover {
+        background: rgba(0, 0, 0, 0.66);
+        color: white;
+    }
+    
+    #barraSlider {
+        width: 100%;
+        height: 50px;
+        display: table;
+        text-align: center;
+    }
+    
+    #barraSlider li {
+        display: inline-block;
+    }
+    
+    #componentesBarraSlider {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .trianguloIzquierdo {
+        width: 12px;
+        height: auto;
+    }
+    
+    .circulo {
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: var(--color-amarillo);
+        border: 0.5px solid var(--color-verdeOscuro);
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+    
+    .trianguloDerecho {
+        width: 12px;
+        height: auto;
+        transform: rotate(180deg);
+        margin-left: 10px;
+    }
+    
+    #slider li {
+        display: inline-block;
+    }
+    
+    .imgSlider {
+        width: 100%;
+        height: 454px;
+    }
+    
+    /*AQUÍ TERMINA EL SLIDER DEL INDEX*/
+    
+    /*CONTENEDOR GIF*/
+    #contenedorGif {
+        width: 95%;
+        height: 500px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 1000px;
+        z-index: 1;
+    }
+    
+    #contenedorGif img {
+        width: 100%;
+        height: auto;
+    }
+    /*FIN CONTENEDOR GIF*/
+    
+    /*CONTENEDOR PIE*/
+    #contenedorPie {
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        margin-top: 2100px;
+        background-color: var(--color-marron);
+    }
+    /*FIN CONTENEDOR PIE*/
+    
+    /*VENTANA MODAL INICIO SESION*/
+    #login {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .modal-contenido{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+      }
+      .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+      }
+      #login:target{
+        opacity:1;
+        pointer-events:auto;
+      }
+    
+      .etiqueta {
+          width: 100px;
+          display: inline-block;
+          color: var(--color-verdeOscuro);
+          font-weight: bold;
+      }
+    
+      #etiquetaModal {
+          font-weight: bold;
+          color: var(--color-verdeOscuro);
+      }
+    
+      .campo {
+        width: 200px;
+        height: 30px;
+        display: inline-block;
+        background: #FFFFFF;
+        border: 1px solid var(--color-verdeOscuro);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+    
+    .separacion2 {
+        margin-top: 20px;
+    }
+    
+    #cCierreModal {
+        width: 34px;
+        height: 34px;
+        background-color: var(--color-verdeOscuro);
+        display: table;
+        margin-top: -11px;
+        margin-left: 295px;
+    }
+    
+    #cierreModal{
+        display: table-cell;
+        text-decoration: none;
+        color: var(--color-amarillo);
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    
+    #separacionModal {
+        border: 1px solid var(--color-verdeOscuro);
+        background-color: var(--color-verdeOscuro);
+    }
+    
+    .boton {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin: 30px 80px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    .boton:hover {
+        background: var(--color-marron);
+    }
+    
+    #mensajeErrorInicioSesion {
+        color: red;
+        font-weight: bold;
+        line-height: 5px;
+        margin-left: 85px;
+        position: absolute;
+    }
+    
+    /*FIN VENTANA MODAL INICIO SESION*/
+    .modal-contenido2{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+      }
+    #modalUser {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #modalUser:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    
+    #modalAdmin {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #modalAdmin:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    
+    .modal2{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+      }
+    .opcionUsuario {
+        color: var(--color-verdeOscuro);
+        font-weight: bolder;
+        font-size: 15px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 20px;
+    }
+    /*FIN MODAL USUARIO*/
+    /*INICIO DEL MENÚ*/
+    #menu {
+        height: 100%;
+    }
+    
+    #menuAdmin {
+        height: 100%;
+        width: 100px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 9999;
+    }
+    
+    .cList {
+        width: 100%;
+        height: 50px;
+        margin-top: 43px;
+    }
+    
+    .cListImg {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .eImg {
+        height: 100%;
+        width: auto;
+    }
+    
+    #menuAdmin-Submenu {
+        height: 100%;
+        width: 300px;
+        margin-left: -200px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 1;
+    }   
+    
+    .tList {
+        width: 60%;
+        height: 50px;
+        margin-top: 43px;
+        margin-left: 100px;
+        font-weight: bold;
+    }
+    
+    .tList span {
+        line-height: 50px;
+        color: white;
+    }
+    
+    .tList a {
+        text-decoration: none;
+    }
+    
+    
+    /*FINAL DEL MENU*/
+    
+    #iconoBarras {
+        visibility: hidden;
+    }
+    
+    #iconoBarras2 {
+        visibility: hidden;
+    }
+    .separador {
+        display: none;
+    }
+    
+    #iconoUsuario {
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            margin-left: 85%;
+            margin-top: -1300px;
+            z-index: 3;
+    }
+    
+        #cCierreModalAdmin {
+            width: 34px;
+            height: 34px;
+            background-color: var(--color-verdeOscuro);
+            display: table;
+            margin-top: -11px;
+            margin-left: 295px;
+        }
+    
+        #cierreModalAdmin{
+            display: table-cell;
+            text-decoration: none;
+            color: var(--color-amarillo);
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+    
+        #icono5 {
+            width: 10%;
+            height: auto;
+            transform: rotate(17.26deg);
+            margin-top: 50px;
+        }
+        
+        #span-Admin2 {
+            color: var(--color-marron);
+            font-weight: bold;
+            position: absolute;
+            margin-top: 63px;
+            margin-left: 10px;
+        }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1401px) { 
+    #cuerpoIndex {
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+    }
+    
+    #cuerpoAdminApp {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    /*AQUÍ COMIENZA LA PARTE DE LA WEB CLIENTE*/
+    /*AQUÍ COMIENZA LA CABECERA WEB*/
+    #contenedorCabecera {
+        width: 100%;
+        height: 200px;
+        position: fixed;
+        z-index: 10000;
+    }
+    
+    #contenedorCabecera-Sup {
+        width: 100%;
+        height: 150px;
+        background-color: white;
+        z-index: 9999;
+    }
+    
+    #contenedorCabecera-Menu {
+        width: 100%;
+        height: 50px;
+        display: table;
+        z-index: 9997;
+        background-color: white;
+        margin-top: 0px!important;
+    }
+    
+    #contenedorCabecera-Menu a{
+        text-decoration: none;
+        color: var(--color-verdeOscuro);
+        line-height: 30px;
+    }
+    
+    .lista {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .componente-lista {
+        display: inline-block;
+        padding: 0 10px;
+        width: 200px;
+        height: 30px;
+        visibility: visible;
+    }
+    
+    .componente-lista:hover {
+        background-color: var(--color-marron);
+        color: white;
+    }
+    
+    #logotipoCabecera {
+        max-width: 450px;
+        height: 100%;
+    }
+    
+    #logotipo {
+        width: 90%;
+        height: auto;
+        margin: 15px 15px;
+    }
+    
+    #iconoAdmin {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-left: 85%;
+        margin-top: -150px;
+    }
+    
+    #icono {
+        width: 10%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-Admin {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 63px;
+        margin-left: 10px;
+    }
+    
+    .oculto {
+        visibility: hidden;
+    }
+    
+    #logotipoCabeceraMovil {
+        width: 100%;
+        height: 250px;
+        z-index: 9999;
+        background-color: white;
+        position: absolute;
+    }
+    #iconoAdminMovil {
+        width: 200px;
+        height: 150px;
+        z-index: 9990;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: -35px;
+        
+    }
+    
+    #iconoMovil {
+        width: 20%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-AdminMovil {
+        font-weight: bold;
+        margin-top: 90px;
+        position: absolute;
+        margin-left: 10px;
+        color: white;
+    }
+     
+    .sinDecoracion {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nivelInferior {
+        margin-top: 250px;
+        z-index: 9997;
+        position: absolute;
+    }
+    .nivelInferior2 {
+        margin-top: 250px;
+        z-index: 9998;
+        position: absolute;
+    }
+    
+    #icono1 {
+        visibility: visible;
+    }
+    
+    /*AQUÍ TERMINA LA CABECERA WEB*/
+    /*AQUÍ CONCLUYE LA PARTE DE LA WEB CLIENTE*/
+    
+    
+    /*AQUÍ COMIENZA EL SLIDER DEL INDEX*/
+
+    #imgN1 {
+        content:url("../images/fresas.jpg")!important;
+        width: 100%;
+        height: 454px;
+    }
+
+    #imgN2 {
+        content:url("../images/lechuga.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0px;
+    }
+    
+    #imgN3 {
+        content:url("../images/mano.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0;
+    }
+
+    #contenedorSlider {
+        width: 95%;
+        height: 500px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 230px;
+        z-index: 1;
+    }
+    
+    #slider {
+        width: 100%;
+        height: 450px;
+    }
+    
+    .enlaceSlider {
+        position: absolute;
+        width: 500px;
+        height: 50px;
+        margin-top: -70px;
+        margin-left: 350px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.66);
+        border-radius: 10px;
+        line-height: 50px;
+        font-weight: bolder;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .enlaceSlider:hover {
+        background: rgba(0, 0, 0, 0.66);
+        color: white;
+    }
+    
+    #barraSlider {
+        width: 100%;
+        height: 50px;
+        display: table;
+        text-align: center;
+    }
+    
+    #barraSlider li {
+        display: inline-block;
+    }
+    
+    #componentesBarraSlider {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .trianguloIzquierdo {
+        width: 12px;
+        height: auto;
+    }
+    
+    .circulo {
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: var(--color-amarillo);
+        border: 0.5px solid var(--color-verdeOscuro);
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+    
+    .trianguloDerecho {
+        width: 12px;
+        height: auto;
+        transform: rotate(180deg);
+        margin-left: 10px;
+    }
+    
+    #slider li {
+        display: inline-block;
+    }
+    
+    .imgSlider {
+        width: 100%;
+        height: 454px;
+    }
+    
+    /*AQUÍ TERMINA EL SLIDER DEL INDEX*/
+    
+    /*CONTENEDOR GIF*/
+    #contenedorGif {
+        width: 95%;
+        height: 500px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 750px;
+        z-index: 1;
+    }
+    
+    #contenedorGif img {
+        width: 100%;
+        height: auto;
+    }
+    /*FIN CONTENEDOR GIF*/
+    
+    /*CONTENEDOR PIE*/
+    #contenedorPie {
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        margin-top: 1700px;
+        background-color: var(--color-marron);
+    }
+    /*FIN CONTENEDOR PIE*/
+    
+    /*VENTANA MODAL INICIO SESION*/
+    #login {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .modal-contenido{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+      }
+      .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+      }
+      #login:target{
+        opacity:1;
+        pointer-events:auto;
+      }
+    
+      .etiqueta {
+          width: 100px;
+          display: inline-block;
+          color: var(--color-verdeOscuro);
+          font-weight: bold;
+      }
+    
+      #etiquetaModal {
+          font-weight: bold;
+          color: var(--color-verdeOscuro);
+      }
+    
+      .campo {
+        width: 200px;
+        height: 30px;
+        display: inline-block;
+        background: #FFFFFF;
+        border: 1px solid var(--color-verdeOscuro);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+    
+    .separacion2 {
+        margin-top: 20px;
+    }
+    
+    #cCierreModal {
+        width: 34px;
+        height: 34px;
+        background-color: var(--color-verdeOscuro);
+        display: table;
+        margin-top: -11px;
+        margin-left: 295px;
+    }
+    
+    #cierreModal{
+        display: table-cell;
+        text-decoration: none;
+        color: var(--color-amarillo);
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    
+    #separacionModal {
+        border: 1px solid var(--color-verdeOscuro);
+        background-color: var(--color-verdeOscuro);
+    }
+    
+    .boton {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin: 30px 80px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    .boton:hover {
+        background: var(--color-marron);
+    }
+    
+    #mensajeErrorInicioSesion {
+        color: red;
+        font-weight: bold;
+        line-height: 5px;
+        margin-left: 85px;
+        position: absolute;
+    }
+    
+    /*FIN VENTANA MODAL INICIO SESION*/
+    .modal-contenido2{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+      }
+    #modalUser {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #modalUser:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    
+    #modalAdmin {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #modalAdmin:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    
+    .modal2{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+      }
+    .opcionUsuario {
+        color: var(--color-verdeOscuro);
+        font-weight: bolder;
+        font-size: 15px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 20px;
+    }
+    /*FIN MODAL USUARIO*/
+    /*INICIO DEL MENÚ*/
+    #menu {
+        height: 100%;
+    }
+    
+    #menuAdmin {
+        height: 100%;
+        width: 100px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 9999;
+    }
+    
+    .cList {
+        width: 100%;
+        height: 50px;
+        margin-top: 43px;
+    }
+    
+    .cListImg {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .eImg {
+        height: 100%;
+        width: auto;
+    }
+    
+    #menuAdmin-Submenu {
+        height: 100%;
+        width: 300px;
+        margin-left: -200px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 1;
+    }   
+    
+    .tList {
+        width: 60%;
+        height: 50px;
+        margin-top: 43px;
+        margin-left: 100px;
+        font-weight: bold;
+    }
+    
+    .tList span {
+        line-height: 50px;
+        color: white;
+    }
+    
+    .tList a {
+        text-decoration: none;
+    }
+    
+    
+    /*FINAL DEL MENU*/
+    
+    #iconoBarras {
+        visibility: hidden;
+    }
+    
+    #iconoBarras2 {
+        visibility: hidden;
+    }
+    .separador {
+        display: none;
+    }
+    
+    #iconoUsuario {
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            margin-left: 85%;
+            margin-top: -1300px;
+            z-index: 3;
+    }
+    
+        #cCierreModalAdmin {
+            width: 34px;
+            height: 34px;
+            background-color: var(--color-verdeOscuro);
+            display: table;
+            margin-top: -11px;
+            margin-left: 295px;
+        }
+    
+        #cierreModalAdmin{
+            display: table-cell;
+            text-decoration: none;
+            color: var(--color-amarillo);
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+    
+        #icono5 {
+            width: 10%;
+            height: auto;
+            transform: rotate(17.26deg);
+            margin-top: 50px;
+        }
+        
+        #span-Admin2 {
+            color: var(--color-marron);
+            font-weight: bold;
+            position: absolute;
+            margin-top: 63px;
+            margin-left: 10px;
+        }
+    
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1301px) { 
+    #cuerpoIndex {
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+    }
+    
+    #cuerpoAdminApp {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    /*AQUÍ COMIENZA LA PARTE DE LA WEB CLIENTE*/
+    /*AQUÍ COMIENZA LA CABECERA WEB*/
+    #contenedorCabecera {
+        width: 100%;
+        height: 200px;
+        position: fixed;
+        z-index: 10000;
+    }
+    
+    #contenedorCabecera-Sup {
+        width: 100%;
+        height: 150px;
+        background-color: white;
+        z-index: 9999;
+    }
+    
+    #contenedorCabecera-Menu {
+        width: 100%;
+        height: 50px;
+        display: table;
+        z-index: 9997;
+        background-color: white;
+        margin-top: 0px!important;
+    }
+    
+    #contenedorCabecera-Menu a{
+        text-decoration: none;
+        color: var(--color-verdeOscuro);
+        line-height: 30px;
+    }
+    
+    .lista {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .componente-lista {
+        display: inline-block;
+        padding: 0 10px;
+        width: 200px;
+        height: 30px;
+        visibility: visible;
+    }
+    
+    .componente-lista:hover {
+        background-color: var(--color-marron);
+        color: white;
+    }
+    
+    #logotipoCabecera {
+        max-width: 450px;
+        height: 100%;
+    }
+    
+    #logotipo {
+        width: 90%;
+        height: auto;
+        margin: 15px 15px;
+    }
+    
+    #iconoAdmin {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-left: 85%;
+        margin-top: -150px;
+    }
+    
+    #icono {
+        width: 10%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-Admin {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 63px;
+        margin-left: 10px;
+    }
+    
+    .oculto {
+        visibility: hidden;
+    }
+    
+    #logotipoCabeceraMovil {
+        width: 100%;
+        height: 250px;
+        z-index: 9999;
+        background-color: white;
+        position: absolute;
+    }
+    #iconoAdminMovil {
+        width: 200px;
+        height: 150px;
+        z-index: 9990;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: -35px;
+        
+    }
+    
+    #iconoMovil {
+        width: 20%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-AdminMovil {
+        font-weight: bold;
+        margin-top: 90px;
+        position: absolute;
+        margin-left: 10px;
+        color: white;
+    }
+     
+    .sinDecoracion {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nivelInferior {
+        margin-top: 250px;
+        z-index: 9997;
+        position: absolute;
+    }
+    .nivelInferior2 {
+        margin-top: 250px;
+        z-index: 9998;
+        position: absolute;
+    }
+    
+    #icono1 {
+        visibility: visible;
+    }
+    
+    /*AQUÍ TERMINA LA CABECERA WEB*/
+    /*AQUÍ CONCLUYE LA PARTE DE LA WEB CLIENTE*/
+    
+    
+    /*AQUÍ COMIENZA EL SLIDER DEL INDEX*/
+
+    #imgN1 {
+        content:url("../images/fresas.jpg")!important;
+        width: 100%;
+        height: 454px;
+    }
+
+    #imgN2 {
+        content:url("../images/lechuga.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0px;
+    }
+    
+    #imgN3 {
+        content:url("../images/mano.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0;
+    }
+
+    #contenedorSlider {
+        width: 95%;
+        height: 500px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 230px;
+        z-index: 1;
+    }
+    
+    #slider {
+        width: 100%;
+        height: 450px;
+    }
+    
+    .enlaceSlider {
+        position: absolute;
+        width: 500px;
+        height: 50px;
+        margin-top: -70px;
+        margin-left: 350px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.66);
+        border-radius: 10px;
+        line-height: 50px;
+        font-weight: bolder;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .enlaceSlider:hover {
+        background: rgba(0, 0, 0, 0.66);
+        color: white;
+    }
+    
+    #barraSlider {
+        width: 100%;
+        height: 50px;
+        display: table;
+        text-align: center;
+    }
+    
+    #barraSlider li {
+        display: inline-block;
+    }
+    
+    #componentesBarraSlider {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .trianguloIzquierdo {
+        width: 12px;
+        height: auto;
+    }
+    
+    .circulo {
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: var(--color-amarillo);
+        border: 0.5px solid var(--color-verdeOscuro);
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+    
+    .trianguloDerecho {
+        width: 12px;
+        height: auto;
+        transform: rotate(180deg);
+        margin-left: 10px;
+    }
+    
+    #slider li {
+        display: inline-block;
+    }
+    
+    .imgSlider {
+        width: 100%;
+        height: 454px;
+    }
+    
+    /*AQUÍ TERMINA EL SLIDER DEL INDEX*/
+    
+    /*CONTENEDOR GIF*/
+    #contenedorGif {
+        width: 95%;
+        height: 500px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 750px;
+        z-index: 1;
+    }
+    
+    #contenedorGif img {
+        width: 100%;
+        height: auto;
+    }
+    /*FIN CONTENEDOR GIF*/
+    
+    /*CONTENEDOR PIE*/
+    #contenedorPie {
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        margin-top: 1500px;
+        background-color: var(--color-marron);
+    }
+    /*FIN CONTENEDOR PIE*/
+    
+    /*VENTANA MODAL INICIO SESION*/
+    #login {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .modal-contenido{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+      }
+      .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+      }
+      #login:target{
+        opacity:1;
+        pointer-events:auto;
+      }
+    
+      .etiqueta {
+          width: 100px;
+          display: inline-block;
+          color: var(--color-verdeOscuro);
+          font-weight: bold;
+      }
+    
+      #etiquetaModal {
+          font-weight: bold;
+          color: var(--color-verdeOscuro);
+      }
+    
+      .campo {
+        width: 200px;
+        height: 30px;
+        display: inline-block;
+        background: #FFFFFF;
+        border: 1px solid var(--color-verdeOscuro);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+    
+    .separacion2 {
+        margin-top: 20px;
+    }
+    
+    #cCierreModal {
+        width: 34px;
+        height: 34px;
+        background-color: var(--color-verdeOscuro);
+        display: table;
+        margin-top: -11px;
+        margin-left: 295px;
+    }
+    
+    #cierreModal{
+        display: table-cell;
+        text-decoration: none;
+        color: var(--color-amarillo);
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    
+    #separacionModal {
+        border: 1px solid var(--color-verdeOscuro);
+        background-color: var(--color-verdeOscuro);
+    }
+    
+    .boton {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin: 30px 80px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    .boton:hover {
+        background: var(--color-marron);
+    }
+    
+    #mensajeErrorInicioSesion {
+        color: red;
+        font-weight: bold;
+        line-height: 5px;
+        margin-left: 85px;
+        position: absolute;
+    }
+    
+    /*FIN VENTANA MODAL INICIO SESION*/
+    .modal-contenido2{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+      }
+    #modalUser {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #modalUser:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    
+    #modalAdmin {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #modalAdmin:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    
+    .modal2{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+      }
+    .opcionUsuario {
+        color: var(--color-verdeOscuro);
+        font-weight: bolder;
+        font-size: 15px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 20px;
+    }
+    /*FIN MODAL USUARIO*/
+    /*INICIO DEL MENÚ*/
+    #menu {
+        height: 100%;
+    }
+    
+    #menuAdmin {
+        height: 100%;
+        width: 100px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 9999;
+    }
+    
+    .cList {
+        width: 100%;
+        height: 50px;
+        margin-top: 43px;
+    }
+    
+    .cListImg {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .eImg {
+        height: 100%;
+        width: auto;
+    }
+    
+    #menuAdmin-Submenu {
+        height: 100%;
+        width: 300px;
+        margin-left: -200px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 1;
+    }   
+    
+    .tList {
+        width: 60%;
+        height: 50px;
+        margin-top: 43px;
+        margin-left: 100px;
+        font-weight: bold;
+    }
+    
+    .tList span {
+        line-height: 50px;
+        color: white;
+    }
+    
+    .tList a {
+        text-decoration: none;
+    }
+    
+    
+    /*FINAL DEL MENU*/
+    
+    #iconoBarras {
+        visibility: hidden;
+    }
+    
+    #iconoBarras2 {
+        visibility: hidden;
+    }
+    .separador {
+        display: none;
+    }
+    
+    #iconoUsuario {
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            margin-left: 85%;
+            margin-top: -1300px;
+            z-index: 3;
+    }
+    
+        #cCierreModalAdmin {
+            width: 34px;
+            height: 34px;
+            background-color: var(--color-verdeOscuro);
+            display: table;
+            margin-top: -11px;
+            margin-left: 295px;
+        }
+    
+        #cierreModalAdmin{
+            display: table-cell;
+            text-decoration: none;
+            color: var(--color-amarillo);
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+    
+        #icono5 {
+            width: 10%;
+            height: auto;
+            transform: rotate(17.26deg);
+            margin-top: 50px;
+        }
+        
+        #span-Admin2 {
+            color: var(--color-marron);
+            font-weight: bold;
+            position: absolute;
+            margin-top: 63px;
+            margin-left: 10px;
+        }
+    
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1034px) {  
+    #cuerpoIndex {
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+    }
+    
+    #cuerpoAdminApp {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    /*AQUÍ COMIENZA LA PARTE DE LA WEB CLIENTE*/
+    /*AQUÍ COMIENZA LA CABECERA WEB*/
+    #contenedorCabecera {
+        width: 100%;
+        height: 200px;
+        position: fixed;
+        z-index: 10000;
+    }
+    
+    #contenedorCabecera-Sup {
+        width: 100%;
+        height: 150px;
+        background-color: white;
+        z-index: 9999;
+    }
+    
+    #contenedorCabecera-Menu {
+        width: 100%;
+        height: 50px;
+        display: table;
+        z-index: 9997;
+        background-color: white;
+        margin-top: 0px!important;
+    }
+    
+    #contenedorCabecera-Menu a{
+        text-decoration: none;
+        color: var(--color-verdeOscuro);
+        line-height: 30px;
+    }
+    
+    .lista {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .componente-lista {
+        display: inline-block;
+        padding: 0 10px;
+        width: 200px;
+        height: 30px;
+        visibility: visible;
+    }
+    
+    .componente-lista:hover {
+        background-color: var(--color-marron);
+        color: white;
+    }
+    
+    #logotipoCabecera {
+        max-width: 450px;
+        height: 100%;
+    }
+    
+    #logotipo {
+        width: 90%;
+        height: auto;
+        margin: 15px 15px;
+    }
+    
+    #iconoAdmin {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-left: 85%;
+        margin-top: -150px;
+    }
+    
+    #icono {
+        width: 10%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-Admin {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 63px;
+        margin-left: 10px;
+    }
+    
+    .oculto {
+        visibility: hidden;
+    }
+    
+    #logotipoCabeceraMovil {
+        width: 100%;
+        height: 250px;
+        z-index: 9999;
+        background-color: white;
+        position: absolute;
+    }
+    #iconoAdminMovil {
+        width: 200px;
+        height: 150px;
+        z-index: 9990;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: -35px;
+        
+    }
+    
+    #iconoMovil {
+        width: 20%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-AdminMovil {
+        font-weight: bold;
+        margin-top: 90px;
+        position: absolute;
+        margin-left: 10px;
+        color: white;
+    }
+     
+    .sinDecoracion {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nivelInferior {
+        margin-top: 250px;
+        z-index: 9997;
+        position: absolute;
+    }
+    .nivelInferior2 {
+        margin-top: 250px;
+        z-index: 9998;
+        position: absolute;
+    }
+    
+    #icono1 {
+        visibility: visible;
+    }
+    
+    /*AQUÍ TERMINA LA CABECERA WEB*/
+    /*AQUÍ CONCLUYE LA PARTE DE LA WEB CLIENTE*/
+    
+    
+    /*AQUÍ COMIENZA EL SLIDER DEL INDEX*/
+
+    #imgN1 {
+        content:url("../images/fresas.jpg")!important;
+        width: 100%;
+        height: 454px;
+    }
+
+    #imgN2 {
+        content:url("../images/lechuga.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0px;
+    }
+    
+    #imgN3 {
+        content:url("../images/mano.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0;
+    }
+
+    #contenedorSlider {
+        width: 95%;
+        height: 500px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 230px;
+        z-index: 1;
+    }
+    
+    #slider {
+        width: 100%;
+        height: 450px;
+    }
+    
+    .enlaceSlider {
+        position: absolute;
+        width: 500px;
+        height: 50px;
+        margin-top: -70px;
+        margin-left: 350px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.66);
+        border-radius: 10px;
+        line-height: 50px;
+        font-weight: bolder;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .enlaceSlider:hover {
+        background: rgba(0, 0, 0, 0.66);
+        color: white;
+    }
+    
+    #barraSlider {
+        width: 100%;
+        height: 50px;
+        display: table;
+        text-align: center;
+    }
+    
+    #barraSlider li {
+        display: inline-block;
+    }
+    
+    #componentesBarraSlider {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .trianguloIzquierdo {
+        width: 12px;
+        height: auto;
+    }
+    
+    .circulo {
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: var(--color-amarillo);
+        border: 0.5px solid var(--color-verdeOscuro);
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+    
+    .trianguloDerecho {
+        width: 12px;
+        height: auto;
+        transform: rotate(180deg);
+        margin-left: 10px;
+    }
+    
+    #slider li {
+        display: inline-block;
+    }
+    
+    .imgSlider {
+        width: 100%;
+        height: 454px;
+    }
+    
+    /*AQUÍ TERMINA EL SLIDER DEL INDEX*/
+    
+    /*CONTENEDOR GIF*/
+    #contenedorGif {
+        width: 95%;
+        height: 500px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 750px;
+        z-index: 1;
+    }
+    
+    #contenedorGif img {
+        width: 100%;
+        height: auto;
+    }
+    /*FIN CONTENEDOR GIF*/
+    
+    /*CONTENEDOR PIE*/
+    #contenedorPie {
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        margin-top: 1500px;
+        background-color: var(--color-marron);
+    }
+    /*FIN CONTENEDOR PIE*/
+    
+    /*VENTANA MODAL INICIO SESION*/
+    #login {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .modal-contenido{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+      }
+      .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+      }
+      #login:target{
+        opacity:1;
+        pointer-events:auto;
+      }
+    
+      .etiqueta {
+          width: 100px;
+          display: inline-block;
+          color: var(--color-verdeOscuro);
+          font-weight: bold;
+      }
+    
+      #etiquetaModal {
+          font-weight: bold;
+          color: var(--color-verdeOscuro);
+      }
+    
+      .campo {
+        width: 200px;
+        height: 30px;
+        display: inline-block;
+        background: #FFFFFF;
+        border: 1px solid var(--color-verdeOscuro);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+    
+    .separacion2 {
+        margin-top: 20px;
+    }
+    
+    #cCierreModal {
+        width: 34px;
+        height: 34px;
+        background-color: var(--color-verdeOscuro);
+        display: table;
+        margin-top: -11px;
+        margin-left: 295px;
+    }
+    
+    #cierreModal{
+        display: table-cell;
+        text-decoration: none;
+        color: var(--color-amarillo);
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    
+    #separacionModal {
+        border: 1px solid var(--color-verdeOscuro);
+        background-color: var(--color-verdeOscuro);
+    }
+    
+    .boton {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin: 30px 80px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    .boton:hover {
+        background: var(--color-marron);
+    }
+    
+    #mensajeErrorInicioSesion {
+        color: red;
+        font-weight: bold;
+        line-height: 5px;
+        margin-left: 85px;
+        position: absolute;
+    }
+    
+    /*FIN VENTANA MODAL INICIO SESION*/
+    .modal-contenido2{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+      }
+    #modalUser {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #modalUser:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    
+    #modalAdmin {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #modalAdmin:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    
+    .modal2{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+      }
+    .opcionUsuario {
+        color: var(--color-verdeOscuro);
+        font-weight: bolder;
+        font-size: 15px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 20px;
+    }
+    /*FIN MODAL USUARIO*/
+    /*INICIO DEL MENÚ*/
+    #menu {
+        height: 100%;
+    }
+    
+    #menuAdmin {
+        height: 100%;
+        width: 100px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 9999;
+    }
+    
+    .cList {
+        width: 100%;
+        height: 50px;
+        margin-top: 43px;
+    }
+    
+    .cListImg {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .eImg {
+        height: 100%;
+        width: auto;
+    }
+    
+    #menuAdmin-Submenu {
+        height: 100%;
+        width: 300px;
+        margin-left: -200px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 1;
+    }   
+    
+    .tList {
+        width: 60%;
+        height: 50px;
+        margin-top: 43px;
+        margin-left: 100px;
+        font-weight: bold;
+    }
+    
+    .tList span {
+        line-height: 50px;
+        color: white;
+    }
+    
+    .tList a {
+        text-decoration: none;
+    }
+    
+    
+    /*FINAL DEL MENU*/
+    
+    #iconoBarras {
+        visibility: hidden;
+    }
+    
+    #iconoBarras2 {
+        visibility: hidden;
+    }
+    .separador {
+        display: none;
+    }
+    
+    #iconoUsuario {
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            margin-left: 85%;
+            margin-top: -1300px;
+            z-index: 3;
+    }
+    
+        #cCierreModalAdmin {
+            width: 34px;
+            height: 34px;
+            background-color: var(--color-verdeOscuro);
+            display: table;
+            margin-top: -11px;
+            margin-left: 295px;
+        }
+    
+        #cierreModalAdmin{
+            display: table-cell;
+            text-decoration: none;
+            color: var(--color-amarillo);
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+    
+        #icono5 {
+            width: 10%;
+            height: auto;
+            transform: rotate(17.26deg);
+            margin-top: 50px;
+        }
+        
+        #span-Admin2 {
+            color: var(--color-marron);
+            font-weight: bold;
+            position: absolute;
+            margin-top: 63px;
+            margin-left: 10px;
+        }
+    
+}
+
 @media only screen and (max-width: 1033px) and (min-width: 981px) {  
+    #cuerpoIndex {
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+    }
+    
+    #cuerpoAdminApp {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    /*AQUÍ COMIENZA LA PARTE DE LA WEB CLIENTE*/
+    /*AQUÍ COMIENZA LA CABECERA WEB*/
+    #contenedorCabecera {
+        width: 100%;
+        height: 200px;
+        position: fixed;
+        z-index: 10000;
+    }
+    
+    #contenedorCabecera-Sup {
+        width: 100%;
+        height: 150px;
+        background-color: white;
+        z-index: 9999;
+    }
+    
+    #contenedorCabecera-Menu {
+        width: 100%;
+        height: 50px;
+        display: table;
+        z-index: 9997;
+        background-color: white;
+        margin-top: 0px!important;
+    }
+    
+    #contenedorCabecera-Menu a{
+        text-decoration: none;
+        color: var(--color-verdeOscuro);
+        line-height: 30px;
+    }
+    
+    .lista {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .componente-lista {
+        display: inline-block;
+        padding: 0 10px;
+        width: 200px;
+        height: 30px;
+        visibility: visible;
+    }
+    
+    .componente-lista:hover {
+        background-color: var(--color-marron);
+        color: white;
+    }
+    
+    #logotipoCabecera {
+        max-width: 450px;
+        height: 100%;
+    }
+    
+    #logotipo {
+        width: 90%;
+        height: auto;
+        margin: 15px 15px;
+    }
+    
+    #iconoAdmin {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-left: 85%;
+        margin-top: -150px;
+    }
+    
+    #icono {
+        width: 10%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-Admin {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 63px;
+        margin-left: 10px;
+    }
+    
+    .oculto {
+        visibility: hidden;
+    }
+    
+    #logotipoCabeceraMovil {
+        width: 100%;
+        height: 250px;
+        z-index: 9999;
+        background-color: white;
+        position: absolute;
+    }
+    #iconoAdminMovil {
+        width: 200px;
+        height: 150px;
+        z-index: 9990;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: -35px;
+        
+    }
+    
+    #iconoMovil {
+        width: 20%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-AdminMovil {
+        font-weight: bold;
+        margin-top: 90px;
+        position: absolute;
+        margin-left: 10px;
+        color: white;
+    }
+     
+    .sinDecoracion {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nivelInferior {
+        margin-top: 250px;
+        z-index: 9997;
+        position: absolute;
+    }
+    .nivelInferior2 {
+        margin-top: 250px;
+        z-index: 9998;
+        position: absolute;
+    }
+    
+    #icono1 {
+        visibility: visible;
+    }
+    
+    /*AQUÍ TERMINA LA CABECERA WEB*/
+    /*AQUÍ CONCLUYE LA PARTE DE LA WEB CLIENTE*/
+    
+    
+    /*AQUÍ COMIENZA EL SLIDER DEL INDEX*/
+
+    #imgN1 {
+        content:url("../images/fresas.jpg")!important;
+        width: 100%;
+        height: 454px;
+    }
+
+    #imgN2 {
+        content:url("../images/lechuga.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0px;
+    }
+    
+    #imgN3 {
+        content:url("../images/mano.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0;
+    }
+
+    #contenedorSlider {
+        width: 95%;
+        height: 500px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 230px;
+        z-index: 1;
+    }
+    
+    #slider {
+        width: 100%;
+        height: 450px;
+    }
+    
+    .enlaceSlider {
+        position: absolute;
+        width: 500px;
+        height: 50px;
+        margin-top: -70px;
+        margin-left: 250px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.66);
+        border-radius: 10px;
+        line-height: 50px;
+        font-weight: bolder;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .enlaceSlider:hover {
+        background: rgba(0, 0, 0, 0.66);
+        color: white;
+    }
+    
+    #barraSlider {
+        width: 100%;
+        height: 50px;
+        display: table;
+        text-align: center;
+    }
+    
+    #barraSlider li {
+        display: inline-block;
+    }
+    
+    #componentesBarraSlider {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .trianguloIzquierdo {
+        width: 12px;
+        height: auto;
+    }
+    
+    .circulo {
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: var(--color-amarillo);
+        border: 0.5px solid var(--color-verdeOscuro);
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+    
+    .trianguloDerecho {
+        width: 12px;
+        height: auto;
+        transform: rotate(180deg);
+        margin-left: 10px;
+    }
+    
+    #slider li {
+        display: inline-block;
+    }
+    
+    .imgSlider {
+        width: 100%;
+        height: 454px;
+    }
+    
+    /*AQUÍ TERMINA EL SLIDER DEL INDEX*/
+    
+    /*CONTENEDOR GIF*/
+    #contenedorGif {
+        width: 95%;
+        height: 500px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 750px;
+        z-index: 1;
+    }
+    
+    #contenedorGif img {
+        width: 100%;
+        height: auto;
+    }
+    /*FIN CONTENEDOR GIF*/
+    
+    /*CONTENEDOR PIE*/
+    #contenedorPie {
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        margin-top: 1500px;
+        background-color: var(--color-marron);
+    }
+    /*FIN CONTENEDOR PIE*/
+    
+    /*VENTANA MODAL INICIO SESION*/
+    #login {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .modal-contenido{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+      }
+      .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+      }
+      #login:target{
+        opacity:1;
+        pointer-events:auto;
+      }
+    
+      .etiqueta {
+          width: 100px;
+          display: inline-block;
+          color: var(--color-verdeOscuro);
+          font-weight: bold;
+      }
+    
+      #etiquetaModal {
+          font-weight: bold;
+          color: var(--color-verdeOscuro);
+      }
+    
+      .campo {
+        width: 200px;
+        height: 30px;
+        display: inline-block;
+        background: #FFFFFF;
+        border: 1px solid var(--color-verdeOscuro);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+    
+    .separacion2 {
+        margin-top: 20px;
+    }
+    
+    #cCierreModal {
+        width: 34px;
+        height: 34px;
+        background-color: var(--color-verdeOscuro);
+        display: table;
+        margin-top: -11px;
+        margin-left: 295px;
+    }
+    
+    #cierreModal{
+        display: table-cell;
+        text-decoration: none;
+        color: var(--color-amarillo);
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    
+    #separacionModal {
+        border: 1px solid var(--color-verdeOscuro);
+        background-color: var(--color-verdeOscuro);
+    }
+    
+    .boton {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin: 30px 80px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    .boton:hover {
+        background: var(--color-marron);
+    }
+    
+    #mensajeErrorInicioSesion {
+        color: red;
+        font-weight: bold;
+        line-height: 5px;
+        margin-left: 85px;
+        position: absolute;
+    }
+    
+    /*FIN VENTANA MODAL INICIO SESION*/
+    .modal-contenido2{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+      }
+    #modalUser {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #modalUser:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    
+    #modalAdmin {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #modalAdmin:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    
+    .modal2{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+      }
+    .opcionUsuario {
+        color: var(--color-verdeOscuro);
+        font-weight: bolder;
+        font-size: 15px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 20px;
+    }
+    /*FIN MODAL USUARIO*/
+    /*INICIO DEL MENÚ*/
+    #menu {
+        height: 100%;
+    }
+    
+    #menuAdmin {
+        height: 100%;
+        width: 100px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 9999;
+    }
+    
+    .cList {
+        width: 100%;
+        height: 50px;
+        margin-top: 43px;
+    }
+    
+    .cListImg {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .eImg {
+        height: 100%;
+        width: auto;
+    }
+    
+    #menuAdmin-Submenu {
+        height: 100%;
+        width: 300px;
+        margin-left: -200px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 1;
+    }   
+    
+    .tList {
+        width: 60%;
+        height: 50px;
+        margin-top: 43px;
+        margin-left: 100px;
+        font-weight: bold;
+    }
+    
+    .tList span {
+        line-height: 50px;
+        color: white;
+    }
+    
+    .tList a {
+        text-decoration: none;
+    }
+    
+    
+    /*FINAL DEL MENU*/
+    
+    #iconoBarras {
+        visibility: hidden;
+    }
+    
+    #iconoBarras2 {
+        visibility: hidden;
+    }
+    .separador {
+        display: none;
+    }
+    
+    #iconoUsuario {
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            margin-left: 85%;
+            margin-top: -1300px;
+            z-index: 3;
+    }
+    
+        #cCierreModalAdmin {
+            width: 34px;
+            height: 34px;
+            background-color: var(--color-verdeOscuro);
+            display: table;
+            margin-top: -11px;
+            margin-left: 295px;
+        }
+    
+        #cierreModalAdmin{
+            display: table-cell;
+            text-decoration: none;
+            color: var(--color-amarillo);
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+    
+        #icono5 {
+            width: 10%;
+            height: auto;
+            transform: rotate(17.26deg);
+            margin-top: 50px;
+        }
+        
+        #span-Admin2 {
+            color: var(--color-marron);
+            font-weight: bold;
+            position: absolute;
+            margin-top: 63px;
+            margin-left: 10px;
+        }
 
 }    
 /* Para 960px */  
 @media only screen and (max-width: 980px) and (min-width: 821px) {  
+    #cuerpoIndex {
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+    }
     
+    #cuerpoAdminApp {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    /*AQUÍ COMIENZA LA PARTE DE LA WEB CLIENTE*/
+    /*AQUÍ COMIENZA LA CABECERA WEB*/
+    #contenedorCabecera {
+        width: 100%;
+        height: 200px;
+        position: fixed;
+        z-index: 10000;
+    }
+    
+    #contenedorCabecera-Sup {
+        width: 100%;
+        height: 150px;
+        background-color: white;
+        z-index: 9999;
+    }
+    
+    #contenedorCabecera-Menu {
+        width: 100%;
+        height: 50px;
+        display: table;
+        z-index: 9997;
+        background-color: white;
+        margin-top: 0px!important;
+    }
+    
+    #contenedorCabecera-Menu a{
+        text-decoration: none;
+        color: var(--color-verdeOscuro);
+        line-height: 30px;
+    }
+    
+    .lista {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .componente-lista {
+        display: inline-block;
+        padding: 0 10px;
+        width: 200px;
+        height: 30px;
+        visibility: visible;
+    }
+    
+    .componente-lista:hover {
+        background-color: var(--color-marron);
+        color: white;
+    }
+    
+    #logotipoCabecera {
+        max-width: 450px;
+        height: 100%;
+    }
+    
+    #logotipo {
+        width: 90%;
+        height: auto;
+        margin: 15px 15px;
+    }
+    
+    #iconoAdmin {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-left: 85%;
+        margin-top: -150px;
+    }
+    
+    #icono {
+        width: 10%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-Admin {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 63px;
+        margin-left: 10px;
+    }
+    
+    .oculto {
+        visibility: hidden;
+    }
+    
+    #logotipoCabeceraMovil {
+        width: 100%;
+        height: 250px;
+        z-index: 9999;
+        background-color: white;
+        position: absolute;
+    }
+    #iconoAdminMovil {
+        width: 200px;
+        height: 150px;
+        z-index: 9990;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: -35px;
+        
+    }
+    
+    #iconoMovil {
+        width: 20%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 50px;
+    }
+    
+    #span-AdminMovil {
+        font-weight: bold;
+        margin-top: 90px;
+        position: absolute;
+        margin-left: 10px;
+        color: white;
+    }
+     
+    .sinDecoracion {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nivelInferior {
+        margin-top: 250px;
+        z-index: 9997;
+        position: absolute;
+    }
+    .nivelInferior2 {
+        margin-top: 250px;
+        z-index: 9998;
+        position: absolute;
+    }
+    
+    #icono1 {
+        visibility: visible;
+    }
+    
+    /*AQUÍ TERMINA LA CABECERA WEB*/
+    /*AQUÍ CONCLUYE LA PARTE DE LA WEB CLIENTE*/
+    
+    
+    /*AQUÍ COMIENZA EL SLIDER DEL INDEX*/
+
+    #imgN1 {
+        content:url("../images/fresas.jpg")!important;
+        width: 100%;
+        height: 454px;
+    }
+
+    #imgN2 {
+        content:url("../images/lechuga.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0px;
+    }
+    
+    #imgN3 {
+        content:url("../images/mano.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0;
+    }
+
+    #contenedorSlider {
+        width: 95%;
+        height: 500px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 230px;
+        z-index: 1;
+    }
+    
+    #slider {
+        width: 100%;
+        height: 450px;
+    }
+    
+    .enlaceSlider {
+        position: absolute;
+        width: 500px;
+        height: 50px;
+        margin-top: -70px;
+        margin-left: 250px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.66);
+        border-radius: 10px;
+        line-height: 50px;
+        font-weight: bolder;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .enlaceSlider:hover {
+        background: rgba(0, 0, 0, 0.66);
+        color: white;
+    }
+    
+    #barraSlider {
+        width: 100%;
+        height: 50px;
+        display: table;
+        text-align: center;
+    }
+    
+    #barraSlider li {
+        display: inline-block;
+    }
+    
+    #componentesBarraSlider {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .trianguloIzquierdo {
+        width: 12px;
+        height: auto;
+    }
+    
+    .circulo {
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: var(--color-amarillo);
+        border: 0.5px solid var(--color-verdeOscuro);
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+    
+    .trianguloDerecho {
+        width: 12px;
+        height: auto;
+        transform: rotate(180deg);
+        margin-left: 10px;
+    }
+    
+    #slider li {
+        display: inline-block;
+    }
+    
+    .imgSlider {
+        width: 100%;
+        height: 454px;
+    }
+    
+    /*AQUÍ TERMINA EL SLIDER DEL INDEX*/
+    
+    /*CONTENEDOR GIF*/
+    #contenedorGif {
+        width: 95%;
+        height: 500px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 750px;
+        z-index: 1;
+    }
+    
+    #contenedorGif img {
+        width: 100%;
+        height: auto;
+    }
+    /*FIN CONTENEDOR GIF*/
+    
+    /*CONTENEDOR PIE*/
+    #contenedorPie {
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        margin-top: 1500px;
+        background-color: var(--color-marron);
+    }
+    /*FIN CONTENEDOR PIE*/
+    
+    /*VENTANA MODAL INICIO SESION*/
+    #login {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .modal-contenido{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+      }
+      .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+      }
+      #login:target{
+        opacity:1;
+        pointer-events:auto;
+      }
+    
+      .etiqueta {
+          width: 100px;
+          display: inline-block;
+          color: var(--color-verdeOscuro);
+          font-weight: bold;
+      }
+    
+      #etiquetaModal {
+          font-weight: bold;
+          color: var(--color-verdeOscuro);
+      }
+    
+      .campo {
+        width: 200px;
+        height: 30px;
+        display: inline-block;
+        background: #FFFFFF;
+        border: 1px solid var(--color-verdeOscuro);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+    
+    .separacion2 {
+        margin-top: 20px;
+    }
+    
+    #cCierreModal {
+        width: 34px;
+        height: 34px;
+        background-color: var(--color-verdeOscuro);
+        display: table;
+        margin-top: -11px;
+        margin-left: 295px;
+    }
+    
+    #cierreModal{
+        display: table-cell;
+        text-decoration: none;
+        color: var(--color-amarillo);
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    
+    #separacionModal {
+        border: 1px solid var(--color-verdeOscuro);
+        background-color: var(--color-verdeOscuro);
+    }
+    
+    .boton {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin: 30px 80px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    .boton:hover {
+        background: var(--color-marron);
+    }
+    
+    #mensajeErrorInicioSesion {
+        color: red;
+        font-weight: bold;
+        line-height: 5px;
+        margin-left: 85px;
+        position: absolute;
+    }
+    
+    /*FIN VENTANA MODAL INICIO SESION*/
+    .modal-contenido2{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+      }
+    #modalUser {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #modalUser:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    
+    #modalAdmin {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #modalAdmin:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    
+    .modal2{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+      }
+    .opcionUsuario {
+        color: var(--color-verdeOscuro);
+        font-weight: bolder;
+        font-size: 15px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 20px;
+    }
+    /*FIN MODAL USUARIO*/
+    /*INICIO DEL MENÚ*/
+    #menu {
+        height: 100%;
+    }
+    
+    #menuAdmin {
+        height: 100%;
+        width: 100px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 9999;
+    }
+    
+    .cList {
+        width: 100%;
+        height: 50px;
+        margin-top: 43px;
+    }
+    
+    .cListImg {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .eImg {
+        height: 100%;
+        width: auto;
+    }
+    
+    #menuAdmin-Submenu {
+        height: 100%;
+        width: 300px;
+        margin-left: -200px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 1;
+    }   
+    
+    .tList {
+        width: 60%;
+        height: 50px;
+        margin-top: 43px;
+        margin-left: 100px;
+        font-weight: bold;
+    }
+    
+    .tList span {
+        line-height: 50px;
+        color: white;
+    }
+    
+    .tList a {
+        text-decoration: none;
+    }
+    
+    
+    /*FINAL DEL MENU*/
+    
+    #iconoBarras {
+        visibility: hidden;
+    }
+    
+    #iconoBarras2 {
+        visibility: hidden;
+    }
+    .separador {
+        display: none;
+    }
+    
+    #iconoUsuario {
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            margin-left: 85%;
+            margin-top: -1300px;
+            z-index: 3;
+    }
+    
+        #cCierreModalAdmin {
+            width: 34px;
+            height: 34px;
+            background-color: var(--color-verdeOscuro);
+            display: table;
+            margin-top: -11px;
+            margin-left: 295px;
+        }
+    
+        #cierreModalAdmin{
+            display: table-cell;
+            text-decoration: none;
+            color: var(--color-amarillo);
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+    
+        #icono5 {
+            width: 10%;
+            height: auto;
+            transform: rotate(17.26deg);
+            margin-top: 50px;
+        }
+        
+        #span-Admin2 {
+            color: var(--color-marron);
+            font-weight: bold;
+            position: absolute;
+            margin-top: 63px;
+            margin-left: 10px;
+        }
+
 }  
 /* Para 800px */  
 @media only screen and (max-width: 820px) and (min-width: 621px) {  
+    #cuerpoIndex {
+        height: 2000px!important;
+    }
 
+    #logotipoCabecera {
+        width: 100%;
+        text-align: center;
+    }
+
+    #contenedorCabecera {
+        margin-top: -10px!important;
+        width: 100%;
+        position: relative;
+        z-index: 10000;
+    }
+
+    #cCabecera {
+        width: 100%;
+    }
+
+    #contenedorCabecera-Menu {
+        margin-top: -315px!important;
+    }
+
+    #contenedorCabecera-Sup {
+        z-index: 9999;
+        position: absolute;
+        height: 150px!important;
+    } 
+
+    #contenedorCabecera-Menu {
+        background-color: var(--color-marron);
+        height: 500px;
+        z-index: 2;
+        position: absolute;
+        margin-top: -320px!important;
+    }
+
+    .componente-lista {
+        width: auto;
+        display: block!important;
+        color: white;
+        text-align: left;
+        font-size: 18px!important;
+        padding: 0 10px!important;
+    }
+
+    .separacion1 {
+        margin-top: 270px;
+    }
+
+    .separacion {
+        margin-top: 20px;
+    }
+
+    #imgCamb2 {
+        width: 8%;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #iconoBarras {
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        margin-top: 140px;
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .separador {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #logotipoCabecera {
+        margin: auto;
+    }
+
+    #icono {
+        width: 20px;
+        margin-top: 50px;
+        margin-left: -30px;
+        position: absolute;
+    }
+
+    #iconoAdmin {
+        width: 120px;
+        margin-top: -60px;
+        margin-left: 73%;
+    }
+    
+    #icono5 {
+        width: 20px;
+        margin-top: 150px;
+        margin-left: -50px;
+        position: absolute;
+    }
+    
+    #contenedorSlider {
+        width: 95%!important;
+        margin-top: 30px;
+        margin-left: 25px;
+        overflow: hidden;
+    }
+
+    #imgN1 {
+        content:url("../images/fresas.jpg")!important;
+        width: 100%;
+        height: 454px;
+    }
+
+    #imgN2 {
+        content:url("../images/lechuga.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0px;
+    }
+    
+    #imgN3 {
+        content:url("../images/mano.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0;
+    }
+
+    #slider {
+        margin-top: -30px!important;
+    }
+
+    .enlaceSlider {
+        width: 300px;
+        margin-top: -70px;
+        margin-left: 250px;
+        font-size: 15px;
+    }
+    
+    .imgSlider {
+        width: 100%!important;
+        height: 454px;
+    }
+
+    .modal-contenido{
+        width: 250px;
+        height: 280px!important;
+        padding: 10px 20px;
+        margin: 5% auto;
+    }
+
+    .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+    }
+
+    .etiqueta {
+        width: 80px;
+        display: inline-block;
+        color: var(--color-verdeOscuro);
+        font-weight: bold;
+    }
+  
+    #etiquetaModal {
+        font-weight: bold;
+        color: var(--color-verdeOscuro);
+    }
+  
+    .campo {
+       width: 120px;
+       height: 30px;
+       display: inline-block;
+       background: #FFFFFF;
+       border: 1px solid var(--color-verdeOscuro);
+       box-sizing: border-box;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+       border-radius: 5px;
+    }
+  
+    .separacion2 {
+       margin-top: 20px;
+    }
+  
+    #cCierreModal {
+       width: 34px;
+       height: 34px;
+       background-color: var(--color-verdeOscuro);
+       display: table;
+       margin-top: -11px;
+       margin-left: 195px;
+   }
+  
+   #cierreModal{
+       display: table-cell;
+       text-decoration: none;
+       color: var(--color-amarillo);
+       vertical-align: middle;
+       text-align: center;
+       font-weight: bolder;
+       font-size: 30px;
+   }
+  
+    #separacionModal {
+        border: 1px solid var(--color-verdeOscuro);
+        background-color: var(--color-verdeOscuro);
+    }
+    
+    .boton {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin: 30px 30px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    .boton:hover {
+        background: var(--color-marron);
+    }
+  
+    #mensajeErrorInicioSesion {
+       color: red;
+       font-size: small;
+       font-weight: bold;
+       line-height: 2px;
+       margin-left: 10px;
+       position: absolute;
+    }
+
+    #menuAdmin {
+        height: 400px;
+        width: 50px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 9999;
+        margin-left: -50px;
+        margin-top: -20px;
+    }
+
+    
+    #menuAdmin-Submenu {
+        height: 400px;
+        width: 270px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 1;
+        margin-left: -270px;
+        margin-top: -20px;
+    }   
+
+    .cList {
+        width: 100%;
+        height: 20px;
+        margin-top: 43px;
+    }
+
+    .cListImg {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .eImg {
+        height: 90%;
+        width: auto;
+    }
+
+    .tList {
+        width: 60%;
+        height: 20px;
+        margin-top: 43px;
+        margin-left: 100px;
+        font-weight: bold;
+    }
+
+    .tList span {
+        line-height: 20px;
+        color: white;
+    }
+
+    #iconoUsuario {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        margin-left: 80%!important;
+        margin-top: 25px;
+    }
+
+    #icono5 {
+        width: 15%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    #span-Admin2 {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 40px;
+        font-size: 15px;
+    }
+  
+    .modal-contenido2{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 250px;
+        height: 230px;
+        padding: 10px 20px;
+        margin-top: 10%;
+        margin-left: 160px;
+    }
+
+    #cCierreModalAdmin {
+        width: 34px;
+        height: 34px;
+        background-color: var(--color-verdeOscuro);
+        display: table;
+        margin-top: -11px;
+        margin-left: 195px;
+    }
+    
+    #cierreModalAdmin{
+        display: table-cell;
+        text-decoration: none;
+        color: var(--color-amarillo);
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+
+    #contenedorGif {
+        width: 95%!important;
+        height: auto;
+        margin-left: 25px;
+        margin-top: 500px;
+        background-color: white;
+    }
+
+    #contenedorPie {
+        margin-top: 1000px!important;
+    }
+
+    #imgCamb3 {
+        width: 8%;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #iconoBarras2 {
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        margin-top: 20px;
+        visibility: visible;
+        z-index: 0;
+    }
 }
 /* Para 600px */  
 @media only screen and (max-width: 620px) and (min-width: 501px) {  
+    #cuerpoIndex {
+        height: 1200px!important;
+    }
 
-}   
-/* Para 480px */  
-@media only screen and (max-width: 500px) and (min-width: 341px) {  
-
-}  
-/* Para 320px */  
-@media only screen and (max-width: 340px) and (min-width: 5px)  {  
+    #contenedorPie {
+        margin-top: 920px!important;
+    }
 
     #cCabecera {
         width: 100%;
@@ -609,6 +4400,7 @@
         color: white;
         text-align: left;
         font-size: 18px!important;
+        padding: 0 10px!important;
     }
 
     .separacion1 {
@@ -667,6 +4459,1157 @@
         margin-top: 210px;
         margin-left: 8px;
         overflow: hidden;
+    }
+
+    #imgN1 {
+        content:url("../images/fresas.jpg")!important;
+        width: 100%;
+        height: 454px;
+    }
+
+    #imgN2 {
+        content:url("../images/lechuga.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0px;
+    }
+    
+    #imgN3 {
+        content:url("../images/mano.jpg");
+        width: 100%;
+        height: 454px;
+        margin-top: 0;
+    }
+
+    #slider {
+        margin-top: -30px!important;
+    }
+
+    .enlaceSlider {
+        width: 200px;
+        margin-top: -70px;
+        margin-left: 80px;
+        font-size: 10px;
+    }
+    
+    .imgSlider {
+        width: 800px;
+        height: 454px;
+        margin-left: -150px;
+    }
+
+    .modal-contenido{
+        width: 250px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+    }
+
+    .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+    }
+
+    .etiqueta {
+        width: 80px;
+        display: inline-block;
+        color: var(--color-verdeOscuro);
+        font-weight: bold;
+    }
+  
+    #etiquetaModal {
+        font-weight: bold;
+        color: var(--color-verdeOscuro);
+    }
+  
+    .campo {
+       width: 120px;
+       height: 30px;
+       display: inline-block;
+       background: #FFFFFF;
+       border: 1px solid var(--color-verdeOscuro);
+       box-sizing: border-box;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+       border-radius: 5px;
+    }
+  
+    .separacion2 {
+       margin-top: 20px;
+    }
+  
+    #cCierreModal {
+       width: 34px;
+       height: 34px;
+       background-color: var(--color-verdeOscuro);
+       display: table;
+       margin-top: -11px;
+       margin-left: 195px;
+   }
+  
+   #cierreModal{
+       display: table-cell;
+       text-decoration: none;
+       color: var(--color-amarillo);
+       vertical-align: middle;
+       text-align: center;
+       font-weight: bolder;
+       font-size: 30px;
+   }
+  
+    #separacionModal {
+        border: 1px solid var(--color-verdeOscuro);
+        background-color: var(--color-verdeOscuro);
+    }
+    
+    .boton {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin: 30px 30px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    .boton:hover {
+        background: var(--color-marron);
+    }
+  
+    #mensajeErrorInicioSesion {
+       color: red;
+       font-size: small;
+       font-weight: bold;
+       line-height: 5px;
+       margin-left: 10px;
+       position: absolute;
+    }
+
+    #menuAdmin {
+        height: 400px;
+        width: 50px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 9999;
+        margin-left: -50px;
+    }
+
+    
+    #menuAdmin-Submenu {
+        height: 400px;
+        width: 270px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 1;
+        margin-left: -270px;
+    }   
+
+    .cList {
+        width: 100%;
+        height: 20px;
+        margin-top: 43px;
+    }
+
+    .cListImg {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .eImg {
+        height: 90%;
+        width: auto;
+    }
+
+    .tList {
+        width: 60%;
+        height: 20px;
+        margin-top: 43px;
+        margin-left: 100px;
+        font-weight: bold;
+    }
+
+    .tList span {
+        line-height: 20px;
+        color: white;
+    }
+
+    #iconoUsuario {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        margin-left: 190px!important;
+        margin-top: 20px;
+        z-index: 0;
+    }
+
+    #icono5 {
+        width: 15%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    #span-Admin2 {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 40px;
+        font-size: 15px;
+    }
+  
+    .modal-contenido2{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 250px;
+        height: 230px;
+        padding: 10px 20px;
+        margin-top: 20%;
+        margin-left: 50px;
+    }
+
+    #cCierreModalAdmin {
+        width: 34px;
+        height: 34px;
+        background-color: var(--color-verdeOscuro);
+        display: table;
+        margin-top: -11px;
+        margin-left: 195px;
+    }
+    
+    #cierreModalAdmin{
+        display: table-cell;
+        text-decoration: none;
+        color: var(--color-amarillo);
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+
+    #contenedorGif {
+        height: auto;
+        margin-left: 8px;
+        margin-top: 700px;
+        background-color: white;
+    }
+
+    #contenedorPie {
+        margin-top: 900px;
+    }
+
+    #imgCamb3 {
+        width: 8%;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #iconoBarras2 {
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        margin-top: 20px;
+        visibility: visible;
+        z-index: 0;
+    }
+}   
+/* Para 480px */  
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
+    #cuerpoIndex {
+        height: 1200px!important;
+    }
+
+    #contenedorPie {
+        margin-top: 920px!important;
+    }
+
+    #cCabecera {
+        width: 100%;
+    }
+
+    #contenedorCabecera-Sup {
+        height: 150px!important;
+    }
+
+    #contenedorCabecera-Menu {
+        margin-top: -315px!important;
+    }
+
+    #contenedorCabecera-Sup {
+        z-index: 9999;
+        position: absolute;
+    } 
+
+    #contenedorCabecera-Menu {
+        background-color: var(--color-marron);
+        height: 500px;
+        z-index: 1;
+        position: absolute;
+        margin-top: -350px!important;
+    }
+
+    .componente-lista {
+        width: auto;
+        display: block!important;
+        color: white;
+        text-align: left;
+        font-size: 18px!important;
+        padding: 0 10px!important;
+    }
+
+    .separacion1 {
+        margin-top: 270px;
+    }
+
+    .separacion {
+        margin-top: 20px;
+    }
+
+    #imgCamb2 {
+        width: 8%;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #iconoBarras {
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        margin-top: 140px;
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .separador {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #logotipoCabecera {
+        margin: auto;
+    }
+
+    #icono {
+        width: 20px;
+        margin-top: 50px;
+        margin-left: -30px;
+        position: absolute;
+    }
+
+    #iconoAdmin {
+        margin-top: -60px;
+        margin-left: 65%;
+    }
+    
+    #icono5 {
+        width: 20px;
+        margin-top: 150px;
+        margin-left: -50px;
+        position: absolute;
+    }
+    
+    #contenedorSlider {
+        margin-top: 210px;
+        margin-left: 8px;
+        overflow: hidden;
+    }
+
+    #imgN1 {
+        content:url("../images/fresas.jpg")!important;
+        width: 800px;
+        height: 454px;
+        margin-left: -150px;
+    }
+
+    #imgN2 {
+        content:url("../images/lechuga.jpg");
+        width: 800px;
+        height: 454px;
+        margin-left: -150px;
+        margin-top: 0px;
+    }
+    
+    #imgN3 {
+        content:url("../images/mano.jpg");
+        width: 800px;
+        height: 454px;
+        margin-left: -150px;
+        margin-top: 0;
+    }
+
+    #slider {
+        margin-top: -30px!important;
+    }
+
+    #barraSlider {
+        margin-top: -240px;
+    }
+
+    .enlaceSlider {
+        width: 200px;
+        margin-top: -70px;
+        margin-left: 80px;
+        font-size: 10px;
+    }
+    
+    .imgSlider {
+        width: 800px;
+        height: 454px;
+        margin-left: -150px;
+    }
+
+    .modal-contenido{
+        width: 250px;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 20% auto;
+    }
+
+    .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+    }
+
+    .etiqueta {
+        width: 80px;
+        display: inline-block;
+        color: var(--color-verdeOscuro);
+        font-weight: bold;
+    }
+  
+    #etiquetaModal {
+        font-weight: bold;
+        color: var(--color-verdeOscuro);
+    }
+  
+    .campo {
+       width: 120px;
+       height: 30px;
+       display: inline-block;
+       background: #FFFFFF;
+       border: 1px solid var(--color-verdeOscuro);
+       box-sizing: border-box;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+       border-radius: 5px;
+    }
+  
+    .separacion2 {
+       margin-top: 20px;
+    }
+  
+    #cCierreModal {
+       width: 34px;
+       height: 34px;
+       background-color: var(--color-verdeOscuro);
+       display: table;
+       margin-top: -11px;
+       margin-left: 195px;
+   }
+  
+   #cierreModal{
+       display: table-cell;
+       text-decoration: none;
+       color: var(--color-amarillo);
+       vertical-align: middle;
+       text-align: center;
+       font-weight: bolder;
+       font-size: 30px;
+   }
+  
+    #separacionModal {
+        border: 1px solid var(--color-verdeOscuro);
+        background-color: var(--color-verdeOscuro);
+    }
+    
+    .boton {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin: 30px 30px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    .boton:hover {
+        background: var(--color-marron);
+    }
+  
+    #mensajeErrorInicioSesion {
+       color: red;
+       font-size: small;
+       font-weight: bold;
+       line-height: 5px;
+       margin-left: 10px;
+       position: absolute;
+    }
+
+    #menuAdmin {
+        height: 400px;
+        width: 50px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 9999;
+        margin-left: -50px;
+    }
+
+    
+    #menuAdmin-Submenu {
+        height: 400px;
+        width: 270px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 1;
+        margin-left: -270px;
+    }   
+
+    .cList {
+        width: 100%;
+        height: 20px;
+        margin-top: 43px;
+    }
+
+    .cListImg {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .eImg {
+        height: 90%;
+        width: auto;
+    }
+
+    .tList {
+        width: 60%;
+        height: 20px;
+        margin-top: 43px;
+        margin-left: 100px;
+        font-weight: bold;
+    }
+
+    .tList span {
+        line-height: 20px;
+        color: white;
+    }
+
+    #iconoUsuario {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        margin-left: 190px!important;
+        margin-top: 20px;
+        z-index: 0;
+    }
+
+    #icono5 {
+        width: 15%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    #span-Admin2 {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 40px;
+        font-size: 15px;
+    }
+  
+    .modal-contenido2{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 250px;
+        height: 230px;
+        padding: 10px 20px;
+        margin-top: 20%;
+        margin-left: 50px;
+    }
+
+    #cCierreModalAdmin {
+        width: 34px;
+        height: 34px;
+        background-color: var(--color-verdeOscuro);
+        display: table;
+        margin-top: -11px;
+        margin-left: 195px;
+    }
+    
+    #cierreModalAdmin{
+        display: table-cell;
+        text-decoration: none;
+        color: var(--color-amarillo);
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+
+    #contenedorGif {
+        height: auto;
+        margin-left: 8px;
+        margin-top: 700px;
+        background-color: white;
+    }
+
+    #contenedorPie {
+        margin-top: 900px;
+    }
+
+    #imgCamb3 {
+        width: 8%;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #iconoBarras2 {
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        margin-top: 20px;
+        visibility: visible;
+        z-index: 0;
+    }
+}  
+
+@media only screen and (max-width: 700px) and (min-width: 601px) and (orientation : landscape) { 
+
+    #cuerpoIndex {
+        height: auto!important;
+    }
+    #logotipoCabecera {
+        width: 100%;
+        text-align: center;
+    }
+
+    #contenedorCabecera {
+        margin-top: -10px!important;
+        width: 100%;
+        position: relative;
+        z-index: 10000;
+    }
+
+    #cCabecera {
+        width: 100%;
+    }
+
+    #contenedorCabecera-Menu {
+        margin-top: -315px!important;
+    }
+
+    #contenedorCabecera-Sup {
+        z-index: 9999;
+        position: absolute;
+        height: 150px!important;
+    } 
+
+    #contenedorCabecera-Menu {
+        background-color: var(--color-marron);
+        height: 500px;
+        z-index: 2;
+        position: absolute;
+        margin-top: -320px!important;
+    }
+
+    .componente-lista {
+        width: auto;
+        display: block!important;
+        color: white;
+        text-align: left;
+        font-size: 18px!important;
+        padding: 0 10px!important;
+    }
+
+    .separacion1 {
+        margin-top: 270px;
+    }
+
+    .separacion {
+        margin-top: 20px;
+    }
+
+    #imgCamb2 {
+        width: 8%;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #iconoBarras {
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        margin-top: 140px;
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .separador {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #logotipoCabecera {
+        margin: auto;
+    }
+
+    #icono {
+        width: 20px;
+        margin-top: 50px;
+        margin-left: -30px;
+        position: absolute;
+    }
+
+    #iconoAdmin {
+        width: 120px;
+        margin-top: -60px;
+        margin-left: 73%;
+    }
+    
+    #icono5 {
+        width: 20px;
+        margin-top: 150px;
+        margin-left: -50px;
+        position: absolute;
+    }
+    
+    #contenedorSlider {
+        width: 90%!important;
+        margin-top: 30px;
+        margin-left: 25px;
+        overflow: hidden;
+    }
+
+    #imgN1 {
+        content:url("../images/fresas.jpg")!important;
+        width: 800px;
+        height: 454px;
+        margin-left: 0px;
+    }
+
+    #imgN2 {
+        content:url("../images/lechuga.jpg");
+        width: 800px;
+        height: 454px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    
+    #imgN3 {
+        content:url("../images/mano.jpg");
+        width: 800px;
+        height: 454px;
+        margin-left: 0px;
+        margin-top: 0;
+    }
+
+    #barraSlider {
+        margin-top: -240px;
+    }
+
+    #slider {
+        margin-top: -30px!important;
+    }
+
+    .enlaceSlider {
+        width: 300px;
+        margin-top: -70px;
+        margin-left: 150px;
+        font-size: 15px;
+    }
+    
+    .imgSlider {
+        width: 800px;
+        height: 454px;
+        margin-left: -110px;
+    }
+
+    .modal-contenido{
+        width: 250px;
+        height: 280px!important;
+        padding: 10px 20px;
+        margin: 5% auto;
+    }
+
+    .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+        z-index: 10000;
+    }
+
+    .etiqueta {
+        width: 80px;
+        display: inline-block;
+        color: var(--color-verdeOscuro);
+        font-weight: bold;
+    }
+  
+    #etiquetaModal {
+        font-weight: bold;
+        color: var(--color-verdeOscuro);
+    }
+  
+    .campo {
+       width: 120px;
+       height: 30px;
+       display: inline-block;
+       background: #FFFFFF;
+       border: 1px solid var(--color-verdeOscuro);
+       box-sizing: border-box;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+       border-radius: 5px;
+    }
+  
+    .separacion2 {
+       margin-top: 20px;
+    }
+  
+    #cCierreModal {
+       width: 34px;
+       height: 34px;
+       background-color: var(--color-verdeOscuro);
+       display: table;
+       margin-top: -11px;
+       margin-left: 195px;
+   }
+  
+   #cierreModal{
+       display: table-cell;
+       text-decoration: none;
+       color: var(--color-amarillo);
+       vertical-align: middle;
+       text-align: center;
+       font-weight: bolder;
+       font-size: 30px;
+   }
+  
+    #separacionModal {
+        border: 1px solid var(--color-verdeOscuro);
+        background-color: var(--color-verdeOscuro);
+    }
+    
+    .boton {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin: 30px 30px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    .boton:hover {
+        background: var(--color-marron);
+    }
+  
+    #mensajeErrorInicioSesion {
+       color: red;
+       font-size: small;
+       font-weight: bold;
+       line-height: 2px;
+       margin-left: 10px;
+       position: absolute;
+    }
+
+    #menuAdmin {
+        height: 400px;
+        width: 50px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 9999;
+        margin-left: -50px;
+        margin-top: -20px;
+    }
+
+    
+    #menuAdmin-Submenu {
+        height: 400px;
+        width: 270px;
+        position: absolute;
+        background-color: var(--color-marron);
+        z-index: 1;
+        margin-left: -270px;
+        margin-top: -20px;
+    }   
+
+    .cList {
+        width: 100%;
+        height: 20px;
+        margin-top: 43px;
+    }
+
+    .cListImg {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .eImg {
+        height: 90%;
+        width: auto;
+    }
+
+    .tList {
+        width: 60%;
+        height: 20px;
+        margin-top: 43px;
+        margin-left: 100px;
+        font-weight: bold;
+    }
+
+    .tList span {
+        line-height: 20px;
+        color: white;
+    }
+
+    #iconoUsuario {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        margin-left: 80%!important;
+        margin-top: 25px;
+    }
+
+    #icono5 {
+        width: 15%;
+        height: auto;
+        transform: rotate(17.26deg);
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    #span-Admin2 {
+        color: var(--color-marron);
+        font-weight: bold;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 40px;
+        font-size: 15px;
+    }
+  
+    .modal-contenido2{
+        background: radial-gradient(50% 50% at 50% 50%, #E6EFD0 0%, #FFFFFF 100%);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+        width: 250px;
+        height: 230px;
+        padding: 10px 20px;
+        margin-top: 10%;
+        margin-left: 160px;
+    }
+
+    #cCierreModalAdmin {
+        width: 34px;
+        height: 34px;
+        background-color: var(--color-verdeOscuro);
+        display: table;
+        margin-top: -11px;
+        margin-left: 195px;
+    }
+    
+    #cierreModalAdmin{
+        display: table-cell;
+        text-decoration: none;
+        color: var(--color-amarillo);
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+
+    #contenedorGif {
+        width: 90%!important;
+        height: auto;
+        margin-left: 25px;
+        margin-top: 500px;
+        background-color: white;
+    }
+
+    #contenedorPie {
+        margin-top: 850px;
+    }
+
+    #imgCamb3 {
+        width: 8%;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #iconoBarras2 {
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        margin-top: 20px;
+        visibility: visible;
+        z-index: 0;
+    }
+}
+
+/* Para 320px */  
+@media only screen and (max-width: 340px) and (min-width: 5px)  {  
+
+    #cCabecera {
+        width: 100%;
+    }
+
+    #contenedorCabecera-Sup {
+        height: 150px!important;
+    }
+
+    #contenedorCabecera-Menu {
+        margin-top: -315px!important;
+    }
+
+    #contenedorCabecera-Sup {
+        z-index: 9999;
+        position: absolute;
+    } 
+
+    #contenedorCabecera-Menu {
+        background-color: var(--color-marron);
+        height: 500px;
+        z-index: 1;
+        position: absolute;
+        margin-top: -350px!important;
+    }
+
+    .componente-lista {
+        width: auto;
+        display: block!important;
+        color: white;
+        text-align: left;
+        font-size: 18px!important;
+        padding: 0 10px!important;
+    }
+
+    .separacion1 {
+        margin-top: 270px;
+    }
+
+    .separacion {
+        margin-top: 20px;
+    }
+
+    #imgCamb2 {
+        width: 8%;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #iconoBarras {
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        margin-top: 140px;
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .separador {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #logotipoCabecera {
+        margin: auto;
+    }
+
+    #icono {
+        width: 20px;
+        margin-top: 50px;
+        margin-left: -30px;
+        position: absolute;
+    }
+
+    #iconoAdmin {
+        margin-top: -60px;
+        margin-left: 65%;
+    }
+    
+    #icono5 {
+        width: 20px;
+        margin-top: 150px;
+        margin-left: -50px;
+        position: absolute;
+    }
+    
+    #contenedorSlider {
+        margin-top: 210px;
+        margin-left: 8px;
+        overflow: hidden;
+    }
+
+    #imgN1 {
+        content:url("../images/fresas.jpg")!important;
+        width: 800px;
+        height: 454px;
+        margin-left: -150px;
+    }
+
+    #imgN2 {
+        content:url("../images/lechuga.jpg");
+        width: 800px;
+        height: 454px;
+        margin-left: -150px;
+        margin-top: 0px;
+    }
+    
+    #imgN3 {
+        content:url("../images/mano.jpg");
+        width: 800px;
+        height: 454px;
+        margin-left: -150px;
+        margin-top: 0;
+    }
+
+    #barraSlider {
+        margin-top: -240px;
     }
 
     #slider {
@@ -958,6 +5901,7 @@
         color: white;
         text-align: left;
         font-size: 18px!important;
+        padding: 0 10px!important;
     }
 
     .separacion1 {
@@ -1019,6 +5963,33 @@
         overflow: hidden;
     }
 
+    #imgN1 {
+        content:url("../images/fresas.jpg")!important;
+        width: 800px;
+        height: 454px;
+        margin-left: -110px;
+    }
+
+    #imgN2 {
+        content:url("../images/lechuga.jpg");
+        width: 800px;
+        height: 454px;
+        margin-left: -110px;
+        margin-top: 0px;
+    }
+    
+    #imgN3 {
+        content:url("../images/mano.jpg");
+        width: 800px;
+        height: 454px;
+        margin-left: -110px;
+        margin-top: 0;
+    }
+    
+    #barraSlider {
+        margin-top: -240px;
+    }
+    
     #slider {
         margin-top: -30px!important;
     }
@@ -1026,7 +5997,7 @@
     .enlaceSlider {
         width: 300px;
         margin-top: -70px;
-        margin-left: 120px;
+        margin-left: 80px;
         font-size: 15px;
     }
     

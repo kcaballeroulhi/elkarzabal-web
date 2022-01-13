@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>AdminApp</title>
-            <link rel="stylesheet" href="styles/estilos.css">
-            <link rel="stylesheet" href="styles/addUser.css">
-            <script src="javascript/jquery-3.6.0.min.js"></script>
-            <script src="javascript/load.js"></script>
-            <script src="javascript/ventanasModales.js"></script>
-            <script src="javascript/leerCookies.js"></script>
-        </head>
-        <body id="cuerpoAdminApp">
-            <!--Navigation bar-->
-            <div id="menu"></div>
-            <div id="iconoUsuario"><a onclick="mostrarVentanaAdmin()" href="#modalAdmin"><img id="icono5" src="./images/zanahoria.svg"><span id="span-Admin2"></span></a></div>
-            <div id="ventanaModalAdmin"></div>
-            <div id="contenedorFormUser">
-                <script>
-                    const URL = "http://localhost:3000/";
-                    function createNewUser() {
-                        var name = document.getElementById("name").value;
-                        var lastname = document.getElementById("lastname").value;
-                        var email = document.getElementById("email").value;
-                        var phone = document.getElementById("phone").value;
-                        var password = document.getElementById("password").value;
-                        var role = document.getElementById("role").value;
-            
-                        $.ajax({
-                            method: "POST",
-                            url: URL + "api/register",
-                            data: JSON.stringify({
-                                "name": name,
-                                "lastname": lastname,
-                                "phone": phone,
-                                "email": email,
-                                "password": password,
-                                "roleId": parseInt(role)
-                            }),
-                            contentType: "application/json",
-                            success: function (data) {
-                                alert("Usuario " + data.name + " " + data.lastname + " añadido correctamente")
-                            },
-                            error: function (e) {
-                                console.log(e)
-                            }
-                        });
-                    }
-            
-            
-            
-                </script>
-                <form>
-                    <label class="" for="">Nombre</label>
-                    <input class="" name="name" type="text" id="name" /><br>
-            
-                    <label class="" for="">Apellidos</label>
-                    <input class="" name="lastname" type="text" id="lastname" /><br>
-            
-                    <label class="" for="">email</label>
-                    <input class="" name="email" type="text" id="email" /><br>
-            
-                    <label class="" for="">Teléfono</label>
-                    <input class="" name="phone" type="text" id="phone" /><br>
-            
-                    <label class="" for="">Password</label>
-                    <input class="" name="password" type="password" id="password" /><br>
+<!DOCTYPE html>
+<html>
 
-                    <label class="" for="">Tipo usuario</label>
-                    <select id="role">
-                        <option value="1">Administrador</option>
-                        <option value="2">Vendedor</option>
-                        <option value="3">Cliente</option>
-                    </select><br>
-            
-                    <input class="botonAddUser" type="button" value="añadir" onclick="createNewUser()">
-            
-                </form>
-            </div>
-            <script>
-                document.getElementById("span-Admin2").innerHTML = leerCookie( "user" );
-            </script>
-        </body>
-    </html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminApp</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="styles/addUser.css">
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <script src="javascript/load.js"></script>
+    <script src="javascript/ventanasModales.js"></script>
+    <script src="javascript/leerCookies.js"></script>
+    <script src="javascript/jshash-2.2/sha1.js" type="text/javascript"></script>
+</head>
+
+<body id="cuerpoAdminApp">
+    <!--Navigation bar-->
+    <div id="menu"></div>
+    <div id="iconoUsuario"><a onclick="mostrarVentanaAdmin()" href="#modalAdmin"><img id="icono5"
+                src="./images/zanahoria.svg"><span id="span-Admin2"></span></a></div>
+    <div id="ventanaModalAdmin"></div>
+    <div id="contenedorFormUser">
+        <script>
+            const URL = "http://localhost:3000/";
+            function createNewUser() {
+                var name = document.getElementById("name").value;
+                var lastname = document.getElementById("lastname").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("phone").value;
+                var password = document.getElementById("password").value;
+                var role = document.getElementById("role").value;
+                var encryptPass = hex_sha1(password)
+
+                $.ajax({
+                    method: "POST",
+                    url: URL + "api/register",
+                    data: JSON.stringify({
+                        "name": name,
+                        "lastname": lastname,
+                        "phone": phone,
+                        "email": email,
+                        "password": encryptPass,
+                        "roleId": parseInt(role)
+                    }),
+                    contentType: "application/json",
+                    success: function (data) {
+                        alert("Usuario " + data.name + " " + data.lastname + " añadido correctamente")
+                    },
+                    error: function (e) {
+                        console.log(e)
+                    }
+                });
+            }
+
+
+
+        </script>
+        <form>
+            <label class="" for="">Nombre</label>
+            <input class="" name="name" type="text" id="name" /><br>
+
+            <label class="" for="">Apellidos</label>
+            <input class="" name="lastname" type="text" id="lastname" /><br>
+
+            <label class="" for="">email</label>
+            <input class="" name="email" type="text" id="email" /><br>
+
+            <label class="" for="">Teléfono</label>
+            <input class="" name="phone" type="text" id="phone" /><br>
+
+            <label class="" for="">Password</label>
+            <input class="" name="password" type="password" id="password" /><br>
+
+            <label class="" for="">Tipo usuario</label>
+            <select id="role">
+                <option value="1">Administrador</option>
+                <option value="2">Vendedor</option>
+                <option value="3">Cliente</option>
+            </select><br>
+
+            <input class="botonAddUser" type="button" value="añadir" onclick="createNewUser()">
+
+        </form>
+    </div>
+    <script>
+        document.getElementById("span-Admin2").innerHTML = leerCookie("user");
+    </script>
+</body>
+
+</html>
