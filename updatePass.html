@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!DOCTYPE html>
-<html>
 
 <head>
     <meta charset="UTF-8">
@@ -25,8 +23,7 @@
     <div id="ventanaModalAdmin"></div>
     <div id="contenedorDeleteUser">
         <script>
-            var previousPass = "";
-            var nextPass = ""
+            var BBDDpass = ""
             const URL = "http://localhost:3000/api/user/";
             var id = "";
             $.ajax({
@@ -34,22 +31,31 @@
                 type: 'GET',
                 headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
                 success: function (result) {
+                    BBDDpass = result.password;
                     id = result.id;
-                    console.log(id);
-                    document.getElementById("name").value = result.name;
-                    document.getElementById("lastname").value = result.lastname;
-                    document.getElementById("password").value = result.password;
-                    previousPass = result.password
-                    document.getElementById("email").value = result.email;
-                    document.getElementById("phone").value = result.phone;
-                    document.getElementById("role").value = result.roleId;
                 },
                 error: function () {
                     alert("Revisa tu conexión");
                 }
             });
-
             function updateUser() {
+                var decriptLastPassword = document.getElementById("lastPassword").value;
+                var lastPassword = hex_sha1(decriptLastPassword)
+                var decriptNextPassword = document.getElementById("nextPassword").value;
+                var nextPassword = hex_sha1(decriptNextPassword)
+                var decriptRepeatPassword = document.getElementById("repeatPassword").value;
+                var repeatPassword = hex_sha1(decriptRepeatPassword)
+                if (lastPassword === BBDDpass) {
+                    if (nextPass === repeatPassword) {
+                        //cambiar contraseña
+                    } else {
+                        alert("las contraseñas no coinciden")
+                    }
+                } else {
+                    alert("La contraseña actual no es correcta")
+                }
+            }
+            /*function updateUser() {
                 var name = document.getElementById("name").value;
                 var lastname = document.getElementById("lastname").value;
                 var email = document.getElementById("email").value;
@@ -95,42 +101,20 @@
                         console.log(e)
                     }
                 });
-            }
+            }*/
 
         </script>
 
         <form id="formUPUser">
-            <label class="" for="">Nombre</label>
-            <input class="" name="name" type="text" id="name" />
 
-            <label class="separacionUpdate" for="">Apellidos</label>
-            <input class="" name="lastname" type="text" id="lastname" /><br>
+            <label class="" for="">Contraseña actual</label>
+            <input class="" name="password" type="password" id="lastPassword" /><br>
 
-            <label class="" for="">email</label>
-            <input class="" name="email" type="text" id="email" />
+            <label class="" for="">Contraseña nueva</label>
+            <input class="" name="password" type="password" id="newPassword" /><br>
 
-            <label class="separacionUpdate" for="">Teléfono</label>
-            <input class="" name="phone" type="text" id="phone" /><br>
-
-            <label class="" for="">Password</label>
-            <input class="" name="password" type="password" id="password" /><br>
-
-            <label class="" for="">Tipo usuario</label>
-            <select id="role">
-                <option value="1">Administrador</option>
-                <option value="2">Vendedor</option>
-                <option value="3">Cliente</option>
-            </select>
-            <label class="selectIdioma" for="">Idioma</label>
-            <select id="language">
-                <option value="1">Castellano</option>
-                <option value="2">Euskera</option>
-            </select><br>
-            <label class="" for="">Grupo</label>
-            <select id="group">
-                <option value="1">group1</option>
-                <option value="2">group2</option>
-            </select><br>
+            <label class="" for="">Repetir contraseña</label>
+            <input class="" name="password" type="password" id="repeatPassword" /><br>
 
             <input class="botonUpdateUser" type="button" value="modificar" onclick="updateUser()">
 
