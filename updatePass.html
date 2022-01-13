@@ -23,31 +23,51 @@
     <div id="ventanaModalAdmin"></div>
     <div id="contenedorDeleteUser">
         <script>
-            var BBDDpass = ""
-            const URL = "http://localhost:3000/api/user/";
-            var id = "";
-            $.ajax({
-                url: URL + "profile",
+            var BBDDpass = "d033e22ae348aeb5660fc2140aec35850c4da997"
+            const URL = "http://localhost:3000/api/";
+            //var id = "";
+            /*$.ajax({
+                url: URL,
                 type: 'GET',
                 headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
                 success: function (result) {
-                    BBDDpass = result.password;
-                    id = result.id;
+                    BBDDpass = "d033e22ae348aeb5660fc2140aec35850c4da997"//result.password;
                 },
                 error: function () {
                     alert("Revisa tu conexión");
                 }
-            });
+            });*/
+
+            function updatePass(password) {
+                console.log(password)
+                $.ajax({
+                    method: "PATCH",
+                    url: URL + "user/",
+                    headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
+                    data: JSON.stringify({
+                        "password": password,
+                    }),
+                    contentType: "application/json",
+                    success: function (data) {
+                        alert("actualizado correctamente")
+                    },
+                    error: function (e) {
+                        console.log(e)
+                    }
+                });
+            }
+
             function updateUser() {
                 var decriptLastPassword = document.getElementById("lastPassword").value;
                 var lastPassword = hex_sha1(decriptLastPassword)
-                var decriptNextPassword = document.getElementById("nextPassword").value;
+                var decriptNextPassword = document.getElementById("newPassword").value;
                 var nextPassword = hex_sha1(decriptNextPassword)
                 var decriptRepeatPassword = document.getElementById("repeatPassword").value;
                 var repeatPassword = hex_sha1(decriptRepeatPassword)
                 if (lastPassword === BBDDpass) {
-                    if (nextPass === repeatPassword) {
+                    if (nextPassword === repeatPassword) {
                         //cambiar contraseña
+                        updatePass(nextPassword)
                     } else {
                         alert("las contraseñas no coinciden")
                     }
