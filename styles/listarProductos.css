@@ -98,6 +98,10 @@
     content:url("../images/delete_marron.svg");
 }
 
+#bUP3:hover {
+    content:url("../images/activateUser_marron.svg");
+}
+
 .bUImage {
     width: 40%;
     height: auto;

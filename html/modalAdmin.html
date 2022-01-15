@@ -1,3 +1,4 @@
+<script src="javascript/trabaVendor.js"></script>
 <script>
   document.getElementById("modalAdmin").addEventListener("click", function( e ){
     e = window.event || e; 
@@ -10,11 +11,9 @@
 <div id="modalAdmin" class="modal2">
     <div class="modal-contenido2">
       <div id="cCierreModalAdmin" ><a id="cierreModalAdmin" href="#">X</a></div><br>
-      <a class="opcionUsuario" href="./updateUser.html">Modificar Admin</a> 
-      <!--
-      <a class="opcionUsuario" href="">Acceso a base de datos</a> 
-      -->
-      <a class="opcionUsuario" href="./adminApp.html">Acceso a panel administrador</a> 
+      <a id="actualAdmin" class="opcionUsuario" href="./updateUser.html">Modificar Admin</a> 
+      <a class="opcionUsuario" href="./updatePass.html">Modificar Password</a> 
+      <a id="accPAdmin" class="opcionUsuario" href="./adminApp.html">Acceso a panel administrador</a> 
       <a class="opcionUsuario" onclick="eliminarCookies()" href="index.html" >Cerrar sesión</a> 
     </div>  
 </div>

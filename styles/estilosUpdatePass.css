@@ -7,32 +7,25 @@
     font-family: 'Roboto', sans-serif;
 }
 
-#contenedorFormUser {
-    width: 95%;
-    height: 110%;
-    margin-left: 7%;
-    margin-top: -1700px;
+#cuerpoUpdatePass {
     position: absolute;
-    z-index: 0;
-    overflow: scroll;
+    margin-top: 200px;
+    margin-left: 2%;
+    width: 95%;
+    height: 100%;
 }
 
-#iconoUsuario {
-    margin-top: -1900px;
-}
-
-#contenedorFormUser form {
-    width: 40%;
-    margin-left: 25%;
-    margin-top: 10px;
+#cuerpoUpdatePass form {
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 30px;
     border: 1px solid var(--color-verdeOscuro);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
 }
 
-
-#contenedorFormUser label {
+#cuerpoUpdatePass label {
     display: inline-block;
     width: 150px;
     height: 50px;
@@ -40,18 +33,13 @@
     color: var(--color-verdeOscuro);
 }
 
-#contenedorFormUser input {
+#cuerpoUpdatePass input {
     display: inline-block;
     width: 250px;   
     height: 30px;
 }
 
-#contenedorFormUser select {
-    width: 150px;
-    height: 50px;
-}
-
-.botonAddUser {
+.botonUpdateUser {
     width: 150px;
     height: 35px;
     background: var(--color-verdeOscuro);
@@ -61,41 +49,34 @@
     font-weight: bold;
     cursor: pointer;
     font-size: 15px;
-    margin-left: 100px;
+    margin-left: 250px;
     margin-top: 25px;
 }
 
-.botonAddUser:hover {
+.botonUpdateUser:hover {
     background: var(--color-marron);
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 1501px) {  
-    #contenedorFormUser {
-        width: 95%;
-        height: 110%;
-        margin-left: 7%;
-        margin-top: -1450px;
+    #cuerpoUpdatePass {
         position: absolute;
-        z-index: 0;
-        overflow: scroll;
+        margin-top: 200px;
+        margin-left: 2%;
+        width: 95%;
+        height: 100%;
     }
     
-    #iconoUsuario {
-        margin-top: -1600px;
-    }
-    
-    #contenedorFormUser form {
-        width: 40%;
-        margin-left: 25%;
-        margin-top: 10px;
+    #cuerpoUpdatePass form {
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 30px;
         border: 1px solid var(--color-verdeOscuro);
         padding: 30px;
         border-radius: 10px;
         box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
     }
     
-    
-    #contenedorFormUser label {
+    #cuerpoUpdatePass label {
         display: inline-block;
         width: 150px;
         height: 50px;
@@ -103,18 +84,13 @@
         color: var(--color-verdeOscuro);
     }
     
-    #contenedorFormUser input {
+    #cuerpoUpdatePass input {
         display: inline-block;
         width: 250px;   
         height: 30px;
     }
     
-    #contenedorFormUser select {
-        width: 150px;
-        height: 50px;
-    }
-    
-    .botonAddUser {
+    .botonUpdateUser {
         width: 150px;
         height: 35px;
         background: var(--color-verdeOscuro);
@@ -124,42 +100,35 @@
         font-weight: bold;
         cursor: pointer;
         font-size: 15px;
-        margin-left: 150px;
+        margin-left: 250px;
         margin-top: 25px;
     }
     
-    .botonAddUser:hover {
+    .botonUpdateUser:hover {
         background: var(--color-marron);
     }
 }
 
 @media only screen and (max-width: 1500px) and (min-width: 1401px) {  
-    #contenedorFormUser {
-        width: 95%;
-        height: 110%;
-        margin-left: 7%;
-        margin-top: -1400px;
+    #cuerpoUpdatePass {
         position: absolute;
-        z-index: 0;
-        overflow: scroll;
+        margin-top: 200px;
+        margin-left: 2%;
+        width: 95%;
+        height: 100%;
     }
     
-    #iconoUsuario {
-        margin-top: -1500px;
-    }
-    
-    #contenedorFormUser form {
-        width: 40%;
-        margin-left: 25%;
-        margin-top: 10px;
+    #cuerpoUpdatePass form {
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 30px;
         border: 1px solid var(--color-verdeOscuro);
         padding: 30px;
         border-radius: 10px;
         box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
     }
     
-    
-    #contenedorFormUser label {
+    #cuerpoUpdatePass label {
         display: inline-block;
         width: 150px;
         height: 50px;
@@ -167,18 +136,13 @@
         color: var(--color-verdeOscuro);
     }
     
-    #contenedorFormUser input {
+    #cuerpoUpdatePass input {
         display: inline-block;
         width: 250px;   
         height: 30px;
     }
     
-    #contenedorFormUser select {
-        width: 150px;
-        height: 50px;
-    }
-    
-    .botonAddUser {
+    .botonUpdateUser {
         width: 150px;
         height: 35px;
         background: var(--color-verdeOscuro);
@@ -188,42 +152,35 @@
         font-weight: bold;
         cursor: pointer;
         font-size: 15px;
-        margin-left: 150px;
+        margin-left: 250px;
         margin-top: 25px;
     }
     
-    .botonAddUser:hover {
+    .botonUpdateUser:hover {
         background: var(--color-marron);
     }
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 1301px) {  
-    #contenedorFormUser {
-        width: 95%;
-        height: 110%;
-        margin-left: 7%;
-        margin-top: -1300px;
+    #cuerpoUpdatePass {
         position: absolute;
-        z-index: 0;
-        overflow: scroll;
+        margin-top: 200px;
+        margin-left: 2%;
+        width: 95%;
+        height: 100%;
     }
     
-    #iconoUsuario {
-        margin-top: -1400px;
-    }
-
-    #contenedorFormUser form {
-        width: 40%;
-        margin-left: 25%;
-        margin-top: 10px;
+    #cuerpoUpdatePass form {
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 30px;
         border: 1px solid var(--color-verdeOscuro);
         padding: 30px;
         border-radius: 10px;
         box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
     }
     
-    
-    #contenedorFormUser label {
+    #cuerpoUpdatePass label {
         display: inline-block;
         width: 150px;
         height: 50px;
@@ -231,18 +188,13 @@
         color: var(--color-verdeOscuro);
     }
     
-    #contenedorFormUser input {
+    #cuerpoUpdatePass input {
         display: inline-block;
         width: 250px;   
         height: 30px;
     }
     
-    #contenedorFormUser select {
-        width: 150px;
-        height: 50px;
-    }
-    
-    .botonAddUser {
+    .botonUpdateUser {
         width: 150px;
         height: 35px;
         background: var(--color-verdeOscuro);
@@ -252,42 +204,37 @@
         font-weight: bold;
         cursor: pointer;
         font-size: 15px;
-        margin-left: 100px;
+        margin-left: 250px;
         margin-top: 25px;
     }
     
-    .botonAddUser:hover {
+    .botonUpdateUser:hover {
         background: var(--color-marron);
     }
 }
 
+
+
 @media only screen and (max-width: 1300px) and (min-width: 1034px) {  
-    #contenedorFormUser {
-        width: 95%;
-        height: 110%;
-        margin-left: 7%;
-        margin-top: -1200px;
+    #cuerpoUpdatePass {
         position: absolute;
-        z-index: 0;
-        overflow: scroll;
+        margin-top: 200px;
+        margin-left: 2%;
+        width: 95%;
+        height: 100%;
     }
     
-    #iconoUsuario {
-        margin-top: -1300px;
-    }
-
-    #contenedorFormUser form {
-        width: 40%;
-        margin-left: 25%;
-        margin-top: 10px;
+    #cuerpoUpdatePass form {
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 30px;
         border: 1px solid var(--color-verdeOscuro);
         padding: 30px;
         border-radius: 10px;
         box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
     }
     
-    
-    #contenedorFormUser label {
+    #cuerpoUpdatePass label {
         display: inline-block;
         width: 150px;
         height: 50px;
@@ -295,18 +242,13 @@
         color: var(--color-verdeOscuro);
     }
     
-    #contenedorFormUser input {
+    #cuerpoUpdatePass input {
         display: inline-block;
         width: 250px;   
         height: 30px;
     }
     
-    #contenedorFormUser select {
-        width: 150px;
-        height: 50px;
-    }
-    
-    .botonAddUser {
+    .botonUpdateUser {
         width: 150px;
         height: 35px;
         background: var(--color-verdeOscuro);
@@ -316,42 +258,35 @@
         font-weight: bold;
         cursor: pointer;
         font-size: 15px;
-        margin-left: 100px;
+        margin-left: 250px;
         margin-top: 25px;
     }
     
-    .botonAddUser:hover {
+    .botonUpdateUser:hover {
         background: var(--color-marron);
     }
 }
 
 @media only screen and (max-width: 1033px) and (min-width: 981px) {  
-    #contenedorFormUser {
+    #cuerpoUpdatePass {
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 2%;
         width: 95%;
         height: 100%;
-        margin-left: 7%;
-        margin-top: -850px;
-        position: absolute;
-        z-index: 0;
-        overflow: scroll;
     }
     
-    #iconoUsuario {
-        margin-top: -1000px;
-    }
-
-    #contenedorFormUser form {
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 10px;
+    #cuerpoUpdatePass form {
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 30px;
         border: 1px solid var(--color-verdeOscuro);
         padding: 30px;
         border-radius: 10px;
         box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
     }
     
-    
-    #contenedorFormUser label {
+    #cuerpoUpdatePass label {
         display: inline-block;
         width: 150px;
         height: 50px;
@@ -359,18 +294,13 @@
         color: var(--color-verdeOscuro);
     }
     
-    #contenedorFormUser input {
+    #cuerpoUpdatePass input {
         display: inline-block;
         width: 250px;   
         height: 30px;
     }
     
-    #contenedorFormUser select {
-        width: 150px;
-        height: 50px;
-    }
-    
-    .botonAddUser {
+    .botonUpdateUser {
         width: 150px;
         height: 35px;
         background: var(--color-verdeOscuro);
@@ -380,42 +310,35 @@
         font-weight: bold;
         cursor: pointer;
         font-size: 15px;
-        margin-left: 100px;
+        margin-left: 250px;
         margin-top: 25px;
     }
     
-    .botonAddUser:hover {
+    .botonUpdateUser:hover {
         background: var(--color-marron);
     }
 }
 
 @media only screen and (max-width: 980px) and (min-width: 821px) {  
-    #contenedorFormUser {
+    #cuerpoUpdatePass {
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 2%;
         width: 95%;
         height: 100%;
-        margin-left: 7%;
-        margin-top: -850px;
-        position: absolute;
-        z-index: 0;
-        overflow: scroll;
     }
     
-    #iconoUsuario {
-        margin-top: -1000px;
-    }
-
-    #contenedorFormUser form {
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 10px;
+    #cuerpoUpdatePass form {
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 30px;
         border: 1px solid var(--color-verdeOscuro);
         padding: 30px;
         border-radius: 10px;
         box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
     }
     
-    
-    #contenedorFormUser label {
+    #cuerpoUpdatePass label {
         display: inline-block;
         width: 150px;
         height: 50px;
@@ -423,18 +346,13 @@
         color: var(--color-verdeOscuro);
     }
     
-    #contenedorFormUser input {
+    #cuerpoUpdatePass input {
         display: inline-block;
         width: 250px;   
         height: 30px;
     }
     
-    #contenedorFormUser select {
-        width: 150px;
-        height: 50px;
-    }
-    
-    .botonAddUser {
+    .botonUpdateUser {
         width: 150px;
         height: 35px;
         background: var(--color-verdeOscuro);
@@ -444,251 +362,397 @@
         font-weight: bold;
         cursor: pointer;
         font-size: 15px;
-        margin-left: 100px;
+        margin-left: 250px;
         margin-top: 25px;
     }
     
-    .botonAddUser:hover {
+    .botonUpdateUser:hover {
         background: var(--color-marron);
     }
 }
 
 @media only screen and (max-width: 820px) and (min-width: 621px) {  
-    #cuerpoAdminApp {
-        overflow: scroll!important;
+    #iconoUser {
+        margin-top: 20px;
     }
+    
 
-    #contenedorFormUser {
-        margin-top: 100px;
+    #cuerpoUpdatePass {
+        margin-top: -100px;
         margin-left: 120px;
-        width: 500px;
-        height: 500px;
+        width: 600px;
+        height: 1000px;
     }
 
-    #iconoUsuario {
-        margin-top: 20px;
-    }
-
-    #contenedorFormUser form {
+    #cuerpoUpdatePass form {
         width: 80%;
-        height: 80%;
-        margin-left: 10%;
-        padding: 20px;
-    }
-
-    #contenedorFormUser label {
-        width: 150px;
-        margin-bottom: -20px;
-    }
-    
-    #contenedorFormUser input {
-        display: inline-block;
-        width: 200px;   
-        margin-top: -50px;
-        margin-bottom: 20px;
-    }
-    
-    #contenedorFormUser select {
-        width: 150px;
-        height: 50px;
-    }
-    
-    .botonAddUser {
-        width: 50px;
-        margin-left: 100px;
-        margin-top: 30px!important;
-    }
-}
-
-@media only screen and (max-width: 620px) and (min-width: 501px) {  }
-
-@media only screen and (max-width: 500px) and (min-width: 341px) {  
-    #cuerpoAdminApp {
-        overflow: scroll!important;
-    }
-
-    #contenedorFormUser {
-        margin-top: 100px;
-        margin-left: 60px;
-        width: 250px;
-        height: 750px;
-    }
-    
-    #iconoUsuario {
-        margin-top: 20px;
-        margin-left: 250px!important;
-    }
-
-    #contenedorFormUser form {
-        width: 80%;
-        height: 80%;
+        height: 70%;
         margin-left: 2%;
         padding: 20px;
     }
 
-    #contenedorFormUser label {
+    #cuerpoUpdatePass label {
         width: 150px;
         margin-bottom: -20px;
     }
     
-    #contenedorFormUser input {
+    #cuerpoUpdatePass input {
         display: inline-block;
         width: 200px;   
         margin-top: -50px;
         margin-bottom: 20px;
     }
     
-    #contenedorFormUser select {
-        width: 150px;
-        height: 50px;
+    #cuerpoUpdatePass select {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    #image {
+        margin-top: 10px!important;
+        margin-left: 0;
+    }
+
+    .separacionIzq {
+        margin-left: 0!important;
+    }
+
+    .separacionUpdate {
+        margin-left: 0!important;
     }
     
-    .botonAddUser {
+    .botonUpdateUser {
         width: 50px;
-        margin-left: 5px;
+        margin-left: 120px;
         margin-top: 30px!important;
     }
 
+    .selectIdioma {
+        width: 150px;
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 620px) and (min-width: 501px) {  
+
+    #iconoUser{
+        margin-top: 20px;
+    }
+    
+
+    #cuerpoUpdatePass {
+        margin-top: 100px;
+        margin-left: 50px;
+        width: 600px;
+        height: 700px;
+    }
+
+    #cuerpoUpdatePass form {
+        width: 80%;
+        height: 70%;
+        margin-left: 2%;
+        padding: 20px;
+    }
+
+    #cuerpoUpdatePass label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #cuerpoUpdatePass input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #cuerpoUpdatePass select {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    #image {
+        margin-top: 10px!important;
+        margin-left: 0;
+    }
+
+    .separacionIzq {
+        margin-left: 0!important;
+    }
+
+    .separacionUpdate {
+        margin-left: 0!important;
+    }
+    
+    .botonUpdateUser {
+        width: 50px;
+        margin-left: 120px;
+        margin-top: 30px!important;
+    }
+
+    .selectIdioma {
+        width: 150px;
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
+    #iconoUser {
+        margin-top: -20px;
+    }
+    
+
+    #cuerpoUpdatePass {
+        margin-top: 80px;
+        margin-left: 15px;
+        width: 300px;
+        height: 950px;
+    }
+
+    #cuerpoUpdatePass form {
+        width: 80%;
+        height: 75%;
+        margin-left: 1%;
+        padding: 20px;
+    }
+
+    #cuerpoUpdatePass label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #cuerpoUpdatePass input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #cuerpoUpdatePass select {
+        width: 150px;
+        height: 50px;
+    }
+
+    #image {
+        margin-top: 10px!important;
+        margin-left: 0;
+    }
+
+    .separacionIzq {
+        margin-left: 0!important;
+    }
+
+    .separacionUpdate {
+        margin-left: 0!important;
+    }
+    
+    .botonUpdateUser {
+        width: 50px;
+        margin-left: 2px;
+        margin-top: 30px!important;
+    }
+
+    .selectIdioma {
+        margin-left: 0!important;
+    }
 }
 
 @media only screen and (max-width: 700px) and (min-width: 601px) and (orientation : landscape) { 
-    #cuerpoAdminApp {
-        overflow: scroll!important;
-    }
 
-    #contenedorFormUser {
-        margin-top: 100px;
-        margin-left: 50px;
-        width: 500px;
-        height: 500px;
-    }
-
-    #iconoUsuario {
+    #iconoUser {
         margin-top: 20px;
     }
-
-    #contenedorFormUser form {
-        width: 80%;
-        height: 80%;
-        margin-left: 10%;
-        padding: 20px;
-    }
-
-    #contenedorFormUser label {
-        width: 150px;
-        margin-bottom: -20px;
-    }
     
-    #contenedorFormUser input {
-        display: inline-block;
-        width: 200px;   
-        margin-top: -50px;
-        margin-bottom: 20px;
-    }
-    
-    #contenedorFormUser select {
-        width: 150px;
-        height: 50px;
-    }
-    
-    .botonAddUser {
-        width: 50px;
-        margin-left: 100px;
-        margin-top: 30px!important;
-    }
-}
-/* Para 320px */  
-@media only screen and (max-width: 340px) and (min-width: 5px)  {
-    #cuerpoAdminApp {
-        overflow: scroll!important;
-    }
 
-    #contenedorFormUser {
-        margin-top: 100px;
-        margin-left: 30px;
-        width: 250px;
+    #cuerpoUpdatePass {
+        margin-top: -100px;
+        margin-left: 50px;
+        width: 600px;
         height: 700px;
     }
-    
-    #iconoUsuario {
-        margin-top: 20px;
-    }
 
-    #contenedorFormUser form {
+    #cuerpoUpdatePass form {
         width: 80%;
-        height: 80%;
+        height: 70%;
         margin-left: 2%;
         padding: 20px;
     }
 
-    #contenedorFormUser label {
+    #cuerpoUpdatePass label {
         width: 150px;
         margin-bottom: -20px;
     }
     
-    #contenedorFormUser input {
+    #cuerpoUpdatePass input {
         display: inline-block;
         width: 200px;   
         margin-top: -50px;
         margin-bottom: 20px;
     }
     
-    #contenedorFormUser select {
+    #cuerpoUpdatePass select {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    #image {
+        margin-top: 10px!important;
+        margin-left: 0;
+    }
+
+    .separacionIzq {
+        margin-left: 0!important;
+    }
+
+    .separacionUpdate {
+        margin-left: 0!important;
+    }
+    
+    .botonUpdateUser {
+        width: 50px;
+        margin-left: 120px;
+        margin-top: 30px!important;
+    }
+
+    .selectIdioma {
+        width: 150px;
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 340px) and (min-width: 5px)  { 
+
+    #iconoUser {
+        margin-top: -15px;
+    }
+    
+
+    #cuerpoUpdatePass {
+        margin-top: 200px;
+        margin-left: 30px;
+        width: 250px;
+        height: auto;
+    }
+
+    #cuerpoUpdatePass form {
+        width: 80%;
+        height: 50%;
+        margin-left: 2%;
+        padding: 20px;
+    }
+
+    #cuerpoUpdatePass label {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    #cuerpoUpdatePass input {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    #cuerpoUpdatePass select {
         width: 150px;
         height: 50px;
     }
+
+    #image {
+        margin-top: 10px!important;
+        margin-left: 0;
+    }
+
+    .separacionIzq {
+        margin-left: 0!important;
+    }
+
+    .separacionUpdate {
+        margin-left: 0!important;
+    }
     
-    .botonAddUser {
+    .botonUpdateUser {
         width: 50px;
-        margin-left: 5px;
+        margin-left: 2px;
         margin-top: 30px!important;
+    }
+
+    .selectIdioma {
+        margin-left: 0!important;
     }
     
 }
 
-@media only screen and (max-width: 600px) and (min-width: 5px) and (orientation : landscape) {  
-    #cuerpoAdminApp {
-        overflow: scroll!important;
-    }
+@media only screen and (max-width: 600px) and (min-width: 5px) and (orientation : landscape) { 
 
-    #contenedorFormUser {
-        margin-top: 100px;
-        margin-left: 50px;
-        width: 500px;
-        height: 500px;
-    }
-
-    #iconoUsuario {
+    #iconoUser {
         margin-top: 20px;
     }
+    
+    #cuerpoUpdatePass {
+        margin-top: -100px;
+        margin-left: 50px;
+        width: 500px;
+        height: auto;
+    }
 
-    #contenedorFormUser form {
+    #cuerpoUpdatePass form {
         width: 80%;
-        height: 80%;
+        height: 50%;
         margin-left: 2%;
         padding: 20px;
     }
 
-    #contenedorFormUser label {
+    #cuerpoUpdatePass label {
         width: 150px;
         margin-bottom: -20px;
     }
     
-    #contenedorFormUser input {
+    #cuerpoUpdatePass input {
         display: inline-block;
         width: 200px;   
         margin-top: -50px;
         margin-bottom: 20px;
     }
     
-    #contenedorFormUser select {
-        width: 150px;
-        height: 50px;
+    #cuerpoUpdatePass select {
+        display: inline-block;
+        width: 200px;   
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    #image {
+        margin-top: 10px!important;
+        margin-left: 0;
+    }
+
+    .separacionIzq {
+        margin-left: 0!important;
+    }
+
+    .separacionUpdate {
+        margin-left: 0!important;
     }
     
-    .botonAddUser {
+    .botonUpdateUser {
         width: 50px;
         margin-left: 100px;
         margin-top: 30px!important;
+    }
+
+    .selectIdioma {
+        width: 150px;
+        margin-bottom: -20px;
+        margin-left: 0;
     }
 }

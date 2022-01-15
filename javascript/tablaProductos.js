@@ -5,13 +5,6 @@ var productos
 const URL = "http://localhost:3000/api/"
 
 
-/*function updateProduct(id) {
-    window.open("#")
-}
-function deleteProduct(id) {
-    window.open("#")
-}*/
-
 $.ajax({
     async: false,
     url: URL + "product/base",

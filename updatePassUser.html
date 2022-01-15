@@ -5,28 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdminApp</title>
+    <title>Elkarzabal</title>
     <link rel="stylesheet" href="styles/estilos.css">
-    <link rel="stylesheet" href="styles/updateUser.css">
+    <link rel="stylesheet" href="styles/estilospedido.css">
+    <link rel="stylesheet" href="styles/estilosUpdatePass.css">
     <script src="javascript/jquery-3.6.0.min.js"></script>
     <script src="javascript/load.js"></script>
-    <script src="javascript/ventanasModales.js"></script>
+    <script src="javascript/tablaPedido.js"></script>
     <script src="javascript/leerCookies.js"></script>
     <script src="javascript/jshash-2.2/sha1.js" type="text/javascript"></script>
     <script>
-        if(leerCookie( "roleId" ) === null || leerCookie( "roleId" ) == 3) {
+        if(leerCookie( "roleId" ) === null) {
             window.location.href = "./index.html";
         };
     </script>
 </head>
 
-<body id="cuerpoAdminApp">
+<body id="cuerpoIndex">
+    <div id="cCabecera">
+        <div id="cabecera"></div>
+        <div id="ventanaModal"></div>
+        <div id="ventanaModalUsuario"></div>
+    </div>
     <!--Navigation bar-->
-    <div id="menu"></div>
-    <div id="iconoUsuario"><a onclick="mostrarVentanaAdmin()" href="#modalAdmin"><img id="icono5"
-                src="./images/zanahoria.svg"><span id="span-Admin2"></span></a></div>
-    <div id="ventanaModalAdmin"></div>
-    <div id="contenedorDeleteUser">
+    <div id="iconoUser"><a onclick="mostrarVentanaUsuario()" href="#modalUser"><img id="icono5"
+                src="./images/zanahoria.svg"><span id="span-Usuario">Usuario</span></a></div>
+    <div id="cuerpoUpdatePass">
         <script>
             var BBDDpass = ""
             const URL = "http://localhost:3000/api/";
@@ -79,54 +83,6 @@
                     alert("La contraseña actual no es correcta")
                 }
             }
-            /*function updateUser() {
-                var name = document.getElementById("name").value;
-                var lastname = document.getElementById("lastname").value;
-                var email = document.getElementById("email").value;
-                var phone = document.getElementById("phone").value;
-                var password = document.getElementById("password").value;
-                nextPass = password
-                var role = document.getElementById("role").value;
-                var languageCombo = document.getElementById("language").value;
-                var groupCombo = document.getElementById("group")
-                var group = groupCombo.options[groupCombo.selectedIndex].text;
-                //console.log(group)
-                if (languageCombo === 1) {
-                    var language = "ESP";
-                } else {
-                    var language = "EUS";
-                }
-                if (nextPass === previousPass) {
-                    var encryptPass = previousPass
-                } else {
-                    var encryptPass = hex_sha1(nextPass)
-                }
-
-                $.ajax({
-                    method: "PATCH",
-                    url: URL + "user/" + id,
-                    headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-                    data: JSON.stringify({
-                        "name": name,
-                        "lastname": lastname,
-                        "phone": phone,
-                        "email": email,
-                        "password": encryptPass,
-                        "roleId": parseInt(role),
-                        "language": language,
-                        "group": group
-
-                    }),
-                    contentType: "application/json",
-                    success: function (data) {
-                        alert("Usuario " + name + " " + lastname + " añadido correctamente")
-                    },
-                    error: function (e) {
-                        console.log(e)
-                    }
-                });
-            }*/
-
         </script>
 
         <form id="formUPUser">
@@ -143,9 +99,11 @@
             <input class="botonUpdateUser" type="button" value="modificar" onclick="updateUser()">
 
         </form>
+
     </div>
+    <div id="pie"></div>
     <script>
-        document.getElementById("span-Admin2").innerHTML = leerCookie("user");
+        document.getElementById("span-Usuario").innerHTML = leerCookie("user");
     </script>
 </body>
 
