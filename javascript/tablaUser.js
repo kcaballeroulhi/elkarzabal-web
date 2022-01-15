@@ -52,7 +52,7 @@ $(document).ready(function () {
         id: "tabla"
     });
 
-    var tr = $("<tr><th id='cProducto'>Nombre</th><th id='cDescripcion'>Apellido</th><th id='cPrecio'>email</th>");
+    var tr = $("<tr><th id='cProducto'>Nombre</th><th id='cDescripcion'>Apellido</th><th id='cPrecio'>email</th><th id='cPrecio'>Activar</th><th id='cPrecio'>Eliminar</th>");
     tr.attr({
         id: "columnas"
     });
@@ -67,8 +67,8 @@ $(document).ready(function () {
             + users[i].name + "</td><td>"
             + users[i].lastname + "</td><td>"
             + users[i].email + "</td><td>"
-            + "<button onclick=activateUser(" + userID + ")>Activar</button></td > <td>"
-            + "<button onclick=deleteUser(" + userID + ")>Eliminar</button></td > <td>");
+            + "<button class='bUProduct' onclick=activateUser(" + userID + ")><img id='bUP3' class='bUImage' src='./images/activateUser_verde.svg' /></button></td > <td>"
+            + "<button class='bUProduct' onclick=deleteUser(" + userID + ")><img id='bUP2' class='bUImage' src='./images/delete.svg' /></button></td > <td>");
 
         tr2.attr({
             id: "celdas"
