@@ -11,6 +11,11 @@
         <script src="javascript/load.js"></script>
         <script src="javascript/ventanasModales.js"></script>
         <script src="javascript/leerCookies.js"></script>
+        <script>
+            if(leerCookie( "roleId" ) === null || leerCookie( "roleId" ) == 3 || leerCookie( "roleId" ) == 2) {
+                window.location.href = "./index.html";
+            };
+        </script>
     </head>
     <body id="cuerpoAdminApp">
         <!--Navigation bar-->
@@ -19,8 +24,8 @@
         <div id="ventanaModalAdmin"></div>
         <div id="contenedorElementos">
             <div id="elemento1"><a class="enlaceEl" href="addUser.html"><img class="posImg" src="images/sumarUser.svg"><span id="spanEl1">Añadir usuario</span></a></div>
+            <div id="elemento2"><a class="enlaceEl" href="#"><img class="posImg" src="images/listUser.svg"><span id="spanEl2">Lista de usuarios</span></a></div>
             <!--
-            <div id="elemento2"><a class="enlaceEl" href="updateUser.html"><img class="posImg" src="images/modificarUser.svg"><span id="spanEl2">Modificar usuario</span></a></div>
             <div id="elemento3"><a class="enlaceEl" href="#"><img class="posImg" src="images/eliminarUser.svg"><span id="spanEl3">Eliminar usuario</span></div>
             -->
         </div>
