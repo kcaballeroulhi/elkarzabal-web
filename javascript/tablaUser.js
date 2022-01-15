@@ -4,6 +4,7 @@ var users = []
 
 function activateUser(userID) {
     $.ajax({
+        async: false,
         url: URL + "user/reactivate/" + userID,
         type: 'PATCH',
         headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
@@ -19,6 +20,7 @@ function activateUser(userID) {
 
 function deleteUser(userID) {
     $.ajax({
+        async: false,
         url: URL + "user/" + userID,
         type: 'DELETE',
         headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
@@ -33,6 +35,7 @@ function deleteUser(userID) {
 }
 
 $.ajax({
+    async: false,
     url: URL + "user",
     type: 'GET',
     headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
