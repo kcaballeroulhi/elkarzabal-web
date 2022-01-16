@@ -11,11 +11,14 @@
     <link rel="stylesheet" href="styles/estilosUpdatePass.css">
     <script src="javascript/jquery-3.6.0.min.js"></script>
     <script src="javascript/load.js"></script>
+    <script src="javascript/global.js"></script>
+    <script src="javascript/global.js"></script>
+    <script src="javascript/updatePassUser.js"></script>
     <script src="javascript/tablaPedido.js"></script>
     <script src="javascript/leerCookies.js"></script>
     <script src="javascript/jshash-2.2/sha1.js" type="text/javascript"></script>
     <script>
-        if(leerCookie( "roleId" ) === null) {
+        if (leerCookie("roleId") === null) {
             window.location.href = "./index.html";
         };
     </script>
@@ -31,59 +34,6 @@
     <div id="iconoUser"><a onclick="mostrarVentanaUsuario()" href="#modalUser"><img id="icono5"
                 src="./images/zanahoria.svg"><span id="span-Usuario">Usuario</span></a></div>
     <div id="cuerpoUpdatePass">
-        <script>
-            var BBDDpass = ""
-            const URL = "http://localhost:3000/api/";
-            $.ajax({
-                url: URL + "user/profile",
-                type: 'GET',
-                headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-                success: function (result) {
-                    BBDDpass = result.password;
-                },
-                error: function () {
-                    alert("Revisa tu conexión");
-                }
-            });
-
-            function updatePass(password) {
-                //console.log(password)
-                $.ajax({
-                    method: "PATCH",
-                    url: URL + "user",
-                    headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-                    data: JSON.stringify({
-                        "password": password,
-                    }),
-                    contentType: "application/json",
-                    success: function (data) {
-                        alert("actualizado correctamente")
-                    },
-                    error: function (e) {
-                        console.log(e)
-                    }
-                });
-            }
-
-            function updateUser() {
-                var decriptLastPassword = document.getElementById("lastPassword").value;
-                var lastPassword = hex_sha1(decriptLastPassword)
-                var decriptNextPassword = document.getElementById("newPassword").value;
-                var nextPassword = hex_sha1(decriptNextPassword)
-                var decriptRepeatPassword = document.getElementById("repeatPassword").value;
-                var repeatPassword = hex_sha1(decriptRepeatPassword)
-                if (lastPassword === BBDDpass) {
-                    if (nextPassword === repeatPassword) {
-                        //cambiar contraseña
-                        updatePass(nextPassword)
-                    } else {
-                        alert("las contraseñas no coinciden")
-                    }
-                } else {
-                    alert("La contraseña actual no es correcta")
-                }
-            }
-        </script>
 
         <form id="formUPUser">
 

@@ -2,11 +2,10 @@
 
 productos = []
 var productos
-const URL = "http://localhost:3000/api/"
-
 
 function updateProduct(id) {
-    window.open("./updateForm.html?id=" + id)
+    window.location.replace("./updateForm.html?id=" + id);
+
 }
 
 function deleteProduct(id) {

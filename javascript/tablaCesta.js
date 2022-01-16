@@ -1,7 +1,7 @@
 var guardado = localStorage.getItem('pedido');
 var order = JSON.parse(guardado)
 var createOrder = []
-const URL = "http://localhost:3000/api/";
+
 
 
 function confirm() {
@@ -26,7 +26,7 @@ function confirm() {
         success: function (data) {
             alert("Pedido realizado correctamente")
             localStorage.removeItem('pedido')
-
+            window.location.replace('./pedido.html');
         },
         error: function (e) {
             alert("Revise su pedido")

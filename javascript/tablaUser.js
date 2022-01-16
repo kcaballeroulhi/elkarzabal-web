@@ -1,5 +1,5 @@
 //CREAR LA PETICION DE LOS PRODUCTOS SEMANALES
-const URL = "http://localhost:3000/api/";
+
 var users = []
 
 function activateUser(userID) {
