@@ -2,7 +2,7 @@
 
 productos = []
 var productos
-const URL = "http://localhost:3000/api/"
+
 
 
 $.ajax({

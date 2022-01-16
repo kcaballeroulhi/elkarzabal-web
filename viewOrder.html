@@ -7,19 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdminApp</title>
     <link rel="stylesheet" href="styles/estilos.css">
-    <link rel="stylesheet" href="styles/updateUser.css">
+    <link rel="stylesheet" href="styles/adminApp.css">
+    <link rel="stylesheet" href="styles/estilospedido.css">
+    <link rel="stylesheet" href="styles/shoppingCart.css">
     <script src="javascript/jquery-3.6.0.min.js"></script>
     <script src="javascript/load.js"></script>
     <script src="javascript/ventanasModales.js"></script>
     <script src="javascript/leerCookies.js"></script>
     <script src="javascript/global.js"></script>
-    <script src="javascript/updatePass.js"></script>
-    <script src="javascript/jshash-2.2/sha1.js" type="text/javascript"></script>
+    <script src="javascript/tablaValidar.js"></script>
     <script>
-        if (leerCookie("roleId") === null || leerCookie("roleId") == 3) {
+        if (leerCookie("roleId") === null || leerCookie("roleId") == 3 || leerCookie("roleId") == 2) {
             window.location.href = "./index.html";
         };
     </script>
+
 </head>
 
 <body id="cuerpoAdminApp">
@@ -28,22 +30,10 @@
     <div id="iconoUsuario"><a onclick="mostrarVentanaAdmin()" href="#modalAdmin"><img id="icono5"
                 src="./images/zanahoria.svg"><span id="span-Admin2"></span></a></div>
     <div id="ventanaModalAdmin"></div>
-    <div id="contenedorDeleteUser">
+    <div id="contenedorElementos">
 
-        <form id="formUPUser">
-
-            <label class="" for="">Contraseña actual</label>
-            <input class="" name="password" type="password" id="lastPassword" /><br>
-
-            <label class="" for="">Contraseña nueva</label>
-            <input class="" name="password" type="password" id="newPassword" /><br>
-
-            <label class="" for="">Repetir contraseña</label>
-            <input class="" name="password" type="password" id="repeatPassword" /><br>
-
-            <input class="botonUpdateUser" type="button" value="modificar" onclick="updateUser()">
-
-        </form>
+        <div id="cuerpoTablaPedido"></div>
+        <div id="pie"></div>
     </div>
     <script>
         document.getElementById("span-Admin2").innerHTML = leerCookie("user");

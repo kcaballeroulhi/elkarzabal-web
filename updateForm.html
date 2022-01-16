@@ -15,6 +15,8 @@
     <script src="javascript/load.js"></script>
     <script src="javascript/ventanasModales.js"></script>
     <script src="javascript/leerCookies.js"></script>
+    <script src="javascript/global.js"></script>
+    <script src="javascript/updateForm.js"></script>
 </head>
 
 <body id="cuerpoAdminApp">
@@ -24,56 +26,6 @@
                 src="./images/zanahoria.svg"><span id="span-Admin2"></span></a></div>
     <div id="ventanaModalAdmin"></div>
     <div id="contenedorDeleteUser">
-        <script>
-            const valores = window.location.search;
-            const urlParams = new URLSearchParams(valores);
-            var id = urlParams.get('id');
-
-            const URL = "http://localhost:3000/api/";
-            $.ajax({
-                url: URL + "product/" + id,
-                type: 'GET',
-                headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-                success: function (result) {
-                    document.getElementById("name").value = result.name;
-                    document.getElementById("description").value = result.description;
-                    document.getElementById("measurement").value = result.measurementUnit;
-                    document.getElementById("image").src = result.images[0].filename;
-
-                },
-                error: function () {
-                    alert("Revisa tu conexión");
-                }
-            });
-
-            function updateProduct() {
-                var name = document.getElementById("name").value;
-                var description = document.getElementById("description").value;
-                var measurement = document.getElementById("measurement").value;
-
-
-                $.ajax({
-                    method: "PATCH",
-                    url: URL + "product/" + id,
-                    headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-                    data: JSON.stringify({
-                        "name": name,
-                        "description": description,
-                        "measurementUnit": measurement,
-
-
-                    }),
-                    contentType: "application/json",
-                    success: function (data) {
-                        alert(name + " " + "actualizado correctamente")
-                    },
-                    error: function (e) {
-                        console.log(e)
-                    }
-                });
-            }
-
-        </script>
 
         <form>
             <label class="" for="">Nombre</label>
