@@ -1,7 +1,7 @@
-var firstName = "Rubén";
-var lastName = "Cordero";
-var address = "Luis fernandez";
-var phone = "669981290";
+var firstName = "";
+var lastName = "";
+var address = "";
+var phone = "";
 var order = [];
 
 function confirm() {
