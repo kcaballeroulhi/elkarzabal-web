@@ -7,9 +7,6 @@ if (localStorage.getItem('pedido') !== null) {
     var orderProducts = []
 }
 var productos = []
-
-
-
 var temp = false
 
 function validateStock(quantity, maxQuantity) {
@@ -22,11 +19,7 @@ function validateStock(quantity, maxQuantity) {
 }
 
 function deleteProduct(item) {
-    console.log(orderProducts)
-    console.log("item")
-    console.log(item)
     var i = orderProducts.indexOf(item);
-    console.log(i)
     if (i !== -1) {
         orderProducts.splice(i, 1);
     }
@@ -59,7 +52,6 @@ function addProduct(linea) {
     } else {
         var guardado = localStorage.getItem('pedido');
         var order = JSON.parse(guardado)
-        //console.log(order)
         if (validateStock(numCantidad, productos[linea].currentQuantity)) {
             for (i in order) {
                 if (order[i].id === productos[linea].id) {

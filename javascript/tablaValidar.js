@@ -14,7 +14,7 @@ function confirm() {
         }),
         contentType: "application/json",
         success: function (data) {
-            alert("Usuario " + urlID + " añadido correctamente")
+            alert("Pedido " + urlID + " validado correctamente")
             window.location.replace('./validateOrder.html');
 
         },

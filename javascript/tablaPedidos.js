@@ -12,9 +12,7 @@ $.ajax({
     type: 'GET',
     headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
     success: function (result) {
-        console.log(result)
         orders = result
-        console.log(orders)
     },
     error: function () {
         alert("Revisa tu conexión");
