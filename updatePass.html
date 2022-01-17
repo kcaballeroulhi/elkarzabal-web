@@ -12,7 +12,14 @@
     <script src="javascript/load.js"></script>
     <script src="javascript/ventanasModales.js"></script>
     <script src="javascript/leerCookies.js"></script>
+    <script src="javascript/global.js"></script>
+    <script src="javascript/updatePass.js"></script>
     <script src="javascript/jshash-2.2/sha1.js" type="text/javascript"></script>
+    <script>
+        if (leerCookie("roleId") === null || leerCookie("roleId") == 3) {
+            window.location.href = "./index.html";
+        };
+    </script>
 </head>
 
 <body id="cuerpoAdminApp">
@@ -22,107 +29,6 @@
                 src="./images/zanahoria.svg"><span id="span-Admin2"></span></a></div>
     <div id="ventanaModalAdmin"></div>
     <div id="contenedorDeleteUser">
-        <script>
-            var BBDDpass = ""
-            const URL = "http://localhost:3000/api/";
-            $.ajax({
-                url: URL + "user/profile",
-                type: 'GET',
-                headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-                success: function (result) {
-                    BBDDpass = result.password;
-                },
-                error: function () {
-                    alert("Revisa tu conexión");
-                }
-            });
-
-            function updatePass(password) {
-                //console.log(password)
-                $.ajax({
-                    method: "PATCH",
-                    url: URL + "user",
-                    headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-                    data: JSON.stringify({
-                        "password": password,
-                    }),
-                    contentType: "application/json",
-                    success: function (data) {
-                        alert("actualizado correctamente")
-                    },
-                    error: function (e) {
-                        console.log(e)
-                    }
-                });
-            }
-
-            function updateUser() {
-                var decriptLastPassword = document.getElementById("lastPassword").value;
-                var lastPassword = hex_sha1(decriptLastPassword)
-                var decriptNextPassword = document.getElementById("newPassword").value;
-                var nextPassword = hex_sha1(decriptNextPassword)
-                var decriptRepeatPassword = document.getElementById("repeatPassword").value;
-                var repeatPassword = hex_sha1(decriptRepeatPassword)
-                if (lastPassword === BBDDpass) {
-                    if (nextPassword === repeatPassword) {
-                        //cambiar contraseña
-                        updatePass(nextPassword)
-                    } else {
-                        alert("las contraseñas no coinciden")
-                    }
-                } else {
-                    alert("La contraseña actual no es correcta")
-                }
-            }
-            /*function updateUser() {
-                var name = document.getElementById("name").value;
-                var lastname = document.getElementById("lastname").value;
-                var email = document.getElementById("email").value;
-                var phone = document.getElementById("phone").value;
-                var password = document.getElementById("password").value;
-                nextPass = password
-                var role = document.getElementById("role").value;
-                var languageCombo = document.getElementById("language").value;
-                var groupCombo = document.getElementById("group")
-                var group = groupCombo.options[groupCombo.selectedIndex].text;
-                //console.log(group)
-                if (languageCombo === 1) {
-                    var language = "ESP";
-                } else {
-                    var language = "EUS";
-                }
-                if (nextPass === previousPass) {
-                    var encryptPass = previousPass
-                } else {
-                    var encryptPass = hex_sha1(nextPass)
-                }
-
-                $.ajax({
-                    method: "PATCH",
-                    url: URL + "user/" + id,
-                    headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-                    data: JSON.stringify({
-                        "name": name,
-                        "lastname": lastname,
-                        "phone": phone,
-                        "email": email,
-                        "password": encryptPass,
-                        "roleId": parseInt(role),
-                        "language": language,
-                        "group": group
-
-                    }),
-                    contentType: "application/json",
-                    success: function (data) {
-                        alert("Usuario " + name + " " + lastname + " añadido correctamente")
-                    },
-                    error: function (e) {
-                        console.log(e)
-                    }
-                });
-            }*/
-
-        </script>
 
         <form id="formUPUser">
 

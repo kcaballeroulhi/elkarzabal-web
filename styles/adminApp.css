@@ -391,7 +391,7 @@
     
     #spanEl2 {
         position: absolute;
-        margin-left: -190px;
+        margin-left: -160px;
         margin-top: 250px;
     }
     
@@ -486,14 +486,14 @@
         width: 95%;
         height: 110%;
         margin-left: 7%;
-        margin-top: -1300px;
+        margin-top: -1000px;
         position: absolute;
         z-index: 0;
         overflow: scroll;
     }
     
     #iconoUsuario {
-        margin-top: -930px;
+        margin-top: -1000px;
     }
 
     #elemento1 {
@@ -503,7 +503,7 @@
         border-radius: 10px;
         float: left;
         margin-left: 100px;
-        margin-top: 500px;
+        margin-top: 150px;
         text-align: center;
     }
     
@@ -514,7 +514,7 @@
         border-radius: 10px;
         float: left;
         margin-left: 50px;
-        margin-top: 500px;
+        margin-top: 150px;
         text-align: center;
     }
     
@@ -645,8 +645,8 @@
     #elemento2 {
         width: 150px;
         height: 150px;
-        margin-left: 75px;
-        margin-top: 30px;
+        margin-left: -150px;
+        margin-top: 250px;
     }
     
     #elemento3 {

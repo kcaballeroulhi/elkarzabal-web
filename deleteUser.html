@@ -15,9 +15,9 @@
     <script src="javascript/ventanasModales.js"></script>
     <script src="javascript/leerCookies.js"></script>
     <script src="javascript/global.js"></script>
-    <script src="javascript/tablaProductos.js"></script>
+    <script src="javascript/tablaUser.js"></script>
     <script>
-        if (leerCookie("roleId") === null || leerCookie("roleId") == 3) {
+        if (leerCookie("roleId") === null || leerCookie("roleId") == 3 || leerCookie("roleId") == 2) {
             window.location.href = "./index.html";
         };
     </script>
@@ -33,10 +33,10 @@
 
     <div id="cuerpoTablaProducto"></div>
 
-
     <script>
         document.getElementById("span-Admin2").innerHTML = leerCookie("user");
     </script>
+
 </body>
 
 </html>

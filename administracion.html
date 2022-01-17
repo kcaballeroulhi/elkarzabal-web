@@ -11,6 +11,11 @@
         <script src="javascript/load.js"></script>
         <script src="javascript/ventanasModales.js"></script>
         <script src="javascript/leerCookies.js"></script>
+        <script>
+            if(leerCookie("roleId") === null || leerCookie( "roleId" ) == 3) {
+                window.location.href = "./index.html";
+            };
+        </script>
     </head>
     <body id="cuerpoAdminApp">
         <!--Navigation bar-->
@@ -19,8 +24,8 @@
         <div id="ventanaModalAdmin"></div>
         <div id="contenedorElementos">
             <div id="elemento1"><a class="enlaceEl" href="addStock.html"><img class="posImg" src="images/sumarStock.svg"><span id="spanEl1">Stock semanal</span></a></div>
+            <div id="elemento2"><a class="enlaceEl" href="validateOrder.html"><img class="posImg" src="images/informes.svg"><span id="spanEl2">Pedidos</a></div>
             <!--
-            <div id="elemento2"><a class="enlaceEl" href=""><img class="posImg" src=""><span id="spanEl2"></span></a></div>
             <div id="elemento2"><a class="enlaceEl" href=""><img class="posImg" src=""><span id="spanEl2"></span></a></div>
             -->
         </div>

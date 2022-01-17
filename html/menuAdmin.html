@@ -1,5 +1,6 @@
-<script src="javascript/desplazamientoMenu.js"></script>
 <script src="javascript/trabaVendor.js"></script>
+<script src="javascript/desplazamientoMenu.js"></script>
+
 <div id="menuAdmin">
     <div class="cList">
         <div id="barras" class="cListImg"><a onclick=" let estado = comprobarEstado(); if(estado){
@@ -7,7 +8,7 @@
     </div>
     <div id="icono1">
         <div class="cList">
-            <div id="divIcUser" class="cListImg"><a href="./adminApp.html"><img class="eImg" src="./images/users.svg"></a></div>
+            <div class="cListImg"><a id="divIcUser" href="./adminApp.html"><img class="eImg" src="./images/users.svg"></a></div>
         </div>
         <div class="cList">
             <div class="cListImg"><a href="./productos.html"><img class="eImg" src="./images/pimiento.svg"></a></div>
@@ -30,8 +31,8 @@
         <a onclick=" let estado = comprobarEstado(); if(estado){
             extender();} else{encoger();};return false;" href=""><span>Menú</span></a>
     </div>
-    <div id="divTxUser" class="tList">
-        <a href="./adminApp.html"><span>Gestionar usuarios</span></a>
+    <div class="tList">
+        <a id="divTxUser" href="./adminApp.html"><span>Gestionar usuarios</span></a>
     </div>
     <div class="tList">
         <a href="./productos.html"><span>Gestionar productos</span></a>

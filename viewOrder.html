@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!DOCTYPE html>
-<html>
 
 <head>
     <meta charset="UTF-8">
@@ -9,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdminApp</title>
     <link rel="stylesheet" href="styles/estilos.css">
-    <link rel="stylesheet" href="styles/listarProductos.css">
+    <link rel="stylesheet" href="styles/adminApp.css">
+    <link rel="stylesheet" href="styles/estilospedido.css">
+    <link rel="stylesheet" href="styles/shoppingCart.css">
+    <link rel="stylesheet" href="styles/viewOrder.css">
     <script src="javascript/jquery-3.6.0.min.js"></script>
     <script src="javascript/load.js"></script>
     <script src="javascript/ventanasModales.js"></script>
     <script src="javascript/leerCookies.js"></script>
     <script src="javascript/global.js"></script>
-    <script src="javascript/tablaProductos.js"></script>
+    <script src="javascript/tablaValidar.js"></script>
     <script>
         if (leerCookie("roleId") === null || leerCookie("roleId") == 3) {
             window.location.href = "./index.html";
         };
     </script>
+
 </head>
 
 <body id="cuerpoAdminApp">
@@ -30,10 +32,16 @@
                 src="./images/zanahoria.svg"><span id="span-Admin2"></span></a></div>
     <div id="ventanaModalAdmin"></div>
 
-
-    <div id="cuerpoTablaProducto"></div>
-
-
+    <div id="contenedorElementos">
+        <div id="cuerpoDatosCliente">
+            <ul>
+                <li style="color: #567661; font-weight: bolder;">Nombre: </li><li class="sep" id="nom" style="font-weight: bolder;"></li>
+                <li style="color: #567661; font-weight: bolder;">Apellido: </li><li class="sep" id="apl" style="font-weight: bolder;"></li>
+                <li style="color: #567661; font-weight: bolder;">Dirección: </li><li class="sep" id="dir" style="font-weight: bolder;"></li>
+                <li style="color: #567661; font-weight: bolder;">Teléfono: </li><li class="sep" id="tel" style="font-weight: bolder;"></li>
+            </ul>
+        </div>
+        <div id="cuerpoTablaPedido"></div>
     <script>
         document.getElementById("span-Admin2").innerHTML = leerCookie("user");
     </script>

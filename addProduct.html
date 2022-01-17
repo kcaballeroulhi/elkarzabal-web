@@ -1,77 +1,54 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>AdminApp</title>
-            <link rel="stylesheet" href="styles/estilos.css">
-            <link rel="stylesheet" href="styles/addProduct.css">
-            <script src="javascript/jquery-3.6.0.min.js"></script>
-            <script src="javascript/load.js"></script>
-            <script src="javascript/ventanasModales.js"></script>
-            <script src="javascript/leerCookies.js"></script>
-        </head>
+<html>
 
-        <body id="cuerpoAdminApp">
-            <!--Navigation bar-->
-            <div id="menu"></div>
-            <div id="iconoUsuario"><a onclick="mostrarVentanaAdmin()" href="#modalAdmin"><img id="icono5" src="./images/zanahoria.svg"><span id="span-Admin2"></span></a></div>
-            <div id="ventanaModalAdmin"></div>
-            <div id="contenedorFormProduct">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminApp</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="styles/addProduct.css">
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <script src="javascript/load.js"></script>
+    <script src="javascript/ventanasModales.js"></script>
 
-                <script>
-                    const URL = "http://localhost:3000/api/";
-                    function createProduct() {
-                        var name = document.getElementById("name").value;
-                        var description = document.getElementById("description").value;
-                        var measure = document.getElementById("measure").value;
-                        var image = document.getElementById("imagen").value;
-            
-                        var miProduct = new FormData();
-                        miProduct.append('name', name);
-                        miProduct.append('description', description);
-                        miProduct.append('measurementUnit', measure);
-                        miProduct.append('files', imagen.files[0])
-            
-                        $.ajax({
-                            type: 'POST',
-                            url: URL + "product",
-                            headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
-                            data: miProduct,
-                            contentType: false,
-                            processData: false,
-                            success: function (data) {
-                                console.log(data)
-                                alert(data.name + " añadido correctamente")
-                            },
-                            error: function (e) {
-                                console.log(e)
-                            }
-                        });
-                    }
-            
-            
-            
-                </script>
-            <form>
-                <label class="" for="">Nombre</label>
-                <input class="" name="name" type="text" id="name" /><br>
+    <script src="javascript/global.js"></script>
+    <script src="javascript/addProduct.js"></script>
+    <script src="javascript/leerCookies.js"></script>
+    <script>
+        if (leerCookie("roleId") === null || leerCookie("roleId") == 3) {
+            window.location.href = "./index.html";
+        };
+    </script>
+</head>
 
-                <label class="" for="">Descripción</label>
-                <input class="" name="description" type="textarea" id="description" /><br>
+<body id="cuerpoAdminApp">
+    <!--Navigation bar-->
+    <div id="menu"></div>
+    <div id="iconoUsuario"><a onclick="mostrarVentanaAdmin()" href="#modalAdmin"><img id="icono5"
+                src="./images/zanahoria.svg"><span id="span-Admin2"></span></a></div>
+    <div id="ventanaModalAdmin"></div>
+    <div id="contenedorFormProduct">
 
-                <label class="" for="">Unidad de medida</label>
-                <input class="" name="measure" type="text" id="measure" /><br>
+        <form>
+            <label class="" for="">Nombre</label>
+            <input class="" name="name" type="text" id="name" /><br>
 
-                <label class="" for="">Imagen</label>
-                <input class="" name="imagen" type="file" accept=".jpg,.png" id="imagen" />
+            <label class="" for="">Descripción</label>
+            <input class="" name="description" type="textarea" id="description" /><br>
 
-                <input class="botonAddProduct" type="button" value="añadir" onclick="createProduct()">
+            <label class="" for="">Unidad de medida</label>
+            <input class="" name="measure" type="text" id="measure" /><br>
 
-            </form>
-            <script>
-                document.getElementById("span-Admin2").innerHTML = leerCookie( "user" );
-            </script>
-        </body>
-    </html>
+            <label class="" for="">Imagen</label>
+            <input class="" name="imagen" type="file" accept=".jpg,.png" id="imagen" />
+
+            <input class="botonAddProduct" type="button" value="añadir" onclick="createProduct()">
+
+        </form>
+        <script>
+            document.getElementById("span-Admin2").innerHTML = leerCookie("user");
+        </script>
+</body>
+
+</html>

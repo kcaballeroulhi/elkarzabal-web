@@ -1,4 +1,669 @@
+* {
+    margin: 0;
+    padding: 0;
+    --color-marron: #7F6E4A;
+    --color-amarillo: #E6EFD0;
+    --color-verdeOscuro: #567661;
+    font-family: 'Roboto', sans-serif;
+}
+
+#cuerpoIndex {
+    height: auto;
+}
+
 #el4 {
     background-color: #7F6E4A!important;
     color: white;
+}
+
+#cuerpoFormContacto {
+    width: 90%;
+    height: 80%;
+    margin-top: 250px;
+    margin-left: 5%;
+    position: absolute;
+}
+
+#contenedorPie {
+    margin-top: 800px;
+}
+
+#cuerpoFormContacto form {
+    width: 40%;
+    margin-left: 25%;
+    margin-top: 10px;
+    border: 1px solid var(--color-verdeOscuro);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+}
+
+#cuerpoFormContacto label {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    font-weight: bolder;
+    color: var(--color-verdeOscuro);
+}
+
+#cuerpoFormContacto input {
+    display: inline-block;
+    width: 250px;   
+    height: 30px;
+}
+
+#cuerpoFormContacto textarea {
+    width: 300px;
+    height: 50px;
+}
+
+.botonAddUser {
+    width: 150px;
+    height: 35px;
+    background: var(--color-verdeOscuro);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 200px;
+    margin-top: 25px;
+}
+
+.botonAddUser:hover {
+    background: var(--color-marron);
+}
+
+
+@media only screen and (max-width: 1600px) and (min-width: 1501px) {  
+    #cuerpoIndex {
+        height: auto!important;
+    }
+    
+    #el4 {
+        background-color: #7F6E4A!important;
+        color: white;
+    }
+    
+    #cuerpoFormContacto {
+        width: 90%;
+        height: 80%;
+        margin-top: 250px;
+        margin-left: 5%;
+        position: absolute;
+    }
+    
+    #contenedorPie {
+        margin-top: 800px;
+    }
+    
+    #cuerpoFormContacto form {
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+    
+    #cuerpoFormContacto label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+    
+    #cuerpoFormContacto input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+    
+    #cuerpoFormContacto textarea {
+        width: 300px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 200px;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1401px) { 
+    #cuerpoIndex {
+        height: auto;
+    }
+    
+    #el4 {
+        background-color: #7F6E4A!important;
+        color: white;
+    }
+    
+    #cuerpoFormContacto {
+        width: 90%;
+        height: 80%;
+        margin-top: 250px;
+        margin-left: 5%;
+        position: absolute;
+    }
+    
+    #contenedorPie {
+        margin-top: 800px;
+    }
+    
+    #cuerpoFormContacto form {
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+    
+    #cuerpoFormContacto label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+    
+    #cuerpoFormContacto input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+    
+    #cuerpoFormContacto textarea {
+        width: 300px;
+        height: 50px;
+    }
+    
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 200px;
+        margin-top: 25px;
+    }
+    
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+ }
+
+@media only screen and (max-width: 1400px) and (min-width: 1301px) {  
+            
+    #cuerpoIndex {
+        height: auto;
+    }
+
+    #el4 {
+        background-color: #7F6E4A!important;
+        color: white;
+    }
+
+    #cuerpoFormContacto {
+        width: 90%;
+        height: 80%;
+        margin-top: 250px;
+        margin-left: 5%;
+        position: absolute;
+    }
+
+    #contenedorPie {
+        margin-top: 800px;
+    }
+
+    #cuerpoFormContacto form {
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    #cuerpoFormContacto label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+
+    #cuerpoFormContacto input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+
+    #cuerpoFormContacto textarea {
+        width: 300px;
+        height: 50px;
+    }
+
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 100px;
+        margin-top: 25px;
+    }
+
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1300px) and (min-width: 1034px) { 
+        
+    #cuerpoIndex {
+        height: auto;
+    }
+
+    #el4 {
+        background-color: #7F6E4A!important;
+        color: white;
+    }
+
+    #cuerpoFormContacto {
+        width: 90%;
+        height: 80%;
+        margin-top: 250px;
+        margin-left: 5%;
+        position: absolute;
+    }
+
+    #contenedorPie {
+        margin-top: 800px;
+    }
+
+    #cuerpoFormContacto form {
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    #cuerpoFormContacto label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+
+    #cuerpoFormContacto input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+
+    #cuerpoFormContacto textarea {
+        width: 300px;
+        height: 50px;
+    }
+
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 100px;
+        margin-top: 25px;
+    }
+
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+
+ }
+
+@media only screen and (max-width: 1033px) and (min-width: 981px) {  
+               
+    #cuerpoIndex {
+        height: auto;
+    }
+
+    #el4 {
+        background-color: #7F6E4A!important;
+        color: white;
+    }
+
+    #cuerpoFormContacto {
+        width: 90%;
+        height: 80%;
+        margin-top: 250px;
+        margin-left: 5%;
+        position: absolute;
+    }
+
+    #contenedorPie {
+        margin-top: 800px;
+    }
+
+    #cuerpoFormContacto form {
+        width: 60%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    #cuerpoFormContacto label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+
+    #cuerpoFormContacto input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+
+    #cuerpoFormContacto textarea {
+        width: 300px;
+        height: 50px;
+    }
+
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 150px;
+        margin-top: 25px;
+    }
+
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+}
+
+@media only screen and (max-width: 980px) and (min-width: 821px) {  
+           
+    #cuerpoIndex {
+        height: auto;
+    }
+
+    #el4 {
+        background-color: #7F6E4A!important;
+        color: white;
+    }
+
+    #cuerpoFormContacto {
+        width: 90%;
+        height: 80%;
+        margin-top: 250px;
+        margin-left: 5%;
+        position: absolute;
+    }
+
+    #contenedorPie {
+        margin-top: 800px;
+    }
+
+    #cuerpoFormContacto form {
+        width: 60%;
+        margin-left: 25%;
+        margin-top: 10px;
+        border: 1px solid var(--color-verdeOscuro);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    #cuerpoFormContacto label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        font-weight: bolder;
+        color: var(--color-verdeOscuro);
+    }
+
+    #cuerpoFormContacto input {
+        display: inline-block;
+        width: 250px;   
+        height: 30px;
+    }
+
+    #cuerpoFormContacto textarea {
+        width: 300px;
+        height: 50px;
+    }
+
+    .botonAddUser {
+        width: 150px;
+        height: 35px;
+        background: var(--color-verdeOscuro);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 150px;
+        margin-top: 25px;
+    }
+
+    .botonAddUser:hover {
+        background: var(--color-marron);
+    }
+}
+
+@media only screen and (max-width: 820px) and (min-width: 621px) { 
+    #cuerpoIndex {
+        height: auto!important;
+    }
+
+    #cuerpoFormContacto {
+        width: 85%;
+        margin-top: 40px;
+        position: absolute;
+        margin-left: 3%;
+    }
+
+    #cuerpoFormContacto form {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #cuerpoFormContacto input {
+        width: 400px;
+    }
+
+    #cuerpoFormContacto textarea {
+        width: 400px;
+    }
+
+    #cuerpoFormContacto label {
+        width: 100px;
+    }
+ }
+
+@media only screen and (max-width: 620px) and (min-width: 501px) { 
+    #cuerpoFormContacto {
+        width: 85%;
+        margin-top: 20px;
+        position: absolute;
+        margin-left: 3%;
+    }
+
+    #cuerpoFormContacto form {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #cuerpoFormContacto input {
+        width: 400px;
+    }
+
+    #cuerpoFormContacto textarea {
+        width: 400px;
+    }
+
+    #cuerpoFormContacto label {
+        width: 100px;
+    }
+ }
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
+    #cuerpoIndex {
+        height: auto!important;
+    }
+
+    #cuerpoFormContacto {
+        width: 85%;
+        margin-top: 250px;
+        position: absolute;
+        margin-left: 1%;
+    }
+
+    #cuerpoFormContacto form {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #cuerpoFormContacto input {
+        width: 250px;
+    }
+
+    #cuerpoFormContacto textarea {
+        width: 250px;
+    }
+
+    #cuerpoFormContacto label {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 601px) and (orientation : landscape) {
+    #cuerpoFormContacto {
+        width: 85%;
+        margin-top: 20px;
+        position: absolute;
+        margin-left: 3%;
+    }
+
+    #cuerpoFormContacto form {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #cuerpoFormContacto input {
+        width: 400px;
+    }
+
+    #cuerpoFormContacto textarea {
+        width: 400px;
+    }
+
+    #cuerpoFormContacto label {
+        width: 100px;
+    }
+ }
+
+@media only screen and (max-width: 340px) and (min-width: 5px)  { 
+    #cuerpoFormContacto {
+        width: 80%;
+        margin-top: 250px;
+        position: absolute;
+        margin-left: 1%;
+    }
+
+    #cuerpoFormContacto form {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #cuerpoFormContacto input {
+        width: 150px;
+    }
+
+    #cuerpoFormContacto textarea {
+        width: 150px;
+    }
+
+    #cuerpoFormContacto label {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 5px) and (orientation : landscape) { 
+    #cuerpoFormContacto {
+        width: 80%;
+        margin-top: 30px;
+        position: absolute;
+        margin-left: 5%;
+    }
+
+    #cuerpoFormContacto form {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #cuerpoFormContacto input {
+        width: 300px;
+    }
+
+    #cuerpoFormContacto textarea {
+        width: 300px;
+    }
+
+    #cuerpoFormContacto label {
+        width: 100px;
+    }
 }

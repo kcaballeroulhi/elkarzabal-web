@@ -9,7 +9,7 @@ if (localStorage.getItem('pedido') !== null) {
 var productos = []
 
 
-const URL = "http://localhost:3000/api/"
+
 var temp = false
 
 function validateStock(quantity, maxQuantity) {
