@@ -44,7 +44,7 @@ $(document).ready(function () {
             + orders[i].user.name + "</td><td>"
             + orders[i].user.lastname + "</td><td>"
             + orders[i].id + "</td><td>"
-            + "<button class='bUProduct' onclick=viewOrder(" + orderID + ")><img id='bUP2' class='bUImage' src='./images/delete.svg' /></button></td > <td>");
+            + "<button class='bUProduct' onclick=viewOrder(" + orderID + ")><img id='bUP6' class='bUImage' src='./images/ojo_verde.svg' /></button></td > <td>");
 
         tr2.attr({
             id: "celdas"

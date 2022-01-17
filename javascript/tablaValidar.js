@@ -1,8 +1,8 @@
-var firstName = "";
-var lastName = "";
-var address = "";
-var phone = "";
-var order = []
+var firstName = "Rubén";
+var lastName = "Cordero";
+var address = "Luis fernandez";
+var phone = "669981290";
+var order = [];
 
 function confirm() {
     $.ajax({
@@ -77,8 +77,9 @@ $(document).ready(function () {
         }
 
         tabla.append(tr2);
-        var button = '<button class="bUProduct" onclick=confirm()>Validar</button>';
+
     }
+    var button = '<button id="bValidar" class="bUProduct" onclick=confirm()>Validar</button>';
     var th1 = $("<th colspan='4'></th>");
     var th2 = $("<th id='subtotal'>" + "Subtotal" + "</th>");
     var tr3 = $("<td id='celdaSub' >" + total + "</td>");
@@ -87,4 +88,13 @@ $(document).ready(function () {
     tabla.append(tr3);
     cuerpoTabla.append(tabla);
     cuerpoTabla.append(button);
+
+    var nom = $("#nom");
+    nom.append("&nbsp;" + firstName);
+    var apl = $("#apl");
+    apl.append("&nbsp;" + lastName);
+    var dir = $("#dir");
+    dir.append("&nbsp;" + address);
+    var tel = $("#tel");
+    tel.append("&nbsp;" + phone);
 })

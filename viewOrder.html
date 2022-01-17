@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/adminApp.css">
     <link rel="stylesheet" href="styles/estilospedido.css">
     <link rel="stylesheet" href="styles/shoppingCart.css">
+    <link rel="stylesheet" href="styles/viewOrder.css">
     <script src="javascript/jquery-3.6.0.min.js"></script>
     <script src="javascript/load.js"></script>
     <script src="javascript/ventanasModales.js"></script>
@@ -17,7 +18,7 @@
     <script src="javascript/global.js"></script>
     <script src="javascript/tablaValidar.js"></script>
     <script>
-        if (leerCookie("roleId") === null || leerCookie("roleId") == 3 || leerCookie("roleId") == 2) {
+        if (leerCookie("roleId") === null || leerCookie("roleId") == 3) {
             window.location.href = "./index.html";
         };
     </script>
@@ -30,11 +31,17 @@
     <div id="iconoUsuario"><a onclick="mostrarVentanaAdmin()" href="#modalAdmin"><img id="icono5"
                 src="./images/zanahoria.svg"><span id="span-Admin2"></span></a></div>
     <div id="ventanaModalAdmin"></div>
-    <div id="contenedorElementos">
 
+    <div id="contenedorElementos">
+        <div id="cuerpoDatosCliente">
+            <ul>
+                <li style="color: #567661; font-weight: bolder;">Nombre: </li><li class="sep" id="nom" style="font-weight: bolder;"></li>
+                <li style="color: #567661; font-weight: bolder;">Apellido: </li><li class="sep" id="apl" style="font-weight: bolder;"></li>
+                <li style="color: #567661; font-weight: bolder;">Dirección: </li><li class="sep" id="dir" style="font-weight: bolder;"></li>
+                <li style="color: #567661; font-weight: bolder;">Teléfono: </li><li class="sep" id="tel" style="font-weight: bolder;"></li>
+            </ul>
+        </div>
         <div id="cuerpoTablaPedido"></div>
-        <div id="pie"></div>
-    </div>
     <script>
         document.getElementById("span-Admin2").innerHTML = leerCookie("user");
     </script>

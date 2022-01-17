@@ -16,6 +16,11 @@
     <script src="javascript/leerCookies.js"></script>
     <script src="javascript/global.js"></script>
     <script src="javascript/tablaProductos.js"></script>
+    <script>
+        if (leerCookie("roleId") === null || leerCookie("roleId") == 3) {
+            window.location.href = "./index.html";
+        };
+    </script>
 </head>
 
 <body id="cuerpoAdminApp">
