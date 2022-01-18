@@ -5,6 +5,9 @@ var productos
 
 
 function addBBDD(id, stock, price) {
+    console.log("id " + id)
+    console.log("stock " + stock)
+
     $.ajax({
         method: "POST",
         url: URL + "weekly-product",
@@ -22,8 +25,6 @@ function addBBDD(id, stock, price) {
 
 
 function update() {
-    //console.log("hola")
-
 
     var tab = document.getElementById("tabla");
     var rows = tab.rows;

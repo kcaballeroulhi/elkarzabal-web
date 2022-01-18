@@ -5,9 +5,8 @@ var createOrder = []
 
 
 function confirm() {
-    console.log(order)
     for (i in order) {
-        var id = order[i].id
+        var id = order[i].weeklyProductID
         var quantity = order[i].cantidad
         var orderUnit = {
             "weeklyProductId": id,
@@ -16,7 +15,6 @@ function confirm() {
         createOrder.push(orderUnit)
     }
     var orderProducts = createOrder
-
     $.ajax({
         method: "POST",
         url: URL + "order",

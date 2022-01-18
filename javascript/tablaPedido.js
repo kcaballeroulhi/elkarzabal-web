@@ -1,6 +1,5 @@
 //CREAR LA PETICION DE LOS PRODUCTOS SEMANALES
 if (localStorage.getItem('pedido') !== null) {
-    console.log("test")
     var guardado = localStorage.getItem('pedido');
     var orderProducts = JSON.parse(guardado)
 } else {
@@ -28,16 +27,17 @@ function deleteProduct(item) {
 function addProduct(linea) {
     var cantidad = document.getElementById("iCantidad" + linea).value
     var numCantidad = parseFloat(cantidad)
-
+    console.log(productos)
     var unProducto = {
-        "id": productos[linea].id,
+        "productID": productos[linea].productID,
+        "weeklyProductID": productos[linea].weeklyProductID,
         "name": productos[linea].name,
         "description": productos[linea].description,
         "cantidad": numCantidad,
         "medida": productos[linea].measurementUnit,
         "precio": productos[linea].price
     }
-
+    console.log(unProducto)
 
     if (localStorage.getItem("pedido") === null) {
         if (validateStock(numCantidad, productos[linea].currentQuantity)) {
@@ -54,7 +54,7 @@ function addProduct(linea) {
         var order = JSON.parse(guardado)
         if (validateStock(numCantidad, productos[linea].currentQuantity)) {
             for (i in order) {
-                if (order[i].id === productos[linea].id) {
+                if (order[i].productID === productos[linea].productID) {
                     temp = true
                     if (numCantidad === 0) {
                         orderProducts.splice(i, 1);
@@ -81,7 +81,7 @@ function addProduct(linea) {
     }
 }
 
-function takeProductData(id, stock, price) {
+function takeProductData(id, weeklyID, stock, price) {
     $.ajax({
         async: false,
         url: URL + "product/" + id,
@@ -90,7 +90,8 @@ function takeProductData(id, stock, price) {
         success: function (data) {
             var miProducto =
             {
-                id: data.id,
+                productID: id,
+                weeklyProductID: weeklyID,
                 name: data.name,
                 description: data.description,
                 currentQuantity: stock,
@@ -113,12 +114,14 @@ $.ajax({
     headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
     success: function (data) {
         var producto = data
+        //console.log(data)
         for (i in producto) {
 
-            var id = producto[i].id
+            var productID = producto[i].productId
+            var weeklyProductID = producto[i].id
             var stock = producto[i].currentQuantity
             var price = producto[i].price
-            takeProductData(id, stock, price);
+            takeProductData(productID, weeklyProductID, stock, price);
         }
     },
     error: function () {
