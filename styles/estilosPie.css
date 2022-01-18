@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    --color-marron: #7F6E4A;
+    --color-amarillo: #E6EFD0;
+    --color-verdeOscuro: #567661;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contenedorPie {
+    display: table;
+}
+
+#contDatos {
+    width: 50%;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#contDatos p {
+    color: white;
+    font-weight: bolder;
+    height: auto;
+}
+
+#contDatos img {
+    width: 5%;
+    height: auto;
+}
