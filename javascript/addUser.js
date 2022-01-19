@@ -1,3 +1,6 @@
+
+
+
 function createNewUser() {
     var name = document.getElementById("name").value;
     var lastname = document.getElementById("lastname").value;
@@ -10,7 +13,7 @@ function createNewUser() {
 
     $.ajax({
         method: "POST",
-        url: URL + "api/register",
+        url: URL + "register",
         headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
         data: JSON.stringify({
             "name": name,
