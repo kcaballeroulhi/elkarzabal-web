@@ -29,6 +29,7 @@ function createNewUser() {
         contentType: "application/json",
         success: function (data) {
             alert("Usuario " + data.name + " " + data.lastname + " añadido correctamente")
+            window.location.replace('./deleteUser.html')
         },
         error: function (e) {
             console.log(e)

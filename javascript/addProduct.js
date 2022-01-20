@@ -18,8 +18,8 @@ function createProduct() {
             contentType: false,
             processData: false,
             success: function (data) {
-                console.log(data)
                 alert(data.name + " añadido correctamente")
+                window.location.replace('./updateProduct.html')
             },
             error: function (e) {
                 console.log(e)
