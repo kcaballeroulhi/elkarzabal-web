@@ -2,7 +2,6 @@ function createProduct() {
     var name = document.getElementById("name").value;
     var description = document.getElementById("description").value;
     var measure = document.getElementById("measure").value;
-    console.log(imagen.files[0])
 
     if (imagen.files.length === 1) {
         var miProduct = new FormData();

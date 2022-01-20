@@ -90,7 +90,7 @@ $(document).ready(function () {
         var productID = productos[i].id
         var imagen = productos[i].images[0]
         var tr2 = $("<tr><td>"
-            + '<img id="imgListProd" src="' + imagen + '" alt="Girl in a jacket" width="100" height="100"></img>' + "</td><td>"
+            + '<img id="imgListProd" src="' + imagen + '" alt="Girl in a jacket" width="50" height="50"></img>' + "</td><td>"
             + productos[i].name + "</td><td>"
             + productos[i].description + "</td><td>"
             + productos[i].measurementUnit + "</td><td>"
