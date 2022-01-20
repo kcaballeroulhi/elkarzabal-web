@@ -2,6 +2,13 @@
 
 var users = []
 
+function state(state) {
+    if (state === true) {
+        return "activo"
+    } else {
+        return "eliminado"
+    }
+}
 function activateUser(userID) {
     $.ajax({
         async: false,
@@ -9,8 +16,8 @@ function activateUser(userID) {
         type: 'PATCH',
         headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
         success: function (result) {
-            console.log(result)
             alert("usuario activado")
+            window.location.reload()
         },
         error: function () {
             alert("Revisa tu conexión");
@@ -25,8 +32,8 @@ function deleteUser(userID) {
         type: 'DELETE',
         headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
         success: function (result) {
-            console.log(result)
             alert("usuario eliminado")
+            window.location.reload()
         },
         error: function () {
             alert("Revisa tu conexión");
@@ -55,7 +62,7 @@ $(document).ready(function () {
         id: "tabla"
     });
 
-    var tr = $("<tr><th id='cProducto'>Nombre</th><th id='cDescripcion'>Apellido</th><th id='cPrecio'>email</th><th id='cPrecio'>Activar</th><th id='cPrecio'>Eliminar</th>");
+    var tr = $("<tr><th id='cProducto'>Nombre</th><th id='cDescripcion'>Apellido</th><th id='cPrecio'>email</th><th id='cPrecio'>Estado</th><th id='cPrecio'>Activar</th><th id='cPrecio'>Eliminar</th>");
     tr.attr({
         id: "columnas"
     });
@@ -70,6 +77,7 @@ $(document).ready(function () {
             + users[i].name + "</td><td>"
             + users[i].lastname + "</td><td>"
             + users[i].email + "</td><td>"
+            + state(users[i].active) + "</td><td>"
             + "<button class='bUProduct' onclick=activateUser(" + userID + ")><img id='bUP3' class='bUImage' src='./images/activateUser_verde.svg' /></button></td > <td>"
             + "<button class='bUProduct' onclick=deleteUser(" + userID + ")><img id='bUP2' class='bUImage' src='./images/delete.svg' /></button></td > <td>");
 
