@@ -117,6 +117,12 @@
     padding: 10px;
     border-radius: 50px;
 }
+.imgWeek {
+    width: 50px;
+    height: auto;
+    padding: 10px;
+    border-radius: 50px;
+}
 
 .bAddProduct {
     border: none;

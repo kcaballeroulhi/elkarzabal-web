@@ -94,7 +94,7 @@ $(document).ready(function () {
         var imagen = productos[i].images[0]
         var tr2 = $("<tr><td>"
             + '<input class = "chk"type="checkbox" id="chk' + productID + '"> </td><td>'
-            + '<img src="' + imagen + '" alt="Girl in a jacket" width="100" height="100"></img>' + "</td><td>"
+            + '<img src="' + imagen + '" alt="Girl in a jacket" class = "imgWeek" width="50" height="50"></img>' + "</td><td>"
             + productos[i].name + "</td><td>"
             + productos[i].measurementUnit + "</td><td>"
             + '<input type="Text" id="cantidad' + productID + '" value="">' + "</td><td>"
