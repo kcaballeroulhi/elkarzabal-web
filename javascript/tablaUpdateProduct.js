@@ -75,7 +75,7 @@ $(document).ready(function () {
         id: "tabla"
     });
 
-    var tr = $("<tr><th id='cProducto'>Imagen</th><th id='cProducto'>Producto</th><th id='cDescripcion'>Descripción</th><th id='cPrecio'>Unidad de medida</th><th id='cPrecio'>Modificar</th><th id='cPrecio'>Eliminar</th>");
+    var tr = $("<tr><th id='cImg'>Imagen</th><th id='cProducto'>Producto</th><th id='cDescripcion'>Descripción</th><th id='cPrecio'>Unidad de medida</th><th id='cPrecio'>Modificar</th><th id='cPrecio'>Eliminar</th>");
     tr.attr({
         id: "columnas"
     });
@@ -86,7 +86,7 @@ $(document).ready(function () {
     for (i in productos) {
         var productID = productos[i].id
         var imagen = productos[i].images[0]
-        var tr2 = $("<tr><td>"
+        var tr2 = $("<tr><td id='tdImg'>"
             + '<img id="imgListProd" src="' + imagen + '" alt="Girl in a jacket" width="50" height="50"></img>' + "</td><td>"
             + productos[i].name + "</td><td>"
             + productos[i].description + "</td><td>"

@@ -46,6 +46,13 @@
     height: 30px;
 }
 
+#cImg {
+    width: 200px;
+}
+
+#tdImg {
+    height: auto;
+}
 #cProducto {
     width: auto;
 }
@@ -112,7 +119,7 @@
 }
 
 #imgListProd {
-    width: 50px;
+    width: 80%!important;
     height: auto;
     padding: 10px;
     border-radius: 50px;
@@ -260,6 +267,13 @@
     .bAddProduct:hover {
         background-color: var(--color-marron);
     }
+    #cImg {
+        width: 200px;
+    }
+    
+    #tdImg {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 1500px) and (min-width: 1401px) {  
@@ -380,6 +394,13 @@
     
     .bAddProduct:hover {
         background-color: var(--color-marron);
+    }
+    #cImg {
+        width: 200px;
+    }
+    
+    #tdImg {
+        height: auto;
     }
 }
 
@@ -503,6 +524,13 @@
     .bAddProduct:hover {
         background-color: var(--color-marron);
     }
+    #cImg {
+        width: 200px;
+    }
+    
+    #tdImg {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 1034px) {  
@@ -624,6 +652,13 @@
 
     .bAddProduct:hover {
         background-color: var(--color-marron);
+    }
+    #cImg {
+        width: 200px;
+    }
+    
+    #tdImg {
+        height: auto;
     }
 }
 
@@ -747,6 +782,13 @@
     .bAddProduct:hover {
         background-color: var(--color-marron);
     }
+    #cImg {
+        width: 200px;
+    }
+    
+    #tdImg {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 980px) and (min-width: 821px) {  
@@ -869,6 +911,13 @@
     .bAddProduct:hover {
         background-color: var(--color-marron);
     }
+    #cImg {
+        width: 200px;
+    }
+    
+    #tdImg {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 820px) and (min-width: 621px) {  
@@ -927,6 +976,13 @@
 
     .bAddProduct:hover {
         background-color: var(--color-marron);
+    }
+    #cImg {
+        width: 200px;
+    }
+    
+    #tdImg {
+        height: auto;
     }
 }
 
@@ -993,6 +1049,13 @@
     .bAddProduct:hover {
         background-color: var(--color-marron);
     }
+    #cImg {
+        width: 200px;
+    }
+    
+    #tdImg {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 700px) and (min-width: 601px) and (orientation : landscape) { 
@@ -1051,6 +1114,13 @@
 
     .bAddProduct:hover {
         background-color: var(--color-marron);
+    }
+    #cImg {
+        width: 200px;
+    }
+    
+    #tdImg {
+        height: auto;
     }
 }
 
@@ -1115,6 +1185,13 @@
     .bAddProduct:hover {
         background-color: var(--color-marron);
     }
+    #cImg {
+        width: 200px;
+    }
+    
+    #tdImg {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 600px) and (min-width: 5px) and (orientation : landscape) { 
@@ -1174,5 +1251,12 @@
 
     .bAddProduct:hover {
         background-color: var(--color-marron);
+    }
+    #cImg {
+        width: 200px;
+    }
+    
+    #tdImg {
+        height: auto;
     }
 }
