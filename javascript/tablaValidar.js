@@ -32,7 +32,7 @@ $.ajax({
     success: function (result) {
         firstName = result.user.name;
         lastName = result.user.lastname;
-        phone = result.user.lastname;
+        phone = result.user.phone;
         address = result.user.address;
         order = result.orderProducts
     },

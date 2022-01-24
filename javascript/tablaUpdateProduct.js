@@ -9,9 +9,7 @@ function updateProduct(id) {
 }
 
 function deleteProduct(id) {
-    console.log(productos[i].name)
     var deleteID = 0
-    console.log(deleteID)
     //conseguir id imagen del producto a borrar
     $.ajax({
         async: false,
@@ -19,7 +17,6 @@ function deleteProduct(id) {
         type: 'GET',
         headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
         success: function (data) {
-            console.log(data.images[0].id)
             deleteID = data.images[0].id;
         }
         ,
@@ -48,8 +45,8 @@ function deleteProduct(id) {
         type: 'DELETE',
         headers: { "Authorization": "Bearer " + localStorage.getItem('token') },
         success: function () {
-            alert(productos[i].name + " borrado"),
-                location.reload()
+            alert("producto borrado")
+            location.reload()
         },
         error: function () {
             alert("Revisa tu conexión");

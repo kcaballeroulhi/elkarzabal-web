@@ -6,7 +6,7 @@ function state(state) {
     if (state === true) {
         return "activo"
     } else {
-        return "eliminado"
+        return "desactivado"
     }
 }
 function activateUser(userID) {
@@ -62,7 +62,7 @@ $(document).ready(function () {
         id: "tabla"
     });
 
-    var tr = $("<tr><th id='cProducto'>Nombre</th><th id='cDescripcion'>Apellido</th><th id='cPrecio'>email</th><th id='cPrecio'>Estado</th><th id='cPrecio'>Activar</th><th id='cPrecio'>Eliminar</th>");
+    var tr = $("<tr><th id='cProducto'>Nombre</th><th id='cDescripcion'>Apellido</th><th id='cPrecio'>email</th><th id='cPrecio'>Estado</th><th id='cPrecio'>Activar</th><th id='cPrecio'>Desactivar</th>");
     tr.attr({
         id: "columnas"
     });
